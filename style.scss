@@ -23,8 +23,8 @@ $arsenic : #444444;
 $black : #000000;
 $lightgolden : #d4c3a4;
 $golden : #bea373;
-// $golden : #be9e73;
 $spaceshuttle: #433c36;
+// $golden : #be9e73;
 
 
 @font-face {
@@ -68,6 +68,7 @@ $spaceshuttle: #433c36;
   font-weight: 700;
   src: url("fonts/FuturaStd-CondensedBold.otf");
 }
+
 
 
 @mixin phone {
