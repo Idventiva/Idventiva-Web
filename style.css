@@ -15,6 +15,8 @@
     Focus - Idventiva 2020
     SETUP
 \*------------------------------------*/
+/* Colors */
+/* Typography */
 @font-face {
   font-family: 'Futura';
   font-weight: 300;
@@ -58,6 +60,7 @@
   src: url("fonts/FuturaStd-CondensedBold.otf");
 }
 
+/* Responsive displays */
 /*------------------------------------*\
     Estructura
 \*------------------------------------*/
@@ -76,13 +79,14 @@
   text-rendering: optimizeLegibility;
 }
 
-/* html element 62.5% font-size for REM use */
-/*html {
-font-size:62.5%;
-}*/
 body {
   font: 400 16px/1.8 'Futura', Helvetica, Arial, sans-serif;
-  color: #444444;
+  color: #000000;
+}
+
+.dotGrid {
+  background-image: url("img/dotGridBlack.png");
+  opacity: 0.5;
 }
 
 /* clear */
@@ -2432,8 +2436,8 @@ a img.aligncenter {
   }
   .footer {
     background-color: #1b1b1b;
-    -webkit-box-shadow: 0 0px 15px black;
-            box-shadow: 0 0px 15px black;
+    -webkit-box-shadow: 0 0px 15px #000000;
+            box-shadow: 0 0px 15px #000000;
   }
 }
 

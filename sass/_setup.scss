@@ -4,17 +4,20 @@
     SETUP
 \*------------------------------------*/
 
+/* Colors */
+
 $white : #ffffff;
 $lightgray : #c3c3c3;
+$arsenic : #444444;
 $darkgray : #2a2a2a;
 $carbon : #1b1b1b;
-$arsenic : #444444;
 $black : #000000;
 $lightgolden : #d4c3a4;
 $golden : #bea373;
 $spaceshuttle: #433c36;
-// $golden : #be9e73;
 
+
+/* Typography */
 
 @font-face {
   font-family: 'Futura';
@@ -59,6 +62,7 @@ $spaceshuttle: #433c36;
 }
 
 
+/* Responsive displays */
 
 @mixin phone {
   @media (max-width: 599px) { @content; }

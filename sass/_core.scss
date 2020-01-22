@@ -1,4 +1,3 @@
-
 /*------------------------------------*\
     Focus - Idventiva 2020
     MAIN
@@ -14,14 +13,17 @@
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
-/* html element 62.5% font-size for REM use */
-/*html {
-font-size:62.5%;
-}*/
+
 body {
 	font:400 16px/1.8 'Futura', Helvetica, Arial, sans-serif;
-	color: $arsenic;
+	color: $black;
 }
+
+.dotGrid {
+    background-image: url('img/dotGridBlack.png');
+	opacity: 0.5;
+}
+	
 /* clear */
 .clear:before,
 .clear:after {
@@ -124,12 +126,12 @@ input:focus {
 
 
 ::selection {
-	background:$golden;
-	color:#FFF;
-	text-shadow:none;
+	background: $golden;
+	color :#FFF;
+	text-shadow: none;
 }
 ::-webkit-selection {
-	background:$golden;
+	background: $golden;
 	color:#FFF;
 	text-shadow:none;
 }

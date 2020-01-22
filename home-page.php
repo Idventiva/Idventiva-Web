@@ -1,12 +1,7 @@
 <?php /* Template Name: Home */ get_header(); ?>
 
-<style>
-body {background-color: #000;}
-</style>
-
-
 <div id="home" class="section">
-  <div data-tilt class="parallaxLayer">
+  <div class="parallaxLayer">
   <div class="home-background"></div>
   <div class="dotGrid"></div>
     <div class="parallaxText">
