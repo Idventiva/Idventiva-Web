@@ -1,0 +1,86 @@
+
+/*------------------------------------*\
+    Focus - Idventiva 2020
+    SETUP
+\*------------------------------------*/
+
+$white : #ffffff;
+$lightgray : #c3c3c3;
+$darkgray : #2a2a2a;
+$carbon : #1b1b1b;
+$arsenic : #444444;
+$black : #000000;
+$lightgolden : #d4c3a4;
+$golden : #bea373;
+$spaceshuttle: #433c36;
+// $golden : #be9e73;
+
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 300;
+  src: url("fonts/FuturaStd-Light.otf");
+}
+@font-face {
+  font-family: 'Futura';
+  font-weight: 400;
+  src: url("fonts/FuturaStd-Book.otf");
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 600;
+  src: url("fonts/FuturaStd-Heavy.otf");
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 700;
+  src: url("fonts/FuturaStd-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Garamond';
+  font-weight: 400;
+  src: url("fonts/AGaramondPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Garamond';
+  font-weight: 400;
+  font-style: italic;
+  src: url("fonts/AGaramondPro-Italic.otf");
+}
+
+@font-face {
+  font-family: 'Futura Condensed';
+  font-weight: 700;
+  src: url("fonts/FuturaStd-CondensedBold.otf");
+}
+
+
+
+@mixin phone {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet-portrait {
+  @media (min-width:600px) and (max-width: 899px) { @content; }
+}
+@mixin tablet-landscape {
+  @media (min-width:900px) and (max-width: 1199px) { @content; }
+}
+@mixin desktop {
+  @media (min-width:1200px) and (max-width: 1799px) { @content; }
+}
+@mixin big-desktop {
+  @media (min-width:1800px) { @content; }
+}
+@mixin phone-and-tablet {
+  @media (max-width: 1200px) { @content; }
+}
+@mixin both-tablet {
+    @media (min-width:600px) and (max-width: 1199px) { @content; }
+}
+@mixin upto-portrait-tablet {
+    @media  (max-width: 899px) { @content; }
+}

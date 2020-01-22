@@ -12,7 +12,8 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 /*------------------------------------*\
-    SCSS Setup
+    Focus - Idventiva 2020
+    SETUP
 \*------------------------------------*/
 @font-face {
   font-family: 'Futura';
@@ -58,6 +59,10 @@
 }
 
 /*------------------------------------*\
+    Estructura
+\*------------------------------------*/
+/*------------------------------------*\
+    Focus - Idventiva 2020
     MAIN
 \*------------------------------------*/
 /* global box-sizing */
@@ -183,7 +188,34 @@ input:focus {
   margin-top: 0;
 }
 
-/* footer */
+::-moz-selection {
+  background: #bea373;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #bea373;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: #bea373;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #bea373;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/*------------------------------------*\
+    Focus - Idventiva 2020
+    FOOTER
+\*------------------------------------*/
 .footer {
   position: fixed;
   bottom: 0;
@@ -248,6 +280,7 @@ input:focus {
 }
 
 /*------------------------------------*\
+    Focus - Idventiva 2020
     NAVEGACIÓN
 \*------------------------------------*/
 /* Animación de Icono */
@@ -747,6 +780,91 @@ nav .social-networks-nav a i:hover {
 }
 
 /*------------------------------------*\
+    Focus - Idventiva 2020
+    WORDPRESS CORE
+\*------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/*------------------------------------*\
+    Páginas
+\*------------------------------------*/
+/*------------------------------------*\
+    Focus - Idventiva 2020
     PAGINA DE INICIO
 \*------------------------------------*/
 #home {
@@ -1037,6 +1155,7 @@ nav .social-networks-nav a i:hover {
 }
 
 /*------------------------------------*\
+   Focus - Idventiva 2020
    PAGINA DE SERVICIOS
 \*------------------------------------*/
 #services {
@@ -1317,6 +1436,7 @@ nav .social-networks-nav a i:hover {
 }
 
 /*------------------------------------*\
+    Focus - Idventiva 2020
     PORTAFOLIO
 \*------------------------------------*/
 #portafolio {
@@ -1516,7 +1636,46 @@ nav .social-networks-nav a i:hover {
   z-index: 1 !important;
 }
 
+.project-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 00px;
+}
+
+.project-container .post-header {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+}
+
+.project-container .post-header .section-title {
+  position: absolute;
+  bottom: 40px;
+  font-family: 'Futura Condensed';
+  font-size: 58px;
+  line-height: 1.3;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.project-container .post-header .section-title a {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.project-container article {
+  padding: 30px;
+  padding-top: 0px;
+  line-height: 1.8;
+  padding-bottom: 60px;
+}
+
 /*------------------------------------*\
+    Focus - Idventiva 2020
     ABOUT US
 \*------------------------------------*/
 .aboutBackground {
@@ -1630,78 +1789,8 @@ nav .social-networks-nav a i:hover {
   color: #ded1b9;
 }
 
-/* ========================= *\
-    Contacto
-\* ========================= */
-#contact .dotGrid {
-  background-image: url("img/dotGridBlack.png");
-  opacity: 0.5;
-}
-
-#contact h1 {
-  z-index: 1;
-  color: #bea373;
-  font-weight: 300;
-  line-height: 1;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-#contact h2 {
-  z-index: 1;
-  color: #c3c3c3;
-  font-weight: 400;
-  line-height: 1;
-  margin: 0;
-  padding-bottom: 40px;
-  border-bottom: 1px dotted #bea373;
-  margin-bottom: 40px;
-}
-
-#contact .contactContainer {
-  position: absolute;
-  max-width: 980px;
-  margin: 0 auto;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, calc(-50% - 50px));
-          transform: translate(-50%, calc(-50% - 50px));
-  background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px dotted #bfa372;
-  border-top: 1px dotted #bfa372;
-  padding: 70px;
-  pointer-events: none;
-}
-
-#contact .contact-left {
-  float: left;
-  position: relative;
-  width: 400px;
-  height: 400px;
-}
-
-#contact .contact-right {
-  float: right;
-  position: relative;
-  width: calc(100% - 400px - 100px);
-  margin: 20px 50px 50px 50px;
-}
-
-#contact .contact-right a.view-portfolio {
-  color: #bea373;
-  float: right;
-  margin-top: 40px;
-  pointer-events: all;
-  -webkit-transition: 0.25;
-  transition: 0.25;
-}
-
-#contact .contact-right a.view-portfolio:hover {
-  color: #ded1b9;
-}
-
 /*------------------------------------*\
+    Focus - Idventiva 2020
     LEDIX BLOG
 \*------------------------------------*/
 #blog {
@@ -1813,6 +1902,94 @@ nav .social-networks-nav a i:hover {
 }
 
 /*------------------------------------*\
+    Focus - Idventiva 2020
+    CONTACT
+\*------------------------------------*/
+#contact .dotGrid {
+  background-image: url("img/dotGridBlack.png");
+  opacity: 0.5;
+}
+
+#contact h1 {
+  z-index: 1;
+  color: #bea373;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#contact h2 {
+  z-index: 1;
+  color: #c3c3c3;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #bea373;
+  margin-bottom: 40px;
+}
+
+#contact .contactContainer {
+  position: absolute;
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, calc(-50% - 50px));
+          transform: translate(-50%, calc(-50% - 50px));
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px dotted #bfa372;
+  border-top: 1px dotted #bfa372;
+  padding: 70px;
+  pointer-events: none;
+}
+
+#contact .contact-left {
+  float: left;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+#contact .contact-right {
+  float: right;
+  position: relative;
+  width: calc(100% - 400px - 100px);
+  margin: 20px 50px 50px 50px;
+}
+
+#contact .contact-right a.view-portfolio {
+  color: #bea373;
+  float: right;
+  margin-top: 40px;
+  pointer-events: all;
+  -webkit-transition: 0.25;
+  transition: 0.25;
+}
+
+#contact .contact-right a.view-portfolio:hover {
+  color: #ded1b9;
+}
+
+.contact-left {
+  float: left;
+  width: 400px;
+  pointer-events: all;
+}
+
+.contact-left label {
+  color: #bea373;
+  font-family: 'Futura';
+  font-weight: 300;
+}
+
+/*------------------------------------*\
+    Plantillas
+\*------------------------------------*/
+/*------------------------------------*\
+    Focus - Idventiva 2020
     SINGLE POST
 \*------------------------------------*/
 .post-container {
@@ -1930,48 +2107,8 @@ nav .social-networks-nav a i:hover {
 }
 
 /*------------------------------------*\
-    Portafolio
-\*------------------------------------*/
-.project-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 00px;
-}
-
-.project-container .post-header {
-  height: 300px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-size: cover;
-}
-
-.project-container .post-header .section-title {
-  position: absolute;
-  bottom: 40px;
-  font-family: 'Futura Condensed';
-  font-size: 58px;
-  line-height: 1.3;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.project-container .post-header .section-title a {
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.project-container article {
-  padding: 30px;
-  padding-top: 0px;
-  line-height: 1.8;
-  padding-bottom: 60px;
-}
-
-/*------------------------------------*\
-    Proyecto Individual
+    Focus - Idventiva 2020
+    SINGLE PROJECT
 \*------------------------------------*/
 .back-button {
   width: 100%;
@@ -2009,128 +2146,11 @@ nav .social-networks-nav a i:hover {
 }
 
 /*------------------------------------*\
-    CONTACTO
+    Responsive y Otros Formatos
 \*------------------------------------*/
-.contact-left {
-  float: left;
-  width: 400px;
-  pointer-events: all;
-}
-
-.contact-left label {
-  color: #bea373;
-  font-family: 'Futura';
-  font-weight: 300;
-}
-
 /*------------------------------------*\
-    MISC
-\*------------------------------------*/
-::-moz-selection {
-  background: #bea373;
-  color: #FFF;
-  text-shadow: none;
-}
-::selection {
-  background: #bea373;
-  color: #FFF;
-  text-shadow: none;
-}
-
-::-webkit-selection {
-  background: #bea373;
-  color: #FFF;
-  text-shadow: none;
-}
-
-::-moz-selection {
-  background: #bea373;
-  color: #FFF;
-  text-shadow: none;
-}
-
-/*------------------------------------*\
-    WORDPRESS CORE
-\*------------------------------------*/
-.alignnone {
-  margin: 5px 20px 20px 0;
-}
-
-.aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
-}
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-  margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-caption {
-  background: #FFF;
-  border: 1px solid #F0F0F0;
-  max-width: 96%;
-  padding: 5px 3px 10px;
-  text-align: center;
-}
-
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-  margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto;
-}
-
-.wp-caption .wp-caption-text,
-.gallery-caption {
-  font-size: 11px;
-  line-height: 17px;
-  margin: 0;
-  padding: 0 4px 5px;
-}
-
-/*------------------------------------*\
-    Responsive
+    Focus - Idventiva 2020
+    RESPONSIVE
 \*------------------------------------*/
 @media (max-width: 899px) {
   #portafolio #portafolioContainer .portafolioSlider {
@@ -2181,6 +2201,8 @@ a img.aligncenter {
     -webkit-transform: translate(120%, -50%);
             transform: translate(120%, -50%);
     font-size: 0.8em;
+    /*.lower {
+      }*/
   }
   #portafolio #portafolioContainer {
     margin-top: 60px;
@@ -2396,6 +2418,7 @@ a img.aligncenter {
   }
   #services .serviceContainer {
     margin-top: 185px;
+    /*.card {}*/
   }
   #contact {
     margin-top: 30px;
@@ -2458,6 +2481,7 @@ a img.aligncenter {
 }
 
 /*------------------------------------*\
+    Focus - Idventiva 2020
     PRINT
 \*------------------------------------*/
 @media print {

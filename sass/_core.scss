@@ -1,0 +1,140 @@
+
+/*------------------------------------*\
+    Focus - Idventiva 2020
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+/*html {
+font-size:62.5%;
+}*/
+body {
+	font:400 16px/1.8 'Futura', Helvetica, Arial, sans-serif;
+	color: $arsenic;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:$arsenic;
+	text-decoration:none;
+  cursor: pointer;
+}
+a:hover {
+	color: $arsenic;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* section */
+.section {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* wrapper */
+.wrapper {
+	max-width:1120px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+  padding: 20px;
+  height: 100%;
+
+}
+/* header */
+.header {
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.home-header {
+  position: absolute;
+  top:0;
+  z-index: 2;
+}
+/* logo */
+.logo {
+  position: absolute;
+  z-index: 10;
+  width: 120px;
+}
+.page-inicio .logo {
+  width: 200px;
+}
+
+
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+
+.sidebar-widget h3 {margin-bottom: 0; color: $golden;}
+.sidebar-widget ul {margin-top: 0;}
+
+
+::selection {
+	background:$golden;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:$golden;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:$golden;
+	color:#FFF;
+	text-shadow:none;
+}

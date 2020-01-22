@@ -1,0 +1,113 @@
+/*------------------------------------*\
+    Focus - Idventiva 2020
+    SINGLE POST
+\*------------------------------------*/
+
+.post-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 60px;
+  .post-header {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    .section-title {
+      position: absolute;
+      bottom: 40px;
+      font-family: 'Futura Condensed';
+      font-size: 58px;
+      line-height: 1.3;
+      margin-left: 30px;
+      margin-right: 30px;
+      a {
+        color: $black;
+        background-color: transparentize($white,0.4);
+
+      }
+    }
+  }
+  article {
+    padding: 60px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+}
+
+.single-post .footer {
+  position: relative;
+}
+
+.single-post .post-meta {
+  position: absolute;
+   background-color: $black;
+   color: $white;
+   bottom: 0;
+   right:0;
+   text-transform: uppercase;
+   font-size: 0.6em;
+   padding: 10px;
+   letter-spacing: 2px;
+  a {
+    color: $golden;
+  }
+}
+
+/* Comentarios */
+
+.single-post .comments {
+  padding: 60px;
+  margin: 80px 0 80px;
+  border-top: 1px solid $golden;
+  h2 {
+    font-family: 'Futura Condensed';
+    color: $golden;
+    text-transform: uppercase;
+  }
+  .comment-reply-title {
+    font-family: 'Futura Condensed';
+    color: $golden;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      // border-left: 1px solid $lightgray;
+      // padding: 30px;
+    }
+  }
+
+  .comment-respond {
+    border-top: 1px dotted $golden;
+    margin-top: 40px;
+  }
+  .comment-form-comment {
+    label {
+      float:left;
+    }
+    #comment {
+      float: left;
+      clear: both;
+    }
+  }
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form-submit {
+    clear: both;
+    #submit {
+      float:right;
+      background-color: $golden;
+      color: $white;
+      border: 0;
+      padding: 10px;
+    }
+  }
+}

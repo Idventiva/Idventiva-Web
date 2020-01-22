@@ -1,0 +1,384 @@
+/*------------------------------------*\
+    Focus - Idventiva 2020
+    RESPONSIVE
+\*------------------------------------*/
+
+@include upto-portrait-tablet  {
+  #portafolio {
+    #portafolioContainer {
+      .portafolioSlider {
+        height: 850px;
+        .portafolioSlide {
+          height: inherit;
+          .projectSlide{
+            height: inherit;
+            .thumbnail {
+              position: relative;
+              width: 100%;
+              height: 500px;
+            }
+            .details {
+              position: relative;
+              clear: both;
+              width: 100%;
+              height: 350px;
+              padding-top: 30px;
+              a.view-project {
+                bottom: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bx-wrapper .bx-next {
+    right: 10px !important;
+    }
+  }
+}
+
+@include phone-and-tablet {
+
+  // Queries para del menú
+  #home {
+    .sliderContainer {
+      display: none;
+    }
+
+    nav .blade {
+      transform: skewX(0);
+      &.hidden {
+        transform: skewX(0) translateX(-150vw);
+      }
+    }
+
+    .menu-localization {
+      width: 40%;
+      right: 50%;
+      left: auto;
+      transform: translate(120%,-50%);
+      font-size: 0.8em;
+      /*.lower {
+      }*/
+    }
+  }
+
+  // Queries para del portafolio
+  #portafolio {
+    #portafolioContainer {
+      margin-top: 60px;
+      margin-bottom: 0px;
+      .portafolioGallery {margin-bottom: 0;}
+    }
+    h1 {
+      font-size: 60px;
+      line-height: 1.0;
+      left: 20px;
+      top: 80px;
+      position: relative;
+    }
+    h2 {
+      left: 20px;
+      top: 40px;
+      position: relative;
+    }
+  }
+
+  // Queries para SERVICIOS
+
+  #services {
+    overflow: visible;
+    .serviceContainer {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      height: auto;
+      overflow: hidden;
+      top: auto; left:auto; right: auto; bottom: auto;
+      transform: none;
+      .serviceCard {
+        width: 50%;
+        min-width: auto;
+        height: 350px;
+      }
+    }
+  }
+
+  // Queries para de Nosotros
+  #about-us {
+    .aboutContainer {
+      padding: 0;
+    }
+    .about-left {
+      padding: 40px;
+    }
+    .about-right {
+      margin: 0;
+      float: left;
+      clear: both;
+      width: 100%;
+      padding: 40px;
+    }
+  }
+
+  #contact
+    .contactContainer {
+
+      .contact-right {
+              padding: 40px;
+              float: left;
+              clear: both;
+              width: 100%;
+              margin: 0;
+              padding-bottom: 0;
+      }
+      .contact-left {
+        padding: 40px;
+        padding-top: 0;
+        margin-top: 0px;
+        float: left;
+        clear: both;
+        width: 100%;
+      }
+    }
+
+  // Queries para Blog
+  #blog {
+    .container {
+      max-width: 100%;
+
+    }
+    header {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .main-area {
+      padding: 40px;
+    }
+  }
+
+}
+
+@include upto-portrait-tablet {
+  #services {
+    .serviceContainer {
+      .serviceCard {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include tablet-portrait {
+  nav {
+    .blade {
+      transform: skewX(0) translateZ(100px);
+    }
+    .menu {
+      transform: translate(-50%, -50%) translateZ(100px);
+    }
+    .menu-localization {
+      width: 250px;
+      left: 78%;
+      font-size: 13px;
+      transform: translate(-50%, -50%) translateZ(100px);
+    }
+  }
+  #services {
+    .serviceContainer {
+      .serviceCard {
+        .cardGraphic, .cardAnimation {
+          left: 0; top:0;
+          width: calc(100% - 300px);
+          height: 100%;
+        }
+        .cardInfo {
+          right:0;
+          width: 300px;
+          height: 100%;
+          border-top:0;
+          border-left: 1px solid $golden;
+        }
+        .card.active {
+          .cardInfo {
+            height: 100%;
+            border-bottom:0;
+            border-left: 1px solid $golden;
+          }
+          .cardGraphic, .cardAnimation {
+            height: 100%;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+
+  nav {
+    .menu {
+      left: 48px;
+      top: 34%;
+      transform: translate(0, -50%) translateZ(100px);
+      ul li a {padding-left: 0;}
+    }
+    .social-networks-nav {
+      margin-top: 10px;
+      left: 8px;
+    }
+  }
+
+  .menu-localization {
+    z-index: 1004;
+    top: auto;
+    left: 50px;
+    bottom: 30px;
+    transform: translateX(0) translateZ(100px);
+    .upper {
+      display: none;
+    }
+    .lower {
+      font-size: 10pt;
+      margin-left: 0;
+      .menu-logo {
+        display: none;
+      }
+      address {max-width: 100%;}
+    }
+  }
+
+  #portafolio {
+    .bx-wrapper a {
+      top: 24%;
+    }
+    #portafolioContainer {
+      .bx-viewport {
+        background-color: $carbon;
+        height: 760px!important;
+      }
+      .portafolioSlider .portafolioSlide .projectSlide  {
+        .details {
+          .excerpt {
+            font-size: 14px;
+          }
+          a.view-project {
+            position: absolute;
+            bottom: -48px;
+            top:auto;
+            font-size: 1.2em;
+          }
+        }
+        .thumbnail {
+          width: 100%;
+          height: 350px;
+        }
+      }
+    }
+  }
+
+  #blog {
+    margin-bottom: 0;
+    .container {
+      aside {
+        width: 100%;
+        .thumbnail {
+          width: inherit;
+        }
+      }
+      article {
+        width: 100%;
+        max-width: 100%;
+        float: left;
+        padding-left: 0;
+      }
+    }
+  }
+  #services{
+    padding:30px;
+    h1 {
+      left: 30px;
+      top: 72px;
+    }
+    h2 {
+      left: 30px;
+      top: 118px;
+    }
+    .serviceContainer {
+      margin-top: 185px;
+      /*.card {}*/
+  }
+    }
+
+  #contact {
+    margin-top: 30px;
+    .contactContainer {
+      padding: 0;
+    }
+  }
+  .project-container {
+    article {
+      padding-top: 80px;
+      padding-bottom:0;
+    }
+  }
+
+  .footer {
+    background-color: $carbon;
+    box-shadow: 0 0px 15px rgba(0,0,0,1);
+  }
+}
+
+@media (max-width: 599px) and (max-height: 590px)  {
+  nav {
+    .menu {
+      font-size: 24px;
+      line-height: 1.6;
+    }
+    .social-networks-nav {
+      margin-top: 8px;
+      left: 8px;
+    }
+  }
+}
+
+@media (max-width: 740px) and (max-height: 420px) {
+
+  #nav-button-container {
+    top: 26px;
+    left: 25px;
+  }
+
+  nav {
+  .menu {
+    font-size: 20px;
+    transform: translate(-50%, -50%) translateZ(100px);
+    .ul {
+      line-height: 1.5;
+    }
+  }
+
+    .menu-localization {
+      z-index: 1004;
+      font-size: 12px;
+      width: 250px;
+      transform: translate(-40%, -50%) translateZ(100px);
+      line-height: 1.5;
+      .upper {
+        display:none;
+      }
+      .lower {
+        max-width: 280px;
+        .menu-logo {
+          height: 42px;
+        }
+      }
+    }
+  }
+
+
+}

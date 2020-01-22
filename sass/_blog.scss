@@ -1,0 +1,103 @@
+/*------------------------------------*\
+    Focus - Idventiva 2020
+    LEDIX BLOG
+\*------------------------------------*/
+
+#blog {
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 180px;
+  margin-top: 100px;
+
+  .container {
+    height: 100%;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: $white;
+
+    header {
+      padding-top: 40px;
+      h1 {
+        display: inline-block;
+        font-weight: 400;
+        color: $golden;
+        text-transform: uppercase;
+        width: 100%;
+        border-bottom: 1px solid $golden;
+        small {
+          padding-left: 20px;
+          color: $carbon;
+          text-transform: none;
+        }
+      }
+    }
+    aside {
+      float: left;
+      width: 300px;
+      padding: 20px 0px 20px 0;
+      font-size: 10px;
+      clear: both;
+
+      .thumbnail {
+        width: 300px;
+        height: 200px;
+        background-size: cover;
+      }
+
+      .details {
+        border-right: 1px solid $golden;
+        padding-right: 10px;
+        float: right;
+        margin-top: 10px;
+
+        .date {
+          text-transform: uppercase;
+          color: $carbon;
+          float:right;
+          letter-spacing: 2px;
+          font-weight: 600;
+        }
+        .author {
+          color: $lightgray;
+          float:right;
+          clear: both;
+          font-weight: 1px;
+        }
+        .comments {
+          float:right;
+          clear: both;
+          font-weight: 1px;
+          a {
+            color: $lightgray;
+          }
+        }
+      }
+    }
+    article {
+      float:right;
+      width: calc(100% - 300px);
+      padding: 0 0 20px 20px;
+      margin-bottom: 80px;
+      a {
+        color: $golden;
+      }
+
+      h2 {
+        font-weight: 400;
+        line-height: 30px;
+      }
+      .view-article {
+        display: block;
+        float: right;
+        clear: both;
+        margin-top: 20px;
+      }
+      .post-edit-link {
+        float: right;
+        display: none;
+      }
+    }
+  }
+
+}
