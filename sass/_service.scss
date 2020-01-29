@@ -4,3 +4,26 @@
    PAGINA DE SERVICIOS
 \*------------------------------------*/
 
+.service {
+   display: grid;
+   grid-template-columns: 1fr 1280px 1fr;
+   height: auto;
+   margin: 0;
+   padding: 0;
+   background-color: $degblack;
+
+   &__pilar {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: auto;
+   }
+
+   &__info {
+      grid: 2;
+   }
+
+   h5 {
+      color: $white;
+   }
+}

@@ -132,7 +132,6 @@ ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
@@ -238,8 +237,6 @@ input:focus {
   width: 200px;
 }
 
-/* nav */
-/* sidebar */
 .sidebar-widget h3 {
   margin-bottom: 0;
   color: #bea373;
@@ -1219,6 +1216,35 @@ a img.aligncenter {
    Focus - Idventiva 2020
    PAGINA DE SERVICIOS
 \*------------------------------------*/
+.service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1280px 1fr;
+      grid-template-columns: 1fr 1280px 1fr;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: linear-gradient(90deg, #1b1b1b, #444444);
+}
+
+.service__pilar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  height: auto;
+}
+
+.service__info {
+  grid: 2;
+}
+
+.service h5 {
+  color: #ffffff;
+}
+
 /*------------------------------------*\
     Focus - Idventiva 2020
     PORTAFOLIO

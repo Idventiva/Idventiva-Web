@@ -6,15 +6,19 @@
 
 /*----------------------------------------------------- Colors */
 
-$white : #ffffff;
-$lightgray : #c3c3c3;
-$arsenic : #444444;
-$darkgray : #2a2a2a;
-$carbon : #1b1b1b;
-$black : #000000;
-$lightgolden : #d4c3a4;
-$golden : #bea373;
+$white: #ffffff;
+$lightgray: #c3c3c3;
+$arsenic: #444444;
+$darkgray: #2a2a2a;
+$carbon: #1b1b1b;
+$black: #000000;
+$lightgolden: #d4c3a4;
+$golden: #bea373;
 $spaceshuttle: #433c36;
+
+$degblack: linear-gradient(90deg, $carbon, $arsenic);
+$degwhite: linear-gradient(90deg, $lightgray, $white);
+$deggolden: linear-gradient(90deg, $golden, $lightgolden);
 
 
 /*-------------------------------------------------- Typography */

@@ -10,7 +10,6 @@
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	-webkit-font-smoothing:antialiased;
-	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
 
@@ -106,19 +105,6 @@ input:focus {
 }
 .page-inicio .logo {
   width: 200px;
-}
-
-
-.logo-img {
-
-}
-/* nav */
-.nav {
-
-}
-/* sidebar */
-.sidebar {
-
 }
 
 .sidebar-widget h3 {margin-bottom: 0; color: $golden;}
