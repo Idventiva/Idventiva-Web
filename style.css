@@ -15,52 +15,109 @@
     Focus - Idventiva 2020
     SETUP
 \*------------------------------------*/
-/* Colors */
-/* Typography */
+/*----------------------------------------------------- Colors */
+/*-------------------------------------------------- Typography */
 @font-face {
-  font-family: 'Futura';
+  font-family: 'Geometria';
   font-weight: 300;
-  src: url("fonts/FuturaStd-Light.otf");
+  src: url("fonts/geometria/woff2/Geometria-Light.woff2") format("woff2"), url("fonts/geometria/woff/Geometria-Light.woff") format("woff"), url("fonts/geometria/ttf/Geometria-Light.ttf") format("truetype"), url("fonts/geometria/svg/Geometria-Light.svg") format("svg");
 }
 
 @font-face {
-  font-family: 'Futura';
+  font-family: 'Geometria';
   font-weight: 400;
-  src: url("fonts/FuturaStd-Book.otf");
+  src: url("fonts/geometria/woff2/Geometria.woff2") format("woff2"), url("fonts/geometria/woff/Geometria.woff") format("woff"), url("fonts/geometria/ttf/Geometria.ttf") format("truetype"), url("fonts/geometria/svg/Geometria.svg") format("svg");
+  /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'Futura';
+  font-family: 'Geometria';
   font-weight: 600;
-  src: url("fonts/FuturaStd-Heavy.otf");
+  src: url("fonts/geometria/woff2/Geometria-Medium.woff2") format("woff2"), url("fonts/geometria/woff/Geometria-Medium.woff") format("woff"), url("fonts/geometria/ttf/Geometria-Medium.ttf") format("truetype"), url("fonts/geometria/svg/Geometria-Medium.svg") format("svg");
 }
 
 @font-face {
-  font-family: 'Futura';
+  font-family: 'Geometria';
   font-weight: 700;
-  src: url("fonts/FuturaStd-Bold.otf");
+  src: url("fonts/geometria/woff2/Geometria-Bold.woff2") format("woff2"), url("fonts/geometria/woff/Geometria-Bold.woff") format("woff"), url("fonts/geometria/ttf/Geometria-Bold.ttf") format("truetype"), url("fonts/geometria/svg/Geometria-Bold.svg") format("svg");
 }
 
 @font-face {
-  font-family: 'Garamond';
+  font-family: 'Geometria';
+  font-weight: 800;
+  src: url("fonts/geometria/woff2/Geometria-ExtraBold.woff2") format("woff2"), url("fonts/geometria/woff/Geometria-ExtraBold.woff") format("woff"), url("fonts/geometria/ttf/Geometria-ExtraBold.ttf") format("truetype"), url("fonts/geometria/svg/Geometria-ExtraBold.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'IbarraRealNova';
   font-weight: 400;
-  src: url("fonts/AGaramondPro-Regular.otf");
+  src: url("fonts/ibarra_real/woff2/IbarraRealNova-Regular.woff2") format("woff2"), url("fonts/ibarra_real/woff/IbarraRealNova-Regular.woff") format("woff"), url("fonts/ibarra_real/ttf/IbarraRealNova-Regular.ttf") format("truetype"), url("fonts/ibarra_real/svg/IbarraRealNova-Regular.svg") format("svg");
 }
 
 @font-face {
-  font-family: 'Garamond';
-  font-weight: 400;
-  font-style: italic;
-  src: url("fonts/AGaramondPro-Italic.otf");
+  font-family: 'IbarraRealNova';
+  font-weight: 800;
+  src: url("fonts/ibarra_real/woff2/IbarraRealNova-Bold.woff2") format("woff2"), url("fonts/ibarra_real/woff/IbarraRealNova-Bold.woff") format("woff"), url("fonts/ibarra_real/ttf/IbarraRealNova-Bold.ttf") format("truetype"), url("fonts/ibarra_real/svg/IbarraRealNova-Bold.svg") format("svg");
 }
 
-@font-face {
-  font-family: 'Futura Condensed';
+h1 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  src: url("fonts/FuturaStd-CondensedBold.otf");
+  font-size: 60px;
+  line-height: 72px;
 }
 
-/* Responsive displays */
+h2 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 58px;
+}
+
+h3 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h4 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h5 {
+  font-family: "IbarraRealNova", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+h6 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+P {
+  font-family: "IbarraRealNova", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+ul {
+  list-style: circle;
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* ------------------------------------------------Responsive displays */
 /*------------------------------------*\
     Estructura
 \*------------------------------------*/
@@ -80,8 +137,8 @@
 }
 
 body {
-  font: 400 16px/1.8 'Futura', Helvetica, Arial, sans-serif;
-  color: #000000;
+  margin: 0px;
+  padding: 0px;
 }
 
 .dotGrid {
@@ -999,7 +1056,7 @@ a img.aligncenter {
 #home .parallaxLayer .parallaxText .pT5 {
   font-size: 146px;
   color: #bea373;
-  font-family: 'Garamond';
+  font-family: 'IbarraRealNova';
   right: 31%;
   bottom: 0;
   -webkit-transform: translateZ(-50px);
@@ -1162,283 +1219,6 @@ a img.aligncenter {
    Focus - Idventiva 2020
    PAGINA DE SERVICIOS
 \*------------------------------------*/
-#services {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-
-#services h1 {
-  position: absolute;
-  z-index: 1;
-  color: #bea373;
-  left: 130px;
-  top: 32px;
-  font-weight: 300;
-}
-
-#services h2 {
-  position: absolute;
-  z-index: 1;
-  color: #c3c3c3;
-  left: 130px;
-  top: 75px;
-  font-weight: 400;
-}
-
-#services .servicesBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(img/backgrounds/background-02.jpg);
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: left;
-}
-
-#services .serviceContainer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  bottom: 0;
-  margin: 0 auto;
-  width: 1120px;
-  max-width: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-#services .serviceContainer .serviceCard {
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 440px;
-  padding: 10px;
-}
-
-@media (min-width: 600px) and (max-width: 1199px) {
-  #services .serviceContainer .serviceCard {
-    min-width: 400px;
-  }
-}
-
-#services .serviceContainer .card {
-  position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 27, 0.9)), to(rgba(0, 0, 0, 0.9)));
-  background-image: linear-gradient(to bottom, rgba(27, 27, 27, 0.9), rgba(0, 0, 0, 0.9));
-  width: 100%;
-  height: 100%;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
-  cursor: pointer;
-}
-
-#services .serviceContainer .card .cardLink {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#services .serviceContainer .card .cardGraphic {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 65%;
-  background-position: center;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-}
-
-#services .serviceContainer .card .cardAnimation {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 65%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-}
-
-#services .serviceContainer .card .cardInfo {
-  border-top: 1px solid #bea373;
-  border-bottom: 1px solid transparent;
-  position: absolute;
-  bottom: 0;
-  height: 35%;
-  width: 100%;
-  padding: 10px 0 20px;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-}
-
-#services .serviceContainer .card .cardInfo h4 {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  color: #bea373;
-  text-align: center;
-  font-weight: 300;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-}
-
-#services .serviceContainer .card .cardInfo ul {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(calc(-50% + 5px));
-          transform: translateY(calc(-50% + 5px));
-  opacity: 0;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
-  color: #ffffff;
-  font-size: 12px;
-  list-style: none;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-#services .serviceContainer .card.active {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-}
-
-#services .serviceContainer .card.active .cardGraphic {
-  height: 50%;
-  opacity: 0;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-#services .serviceContainer .card.active .cardAnimation {
-  height: 50%;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  opacity: 1;
-}
-
-#services .serviceContainer .card.active .cardInfo {
-  height: 50%;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #bea373;
-}
-
-#services .serviceContainer .card.active h4 {
-  -webkit-transform: translateY(-300%);
-          transform: translateY(-300%);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-#services .serviceContainer .card.active ul {
-  opacity: 1;
-  -webkit-transition-delay: 0.15;
-          transition-delay: 0.15;
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(1) .card {
-  -webkit-box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(1) .card.active {
-  -webkit-box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(2) .card {
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(2) .card.active {
-  -webkit-box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(3) .card {
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(3) .card.active {
-  -webkit-box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(4) .card {
-  -webkit-box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-#services .serviceContainer .serviceCard:nth-of-type(4) .card.active {
-  -webkit-box-shadow: -10px 30px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: -10px 30px 20px rgba(0, 0, 0, 0.4);
-}
-
-#serviceCard01 .cardGraphic {
-  background-image: url("img/icons/branding.svg");
-}
-
-#serviceCard01 .cardAnimation {
-  background-image: url("img/services/animbranding.png");
-}
-
-#serviceCard02 .cardGraphic {
-  background-image: url("img/icons/estrategia.svg");
-}
-
-#serviceCard02 .cardAnimation {
-  background-image: url("img/services/animestrategia.png");
-}
-
-#serviceCard03 .cardGraphic {
-  background-image: url("img/icons/audiovisual.svg");
-}
-
-#serviceCard03 .cardAnimation {
-  background-image: url("img/services/animproduccion.png");
-}
-
-#serviceCard04 .cardGraphic {
-  background-image: url("img/icons/web.svg");
-}
-
-#serviceCard04 .cardAnimation {
-  background-image: url("img/services/animweb.png");
-}
-
 /*------------------------------------*\
     Focus - Idventiva 2020
     PORTAFOLIO

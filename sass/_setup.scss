@@ -18,9 +18,10 @@ $spaceshuttle: #433c36;
 
 
 /*-------------------------------------------------- Typography */
+
 @font-face {
   font-family: 'Geometria';
-  font-weight: 200;
+  font-weight: 300;
   src: url('fonts/geometria/woff2/Geometria-Light.woff2') format('woff2'),
        url('fonts/geometria/woff/Geometria-Light.woff') format('woff'),
        url('fonts/geometria/ttf/Geometria-Light.ttf')  format('truetype'),
@@ -79,6 +80,66 @@ $spaceshuttle: #433c36;
        url('fonts/ibarra_real/woff/IbarraRealNova-Bold.woff') format('woff'),
        url('fonts/ibarra_real/ttf/IbarraRealNova-Bold.ttf')  format('truetype'),
        url('fonts/ibarra_real/svg/IbarraRealNova-Bold.svg') format('svg');
+}
+
+$Geometria: 'Geometria', Helvetica, Arial, sans-serif;
+$Ibarra: 'IbarraRealNova', Arial, sans-serif;
+
+h1 {
+  font-family: $Geometria;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+h2 {
+  font-family: $Geometria;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 58px;
+}
+
+h3 {
+  font-family: $Geometria;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h4 {
+  font-family: $Geometria;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h5 {
+  font-family: $Ibarra;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+h6 {
+  font-family: $Geometria;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+P {
+  font-family: $Ibarra;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+ul {
+  list-style: circle;
+  font-family: $Geometria;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 
