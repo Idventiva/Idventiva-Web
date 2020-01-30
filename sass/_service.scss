@@ -4,26 +4,137 @@
    PAGINA DE SERVICIOS
 \*------------------------------------*/
 
+.button--black {
+   display:inline-block;
+   width: 140px;
+   height: 50px;
+   border: 1px solid $golden;
+   background: $degblack;
+   
+   a {
+      padding: 8px 16px;
+      color: $white;
+   }
+
+}
+
+.button--black:hover {
+   background: $deggolden;
+   color: $carbon;
+}
+
 .service {
    display: grid;
-   grid-template-columns: 1fr 1280px 1fr;
+   grid-template-columns: 1fr 1080px 1fr;
    height: auto;
    margin: 0;
-   padding: 0;
-   background-color: $degblack;
+   padding-top: 120px;
+   background: $degblack;
 
    &__pilar {
       display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-column-start: 2;
       height: auto;
+
+      h3 {
+         grid-column-start: 2;
+         margin-top: 32px;
+         margin-bottom: 16px;
+         color: $white;
+      }
+
    }
 
    &__info {
-      grid: 2;
+      grid-column-start: 2;
    }
 
    h5 {
       color: $white;
    }
+
+   h2 {
+      color: $lightgolden;
+      margin-bottom: 24px;
+   }
+
+   p {
+      color: $white;
+   }
+   
+   &__cta {
+      grid-column-start: 3;
+
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-start: 2;
+      padding: 16px 0px;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+         color: $white;
+      }
+
+      ul { 
+         list-style: none;
+
+         li {
+         margin: 8px;
+         color: $white;
+         }
+      }
+   }
+}
+
+
+.project-case {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-start: 2;
+   margin-bottom: 160px;
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 95%;
+      height: 280px;
+      margin: 8px;
+      padding: 16px;
+      background-color: $lightgolden;
+      border: 1px solid $golden;
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: flex-end;
+
+   h3 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 24px;
+      color: $carbon;
+   }
+
+   ul {
+      list-style: none;
+
+      li {
+         margin: 4px;
+         padding-left: 24px;
+         color: $white;
+      }
+   }
+   }
+
 }

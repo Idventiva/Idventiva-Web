@@ -1,109 +1,147 @@
 <?php /* Template Name: Servicios */ get_header(); ?>
 
-<main role="main">
-  <section class="main-area">
-    <div id="services" class="section">
-      <div class="parallaxLayer">
-        <div class="servicesBackground"></div>
-        <div class="dotGrid"></div>
-      </div>
-      <div class="serviceContainer">
-        <div id="serviceCard01" class="serviceCard">
-          <div class="card">
-            <!-- Card Content -->
-            <div class="cardGraphic"></div>
-            <div class="cardAnimation"></div>
-            <div class="cardInfo">
-              <h4>Branding</h4>
-              <ul>
-                <li>Naming y Registro de Marca</li>
-                <li>Identidad Corporativa</li>
-                <li>Diseño de Empaque y Producto</li>
+<main class="service">
+
+    <section class="service__pilar">
+        
+        <!-- Line -->
+        
+        <section class="service__info">
+            <h5>Creativos y Creadores</h5>
+            <h2>Branding y Diseño Digital</h2>
+            <p> Texto de relleno</p>
+        </section>
+        <section class="service__cta">
+          <button class="button--black">
+            <a href="/contacto">¡A crear!</a>
+          </button>
+        </section>
+        
+        <div class="service__list">
+            <div class="service__item">
+                <i></i>
+                <h4>Identidad Visual</h4>
+                <ul class="service__item__list">
+                    <li>Logotipos</li>
+                    <li>Manuales de Identidad</li>
+                </ul>
+            </div>
+
+            <div class="service__item">
+                <i></i>
+                <h4>Naming</h4>
+            </div>
+
+            <div class="service__item">
+                <i></i>
+                <h4>Registro de Marca</h4>
+            </div>
+
+            <div class="service__item">
+                <i></i>
+                <h4>Publicidad</h4>
+            </div>
+
+        </div>
+
+        <h3>Así es como nos superamos</h3>
+        
+        <section class="project-case">
+            <div class="project-case__item">
+                <div class="project-case__info">
+                    <h3>Healthy Pau</h3>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+                <button class="button--black">
+                  <a href="/portafolio/healthypau">¡Descubrir!</a>
+                </button>
+            </div>
+            <div class="project-case__item">
+                <div class="project-case__info">
+                    <h3>Toy Chavito</h3>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Manuales de identidad</li>
+                    </ul>
+                </div>
+                <button class="button--black">
+                  <a href="/portafolio/healthypau">¡Descubrir!</a>
+                </button>
+            </div>
+        </section>
+        
+    </section>
+
+
+    <section class="service__pilar">
+        
+        <!-- Line -->
+        
+        <section class="service__info">
+            <h5>Planeamos y diseñamos el futuro</h5>
+            <h2>Marketing Digital</h2>
+            <p> Texto de relleno</p>
+        </section>
+        <section class="service__cta">
+          <button class="button--black">
+            <a href="/contacto">¡A crear!</a>
+          </button>
+        </section>
+        
+        <div class="service__list">
+            <div class="service__item">
+                <i></i>
+                <h4>Inbound y Outbound Marketing</h4>
               </ul>
             </div>
-            <!-- Card Content -->
-          </div>
-        </div>
-        <div id="serviceCard02" class="serviceCard">
-          <div class="card">
-            <!-- Card Content -->
-            <div class="cardGraphic"></div>
-            <div class="cardAnimation"></div>
-            <div class="cardInfo">
-              <h4>Estrategia Digital</h4>
-              <ul>
-                <li>Campañas de Marketing Digital</li>
-                <li>Analitica Digital y SEO</li>
-                <li>Publicidad</li>
+            
+            <div class="service__item">
+              <i></i>
+              <h4>Gestión de Redes Sociales</h4>
+            </div>
+            
+            <div class="service__item">
+              <i></i>
+              <h4>Campañas de SEO y SEM</h4>
+              <ul class="service__item__list">
+                  <li>Google Analytics</li>
+            </div>
+            
+            <div class="service__item">
+              <i></i>
+              <h4>Campañas de Social Media</h4>
+              <ul class="service__item__list">
+                <li>Estrategias de Contenido</li>
+                <li>Creación y Diseño de Contenido</li>
                 <li>Community Management</li>
-              </ul>
             </div>
-            <!-- Card Content -->
-          </div>
         </div>
-        <div id="serviceCard03" class="serviceCard">
-          <div class="card">
-            <!-- Card Content -->
-            <div class="cardGraphic"></div>
-            <div class="cardAnimation"></div>
-            <div class="cardInfo">
-              <h4>Producción Audiovisual</h4>
-              <ul>
-                <li>Videograbación y Edición</li>
-                <li>Motion Graphics</li>
-                <li>Fotografia Digital</li>
-              </ul>
+
+        </div>
+
+        <h3>Así es como nos superamos</h3>
+        
+        <section class="project-case">
+            <div class="project-case__item">
+                <div class="project-case__info">
+                    <h3>Healthy Pau</h3>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+                <button class="button--black">
+                  <a href="/portafolio/healthypau">¡Descubrir!</a>
+                </button>
             </div>
-            <!-- Card Content -->
-          </div>
-        </div>
-        <div id="serviceCard04" class="serviceCard">
-          <div class="card">
-            <!-- Card Content -->
-            <div class="cardGraphic"></div>
-            <div class="cardAnimation"></div>
-            <div class="cardInfo">
-              <h4>Diseño Web y Productos Digitales</h4>
-              <ul>
-                <li>Sitios corporativos y de producto</li>
-                <li>Experiencias Digitales</li>
-                <li>E-Commerce y herramientas en linea</li>
-                <li>Diseño de aplicaciones web móviles</li>
-              </ul>
-            </div>
-            <!-- Card Content -->
-          </div>
-        </div>
-      </div>
-      <h1 class="section-title"><?php the_title(); ?></h1>
-      <h2 class="">Lo que hacemos</h2>
-    </div>
-  </section>
+        </section>
+        
+    </section>
+
 </main>
-
-
-
-  <script>
-
-  jQuery(document).ready(function(){
-
-    jQuery('.card').hover(function(){
-      jQuery(this).toggleClass('active')
-    });
-
-    jQuery('.parallaxLayer').tilt({
-          maxTilt: 20,
-          perspective: 4000,
-          reset: false,
-          glare: false,
-          maxGlare: 1,
-          transition: true,
-          easing: "cubic-bezier(.03,.98,.52,.99)",
-          speed:  1000
-    });
-  });
-
-  </script>
 
 
 <?php get_footer(); ?>

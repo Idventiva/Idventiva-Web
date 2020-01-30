@@ -7,8 +7,8 @@
         <!-- Line -->
         
         <section class="service__info">
-            <h4 class="service__subtitle">Creativos y Creadores</h4>
-            <h2 class="service__title">Branding y Diseño Digital</h2>
+            <h5>Creativos y Creadores</h4>
+            <h2>Branding y Diseño Digital</h2>
             <p class="service__paragraph"> Texto de relleno</p>
         </section>
         <section class="service__cta">

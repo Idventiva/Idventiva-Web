@@ -16,7 +16,7 @@ $lightgolden: #d4c3a4;
 $golden: #bea373;
 $spaceshuttle: #433c36;
 
-$degblack: linear-gradient(90deg, $carbon, $arsenic);
+$degblack: linear-gradient(90deg, $arsenic, $carbon);
 $degwhite: linear-gradient(90deg, $lightgray, $white);
 $deggolden: linear-gradient(90deg, $golden, $lightgolden);
 
@@ -99,35 +99,35 @@ h1 {
 h2 {
   font-family: $Geometria;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 40px;
   line-height: 58px;
 }
 
 h3 {
   font-family: $Geometria;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
 }
 
 h4 {
   font-family: $Geometria;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
 }
 
 h5 {
   font-family: $Ibarra;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 27px;
 }
 
 h6 {
   font-family: $Geometria;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
 }
 
@@ -139,11 +139,12 @@ P {
 }
 
 ul {
+  margin-top: 8px;
   list-style: circle;
   font-family: $Geometria;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 

@@ -70,35 +70,35 @@ h1 {
 h2 {
   font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 40px;
   line-height: 58px;
 }
 
 h3 {
   font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
 }
 
 h4 {
   font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
 }
 
 h5 {
   font-family: "IbarraRealNova", Arial, sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 27px;
 }
 
 h6 {
   font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
 }
 
@@ -110,11 +110,12 @@ P {
 }
 
 ul {
+  margin-top: 8px;
   list-style: circle;
   font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 /* ------------------------------------------------Responsive displays */
@@ -133,11 +134,12 @@ ul {
           box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
 }
 
 .dotGrid {
@@ -195,7 +197,6 @@ input:focus {
 /* section */
 .section {
   width: 100%;
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1216,32 +1217,170 @@ a img.aligncenter {
    Focus - Idventiva 2020
    PAGINA DE SERVICIOS
 \*------------------------------------*/
+.button--black {
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+  border: 1px solid #bea373;
+  background: -webkit-gradient(linear, left top, right top, from(#444444), to(#1b1b1b));
+  background: linear-gradient(90deg, #444444, #1b1b1b);
+}
+
+.button--black a {
+  padding: 8px 16px;
+  color: #ffffff;
+}
+
+.button--black:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#bea373), to(#d4c3a4));
+  background: linear-gradient(90deg, #bea373, #d4c3a4);
+  color: #1b1b1b;
+}
+
 .service {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1280px 1fr;
-      grid-template-columns: 1fr 1280px 1fr;
+  -ms-grid-columns: 1fr 1080px 1fr;
+      grid-template-columns: 1fr 1080px 1fr;
   height: auto;
   margin: 0;
-  padding: 0;
-  background-color: linear-gradient(90deg, #1b1b1b, #444444);
+  padding-top: 120px;
+  background: -webkit-gradient(linear, left top, right top, from(#444444), to(#1b1b1b));
+  background: linear-gradient(90deg, #444444, #1b1b1b);
 }
 
 .service__pilar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   height: auto;
 }
 
+.service__pilar h3 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
 .service__info {
-  grid: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
 }
 
 .service h5 {
+  color: #ffffff;
+}
+
+.service h2 {
+  color: #d4c3a4;
+  margin-bottom: 24px;
+}
+
+.service p {
+  color: #ffffff;
+}
+
+.service__cta {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+.service__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 16px 0px;
+}
+
+.service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service__item h4 {
+  color: #ffffff;
+}
+
+.service__item ul {
+  list-style: none;
+}
+
+.service__item ul li {
+  margin: 8px;
+  color: #ffffff;
+}
+
+.project-case {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  margin-bottom: 160px;
+}
+
+.project-case__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 95%;
+  height: 280px;
+  margin: 8px;
+  padding: 16px;
+  background-color: #d4c3a4;
+  border: 1px solid #bea373;
+}
+
+.project-case__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.project-case__info h3 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  color: #1b1b1b;
+}
+
+.project-case__info ul {
+  list-style: none;
+}
+
+.project-case__info ul li {
+  margin: 4px;
+  padding-left: 24px;
   color: #ffffff;
 }
 
