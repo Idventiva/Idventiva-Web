@@ -19,6 +19,10 @@ body {
 	font-family: $Geometria;
 }
 
+@mixin dotgrid--white {
+    background-image: url('img/dotGrid.png');
+}
+
 .dotGrid {
     background-image: url('img/dotGridBlack.png');
 	opacity: 0.5;

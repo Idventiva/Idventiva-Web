@@ -2,6 +2,11 @@
 
 <main class="service">
 
+    <section class="section__title">
+        <h5>Nuestro</h5>
+        <h2>Trabajo</h2>
+    </section>
+
     <section class="service__pilar">
         
         <!-- Line -->

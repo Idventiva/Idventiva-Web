@@ -4,28 +4,9 @@
    PAGINA DE SERVICIOS
 \*------------------------------------*/
 
-.button--black {
-   display:inline-block;
-   width: 140px;
-   height: 50px;
-   border: 1px solid $golden;
-   background: $degblack;
-   
-   a {
-      padding: 8px 16px;
-      color: $white;
-   }
-
-}
-
-.button--black:hover {
-   background: $deggolden;
-   color: $carbon;
-}
-
 .service {
    display: grid;
-   grid-template-columns: 1fr 1080px 1fr;
+   grid-template-columns: 1fr 1440px 1fr;
    height: auto;
    margin: 0;
    padding-top: 120px;
@@ -34,6 +15,7 @@
    &__pilar {
       display: grid;
       grid-template-columns: 1fr 5fr 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-column-start: 2;
       height: auto;
 
@@ -77,7 +59,7 @@
 
    &__item {
       display: flex;
-      flex-direction: column;
+      grid-row-start: 2;
 
       h4 {
          color: $white;
