@@ -171,12 +171,18 @@ ul {
     display: flex;
     grid-column-start: 2;
     flex-direction: column;
+    margin: 40px 0px;
     
     h5 {
+      margin-bottom: -8px;
       color:$white;
     }
     
     h2 {
+      margin: 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
       color: $lightgolden;
     }
     

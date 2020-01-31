@@ -4,13 +4,16 @@
    PAGINA DE SERVICIOS
 \*------------------------------------*/
 
+body {
+   background: $degblack;
+}
+
 .service {
    display: grid;
    grid-template-columns: 1fr 1440px 1fr;
    height: auto;
    margin: 0;
-   padding-top: 120px;
-   background: $degblack;
+   @include dotgrid--white;
 
    &__pilar {
       display: grid;
@@ -21,7 +24,7 @@
 
       h3 {
          grid-column-start: 2;
-         margin-top: 32px;
+         margin-top: 16px;
          margin-bottom: 16px;
          color: $white;
       }
@@ -59,7 +62,19 @@
 
    &__item {
       display: flex;
+      flex-direction: column;
       grid-row-start: 2;
+      padding: 0px 8px;
+
+      i {
+         background-image: url("img/triangle.png");
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         width: 80px;
+         height: 80px;
+         margin: 8px;
+      }
 
       h4 {
          color: $white;
@@ -82,7 +97,7 @@
    grid-template-columns: 1fr 1fr;
    grid-column-start: 2;
    margin-bottom: 160px;
-
+   
    &__item {
       display: flex;
       justify-content: space-between;
@@ -91,8 +106,9 @@
       height: 280px;
       margin: 8px;
       padding: 16px;
+      border: 3px solid $golden;
+      border-radius: 5px;
       background-color: $lightgolden;
-      border: 1px solid $golden;
    }
 
    &__info {

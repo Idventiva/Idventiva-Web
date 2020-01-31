@@ -149,13 +149,19 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 40px 0px;
 }
 
 .section__title h5 {
+  margin-bottom: -8px;
   color: #ffffff;
 }
 
 .section__title h2 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: #d4c3a4;
 }
 
@@ -1258,6 +1264,11 @@ a img.aligncenter {
    Focus - Idventiva 2020
    PAGINA DE SERVICIOS
 \*------------------------------------*/
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#1b1b1b), to(#000000));
+  background: linear-gradient(90deg, #1b1b1b, #000000);
+}
+
 .service {
   display: -ms-grid;
   display: grid;
@@ -1265,9 +1276,7 @@ a img.aligncenter {
       grid-template-columns: 1fr 1440px 1fr;
   height: auto;
   margin: 0;
-  padding-top: 120px;
-  background: -webkit-gradient(linear, left top, right top, from(#1b1b1b), to(#000000));
-  background: linear-gradient(90deg, #1b1b1b, #000000);
+  background-image: url("img/dotGrid.png");
 }
 
 .service__pilar {
@@ -1285,7 +1294,7 @@ a img.aligncenter {
 .service__pilar h3 {
   -ms-grid-column: 2;
       grid-column-start: 2;
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 16px;
   color: #ffffff;
 }
@@ -1327,8 +1336,23 @@ a img.aligncenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-grid-row: 2;
       grid-row-start: 2;
+  padding: 0px 8px;
+}
+
+.service__item i {
+  background-image: url("img/triangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
 }
 
 .service__item h4 {
@@ -1368,8 +1392,9 @@ a img.aligncenter {
   height: 280px;
   margin: 8px;
   padding: 16px;
+  border: 3px solid #bea373;
+  border-radius: 5px;
   background-color: #d4c3a4;
-  border: 1px solid #bea373;
 }
 
 .project-case__info {
