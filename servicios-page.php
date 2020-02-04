@@ -135,30 +135,26 @@
         
     </section>
 
-    <section class="project-case">
-        <div class="project-case__item">
-            <div class="project-case__info">
-                <h3>Healthy Pau</h3>
-                <ul>
-                    <li>Identidad Visual</li>
-                    <li>Marketing Digital</li>
-                </ul>
+    <section class="project-case-two">
+        <div class="project-case-two__item">
+            <div class="project-case-two__container">
             </div>
-            <button class="button--black">
-                <a href="/portafolio/healthypau">¡Descubrir!</a>
-            </button>
+            <a href="/#">Healthy Pau</a>
         </div>
-        <div class="project-case__item">
-            <div class="project-case__info">
-                <h3>Healthy Pau</h3>
-                <ul>
-                    <li>Identidad Visual</li>
-                    <li>Marketing Digital</li>
-                </ul>
+        <div class="project-case-two__item">
+            <div class="project-case-two__container">
             </div>
-            <button class="button--black">
-                <a href="/portafolio/healthypau">¡Descubrir!</a>
-            </button>
+            <a href="/#">Healthy Pau</a>
+        </div>
+        <div class="project-case-two__item">
+            <div class="project-case-two__container">
+            </div>
+            <a href="/#">Healthy Pau</a>
+        </div>
+        <div class="project-case-two__item">
+            <div class="project-case-two__container">
+            </div>
+            <a href="/#">Healthy Pau</a>
         </div>
         
     </section>
@@ -216,32 +212,17 @@
         
     </section>
 
-    <section class="project-case">
-        <div class="project-case__item">
-            <div class="project-case__info">
-                <h3>Healthy Pau</h3>
-                <ul>
-                    <li>Identidad Visual</li>
-                    <li>Marketing Digital</li>
-                </ul>
+    <section class="project-case-three">
+        <div class="project-case-three__item">
+            <div class="project-case-three__container">
             </div>
-            <button class="button--black">
-                <a href="/portafolio/healthypau">¡Descubrir!</a>
-            </button>
+                <a href="/#">Healthy Pau</a>
         </div>
-        <div class="project-case__item">
-            <div class="project-case__info">
-                <h3>Healthy Pau</h3>
-                <ul>
-                    <li>Identidad Visual</li>
-                    <li>Marketing Digital</li>
-                </ul>
+        <div class="project-case-three__item">
+            <div class="project-case-three__container">
             </div>
-            <button class="button--black">
-                <a href="/portafolio/healthypau">¡Descubrir!</a>
-            </button>
+                <a href="/#">Healthy Pau</a>
         </div>
-        
     </section>
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
@@ -290,32 +271,38 @@
         
     </section>
 
-    <section class="project-case">
-        <div class="project-case__item">
-            <div class="project-case__info">
+    <section class="project-case-four">
+        <div class="project-case-four__item">
+            <div class="project-case-four__info">
                 <h3>Healthy Pau</h3>
+                <p>Excepteur velit culpa culpa incididunt ad esse pariatur dolor eu irure do Lorem reprehenderit. Reprehenderit id ex occaecat excepteur culpa do velit reprehenderit et in eu incididunt veniam adipisicing.</p>
                 <ul>
                     <li>Identidad Visual</li>
                     <li>Marketing Digital</li>
                 </ul>
+               <button class="button--black">
+                    <a href="/portafolio/healthypau">¡Descubrir!</a>
+                </button>
             </div>
-            <button class="button--black">
-                <a href="/portafolio/healthypau">¡Descubrir!</a>
-            </button>
+            <div class="project-case-four__img">
+            </div>
         </div>
-        <div class="project-case__item">
-            <div class="project-case__info">
+        <div class="project-case-four__item">
+            <div class="project-case-four__img">
+            </div>
+            <div class="project-case-four__info">
                 <h3>Healthy Pau</h3>
+                <p>Excepteur velit culpa culpa incididunt ad esse pariatur dolor eu irure do Lorem reprehenderit. Reprehenderit id ex occaecat excepteur culpa do velit reprehenderit et in eu incididunt veniam adipisicing.</p>
                 <ul>
                     <li>Identidad Visual</li>
                     <li>Marketing Digital</li>
                 </ul>
-            </div>
             <button class="button--black">
-                <a href="/portafolio/healthypau">¡Descubrir!</a>
-            </button>
+                    <a href="/portafolio/healthypau">¡Descubrir!</a>
+                </button>
         </div>
-        
+        </div>
+
     </section>
 
 </main>

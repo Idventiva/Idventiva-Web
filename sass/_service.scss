@@ -80,14 +80,10 @@ body {
          color: $white;
       }
 
-      ul { 
-         list-style: none;
-
          li {
          margin: 8px;
          color: $white;
          }
-      }
    }
 }
 
@@ -124,15 +120,125 @@ body {
       color: $carbon;
    }
 
-   ul {
-      list-style: none;
-
       li {
          margin: 4px;
          padding-left: 24px;
          color: $white;
       }
+}
+
+}
+
+
+.project-case-two {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-start: 2;
+   margin-bottom: 160px;
+   
+   &__item {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
    }
+   
+   &__container {
+      width: 95%;
+      height: 400px;
+      background-color: $golden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   
+   a {
+      margin-top: 16px;
+      color: $white;
+      text-decoration: underline $lightgolden;
+   }
+}
+
+
+.project-case-three {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-start: 2;
+   margin-bottom: 160px;
+   
+   &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+   
+   &__container {
+      clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+      width: 95%;
+      height: 220px;
+      background-color: $golden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   
+   a {
+      text-align: end;
+      margin-top: 16px;
+      color: $white;
+      text-decoration: underline $lightgolden;
+   }
+}
+
+.project-case-four {
+   grid-column-start: 2;
+   margin-top: -80px;
+   margin-bottom: 160px;
+   
+   &__item {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+   }
+   
+   &__info {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      align-content: center;
+      padding-top: 12%;
+      padding-left: 80px;
+      padding-right: 80px;
+      
+      h3 {
+         text-align: end;
+         color: $white;
+      }
+      
+      p {
+         color: $white;
+         margin: 24px 0px;
+      }
+      
+      ul {
+         margin-bottom: 32px;
+         
+         li { 
+            color: $white;
+            padding-left: 24px;
+            margin: 8px 0px;
+         }
+      }  
    }
 
+   &__img {
+      background-image: url("img/tri.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      grid-column-start: 3;
+      width: 50%;
+      height: 500px;
+      margin: 24px;
+   }
 }
