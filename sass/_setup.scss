@@ -17,8 +17,8 @@ $golden: #bea373;
 $spaceshuttle: #433c36;
 
 $degblack: linear-gradient(90deg, $carbon, $black);
-$degwhite: linear-gradient(90deg, $lightgray, $white);
-$deggolden: linear-gradient(90deg, $golden, $lightgolden);
+$degwhite: linear-gradient(90deg, $white, $lightgray);
+$deggolden: linear-gradient(90deg, $lightgolden, $golden);
 
 
 /*-------------------------------------------------- Typography */
@@ -88,105 +88,6 @@ $deggolden: linear-gradient(90deg, $golden, $lightgolden);
 
 $Geometria: 'Geometria', Helvetica, Arial, sans-serif;
 $Ibarra: 'IbarraRealNova', Arial, sans-serif;
-
-h1 {
-  font-family: $Geometria;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-h2 {
-  font-family: $Geometria;
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 58px;
-}
-
-h3 {
-  font-family: $Geometria;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-h4 {
-  font-family: $Geometria;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-h5 {
-  font-family: $Ibarra;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-h6 {
-  font-family: $Geometria;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-P {
-  font-family: $Ibarra;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-ul {
-  margin-top: 8px;
-  list-style: none;
-  font-family: $Geometria;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.button--black {
-  display:inline-block;
-  width: 140px;
-  height: 50px;
-  border: 1px solid $golden;
-  background: $degblack;
-  
-  a {
-    font-family: $Geometria;
-     padding: 8px 16px;
-     color: $white;
-  }
-
-}
-
-.button--black:hover {
-  background: $deggolden;
-  color: $carbon;
-}
-
-.section__title {
-    display: flex;
-    grid-column-start: 2;
-    flex-direction: column;
-    margin: 40px 0px;
-    
-    h5 {
-      margin-bottom: -8px;
-      color:$white;
-    }
-    
-    h2 {
-      margin: 0;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: $lightgolden;
-    }
-    
-}
 
 
 /* ------------------------------------------------Responsive displays */

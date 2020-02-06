@@ -3,31 +3,112 @@
     SINGLE PROJECT
 \*------------------------------------*/
 
+body {
+  background: $degwhite;
+}
 
-.back-button {
+.single-project {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
   width: 100%;
-  a {
-    margin: 20px auto;
-    width: 55px;
-    height: 55px;
-    border-radius: 100px;
-    display: block;
-    background-color: $carbon;
-    padding: 8px;
-    color: $white;
-    letter-spacing: 1px;
-    font-size: 30px;
+  padding: 80px 0px;
+  @include dotgrid--black;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 0px 0px;
-    color: $golden;
-    border:5px solid $darkgray;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
-    transition: 0.3s;
-    &:hover {
-      box-shadow: 0 0 30px 0 rgba(255,255,255,1);
+    grid-column-start: 2;
+    margin-bottom: 40px;
+
+    h5 {
+      color: $carbon;
     }
-    i {
-      margin-top: -10px;
-      font-size: 1.3em;}
+
+    h2 {
+      color: $carbon;
+    }
+  }
+
+  &__intro {
+    display: flex;
+    justify-content: space-between; 
+    grid-column-start: 2;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: left;
+    width: 40%;
+
+    h5 {
+      margin-top: 16px;
+      font-weight: 600;
+      color: $golden;
+      }
+
+    p {
+      color: $carbon;
+    }
+
+    li {
+      color: $carbon;
+    }
+
+    button {
+      margin-top: 40px;
+    }
+  }
+
+  &__img {
+    background-image: url("img/tri.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+    width: 60%;
+
+  }
+  
+  &__content {
+    grid-column-start: 2;
+    margin-top: 40px;
+
+    &__img { 
+      
+      &--complete {
+        display: block;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        border: 2px solid $golden;
+        
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      
+      &--half {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 400px;
+        padding: 32px 0px;
+        overflow: hidden;
+        
+        img {
+          width: 48%;
+          height: auto;
+          object-fit: cover;
+          border: 2px solid $golden;
+
+        }
+      }
+    }
+    
   }
 }

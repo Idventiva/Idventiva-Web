@@ -1,6 +1,7 @@
 <?php /* Template Name: Servicios */ get_header(); ?>
 
-<main class="service">
+<main class="body--black">
+<container class="service">
 
     <section class="section__title">
         <h5>Nuestros</h5>
@@ -11,18 +12,14 @@
 
     <section class="service__pilar">
         
-        <!-- Line -->
+        <div class="line--lightgolden"></div>
         
         <section class="service__info">
             <h5>Creativos y Creadores</h5>
             <h2>Branding y Diseño Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <section class="service__cta">
-          <button class="button--black">
-            <a href="/contacto">¡A crear!</a>
-          </button>
-        </section>
+          <button class="slide--left"><a href="#">¡A Crear! </a></button>
         
         <div class="service__list">
             <div class="service__item">
@@ -64,9 +61,7 @@
                         <li>Marketing Digital</li>
                     </ul>
                 </div>
-                <button class="button--black">
-                  <a href="/portafolio/healthypau">¡Descubrir!</a>
-                </button>
+                <button class="slide--left"><a href="#">¡A Crear! </a></button>
             </div>
             <div class="project-case__item">
                 <div class="project-case__info">
@@ -76,9 +71,7 @@
                         <li>Marketing Digital</li>
                     </ul>
                 </div>
-                <button class="button--black">
-                  <a href="/portafolio/healthypau">¡Descubrir!</a>
-                </button>
+                <button class="slide--left"><a href="#">¡A Crear! </a></button>
             </div>
         </section>
 
@@ -86,7 +79,7 @@
 
     <section class="service__pilar">
         
-        <!-- Line -->
+        <div class="line--lightgolden"></div>
         
         <section class="service__info">
             <h5>Planeamos y diseñamos el futuro</h5>
@@ -94,9 +87,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
         <section class="service__cta">
-          <button class="button--black">
-            <a href="/contacto">¡A crear!</a>
-          </button>
+            <button class="slide--left"><a href="#">¡A Crear! </a></button>
         </section>
         
         <div class="service__list">
@@ -163,7 +154,7 @@
 
     <section class="service__pilar">
         
-        <!-- Line -->
+        <div class="line--lightgolden"></div>
         
         <section class="service__info">
             <h5>Planeamos y diseñamos el futuro</h5>
@@ -171,9 +162,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
         <section class="service__cta">
-          <button class="button--black">
-            <a href="/contacto">¡A crear!</a>
-          </button>
+            <button class="slide--left"><a href="#">¡A Crear! </a></button>
         </section>
         
         <div class="service__list">
@@ -229,7 +218,7 @@
 
     <section class="service__pilar">
         
-        <!-- Line -->
+        <div class="line--lightgolden"></div>
         
         <section class="service__info">
             <h5>Planeamos y diseñamos el futuro</h5>
@@ -237,9 +226,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
         <section class="service__cta">
-          <button class="button--black">
-            <a href="/contacto">¡A crear!</a>
-          </button>
+            <button class="slide--left"><a href="#">¡A Crear! </a></button>
         </section>
         
         <div class="service__list">
@@ -280,16 +267,14 @@
                     <li>Identidad Visual</li>
                     <li>Marketing Digital</li>
                 </ul>
-               <button class="button--black">
-                    <a href="/portafolio/healthypau">¡Descubrir!</a>
-                </button>
+                <section class="service__cta">
+                    <button class="slide--left"><a href="#">¡A Crear! </a></button>
+                </section>
             </div>
             <div class="project-case-four__img">
             </div>
         </div>
-        <div class="project-case-four__item">
-            <div class="project-case-four__img">
-            </div>
+        <div class="project-case-four__item--reverse">
             <div class="project-case-four__info">
                 <h3>Healthy Pau</h3>
                 <p>Excepteur velit culpa culpa incididunt ad esse pariatur dolor eu irure do Lorem reprehenderit. Reprehenderit id ex occaecat excepteur culpa do velit reprehenderit et in eu incididunt veniam adipisicing.</p>
@@ -297,14 +282,16 @@
                     <li>Identidad Visual</li>
                     <li>Marketing Digital</li>
                 </ul>
-            <button class="button--black">
-                    <a href="/portafolio/healthypau">¡Descubrir!</a>
-                </button>
-        </div>
+                <section class="service__cta">
+                    <button class="slide--left"><a href="#">¡A Crear! </a></button>
+                </section>
+            </div>
+            <div class="project-case-four__img">
+            </div>
         </div>
 
     </section>
-
+</container>
 </main>
 
 
