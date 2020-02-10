@@ -60,45 +60,54 @@ h1 {
 }
 
 h2 {
-font-family: $Geometria;
-font-weight: 300;
-font-size: 40px;
-line-height: 58px;
+	font-family: $Geometria;
+	font-weight: 300;
+	font-size: 34px;
+	line-height: 40px;
+
+	@include tablet-landscape {
+		font-size: 28px;
+	}
+	
+	@include upto-portrait-tablet {
+		font-size: 24px;
+	}
+
 }
 
 h3 {
-font-family: $Geometria;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
+	font-family: $Geometria;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 h4 {
-font-family: $Geometria;
-font-weight: 400;
-font-size: 16px;
-line-height: 25px;
+	font-family: $Geometria;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
 }
 
 h5 {
-font-family: $Ibarra;
-font-weight: 400;
-font-size: 18px;
-line-height: 27px;
+	font-family: $Ibarra;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
 }
 
 h6 {
-font-family: $Geometria;
-font-weight: 300;
-font-size: 16px;
-line-height: 25px;
+	font-family: $Geometria;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
 }
 
 P {
-font-family: $Ibarra;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
+	font-family: $Ibarra;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
 }
 
 a {
@@ -106,12 +115,12 @@ a {
 }
 
 ul {
-margin-top: 8px;
-list-style: none;
-font-family: $Geometria;
-font-weight: 300;
-font-size: 14px;
-line-height: 16px;
+	margin-top: 8px;
+	list-style: none;
+	font-family: $Geometria;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
 
 	li {
 		margin: 4px;
@@ -131,6 +140,7 @@ button {
 	transition: all 500ms;
 	z-index: 1;
 	color: $white;
+	font-size: 16px;
 	overflow: hidden;
 	
 	&:hover {
@@ -158,7 +168,7 @@ button {
   
 		&:after {
 		display: inline-block;
-		content: "  →";
+		// content: "  →";
 	  }
 	
 	  &:hover {
@@ -209,8 +219,8 @@ button {
 	background: url("img/line_golden.svg");
 	background-size: auto;
 	background-repeat: no-repeat;
-	background-position: top;
-	margin-top: 53px;
+	background-position: 0% center;
+	margin-top: 12%;
 	color: $golden;
 	width: 100%;
 	height: 7px;

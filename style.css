@@ -119,8 +119,20 @@ h1 {
 h2 {
   font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 58px;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 899px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 h3 {
@@ -188,6 +200,7 @@ button {
   transition: all 500ms;
   z-index: 1;
   color: #ffffff;
+  font-size: 16px;
   overflow: hidden;
 }
 
@@ -219,7 +232,6 @@ button a {
 
 button a:after {
   display: inline-block;
-  content: "  →";
 }
 
 button a:hover {
@@ -268,8 +280,8 @@ button a:hover {
   background: url("img/line_golden.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: top;
-  margin-top: 53px;
+  background-position: 0% center;
+  margin-top: 12%;
   color: #bea373;
   width: 100%;
   height: 7px;
@@ -1122,6 +1134,7 @@ a img.aligncenter {
 }
 
 #home .parallaxLayer .parallaxText .pT1 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-size: 22pt;
   color: #ffffff;
   font-weight: 300;
@@ -1134,6 +1147,7 @@ a img.aligncenter {
 }
 
 #home .parallaxLayer .parallaxText .pT2 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-size: 40pt;
   color: #ffffff;
   top: 10%;
@@ -1145,6 +1159,7 @@ a img.aligncenter {
 }
 
 #home .parallaxLayer .parallaxText .pT3 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-size: 28pt;
   color: #ffffff;
   font-weight: 300;
@@ -1156,6 +1171,7 @@ a img.aligncenter {
 }
 
 #home .parallaxLayer .parallaxText .pT4 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-size: 54pt;
   color: #ffffff;
   left: 0;
@@ -1174,7 +1190,7 @@ a img.aligncenter {
 #home .parallaxLayer .parallaxText .pT5 {
   font-size: 146px;
   color: #bea373;
-  font-family: 'IbarraRealNova';
+  font-family: "IbarraRealNova", Arial, sans-serif;
   right: 31%;
   bottom: 0;
   -webkit-transform: translateZ(-50px);
@@ -1189,6 +1205,7 @@ a img.aligncenter {
 }
 
 #home .parallaxLayer .parallaxText .pT6 {
+  font-family: "Geometria", Helvetica, Arial, sans-serif;
   font-size: 34pt;
   color: #ffffff;
   right: 0;
@@ -1340,8 +1357,8 @@ a img.aligncenter {
 .service {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1440px 1fr;
-      grid-template-columns: 1fr 1440px 1fr;
+  -ms-grid-columns: 1fr 90% 1fr;
+      grid-template-columns: 1fr 90% 1fr;
   height: auto;
   margin: 0;
   background-image: url("img/dotGrid.png");
@@ -1673,26 +1690,35 @@ body {
 .portfolio {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1440px 1fr;
-      grid-template-columns: 1fr 1440px 1fr;
+  -ms-grid-columns: 1fr 90% 1fr;
+      grid-template-columns: 1fr 90% 1fr;
   width: 100%;
   height: auto;
   overflow: hidden;
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-image: url("img/dotGrid.png");
+}
+
+@media (max-width: 599px) {
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /*-------------------------------
 CAROUSEL
 -------------------------------*/
 .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   -ms-grid-column: 2;
       grid-column-start: 2;
-  padding: 0px;
-  position: relative;
-  overflow: visible;
 }
 
 .carousel__container {
@@ -1701,7 +1727,6 @@ CAROUSEL
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  white-space: nowrap;
   margin-top: 40px;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -1717,14 +1742,20 @@ CAROUSEL
   opacity: 1;
 }
 
+@media (max-width: 899px) {
+  .carousel__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .carousel-item {
-  display: inline-block;
   position: relative;
-  width: 24%;
+  width: 320px;
   height: 480px;
   overflow: hidden;
-  margin-right: 10px;
-  border: 3px solid #bea373;
+  margin-right: 24px;
+  border: 2px solid #bea373;
   border-radius: 10px;
   background-color: #433c36;
   cursor: pointer;
@@ -1745,9 +1776,36 @@ CAROUSEL
           transform: translate3d(100px, 0, 0);
 }
 
+@media (max-width: 899px) {
+  .carousel-item {
+    width: 320px;
+    height: 480px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .carousel-item {
+    width: 25%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 599px) {
+  .carousel-item {
+    width: 90%;
+    height: 480px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-item {
+    margin-bottom: 40px;
+  }
+}
+
 .carousel img {
-  width: 400px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1790,8 +1848,8 @@ CAROUSEL
 }
 
 .carousel-item__details ul li {
-  margin: 4px;
-  padding-left: 24px;
+  margin: 2px;
+  padding-left: 2%;
   color: #ffffff;
 }
 
@@ -1803,9 +1861,10 @@ CAROUSEL
 }
 
 .carousel__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1813,12 +1872,14 @@ CAROUSEL
       grid-column-start: 2;
   width: 100%;
   padding: 0px 16px;
-  margin-bottom: 160px;
+  margin-bottom: 80px;
 }
 
 .carousel__title h2 {
-  font-size: 26px;
   display: inline-block;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding-left: 1%;
   color: #ffffff;
 }
 
