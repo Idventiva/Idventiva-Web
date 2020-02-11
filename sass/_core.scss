@@ -199,6 +199,10 @@ button {
 	flex-direction: column;
 	margin-left: 10%;
 	padding-top: 60px;
+
+	@include phone-and-tablet {
+		padding-top: 160px;
+	}
 	
 	h5 {
 	margin-bottom: -8px;
@@ -226,13 +230,11 @@ button {
 	width: 100%;
 	height: 7px;
 	
-	@include upto-portrait-tablet {
+	@include phone-and-tablet {
 		grid-row-start: 1;
 		margin-top: 0px;
 	}
-
 }
-
 /*-------------------------------------- Animations --*/
 
 @mixin fade {

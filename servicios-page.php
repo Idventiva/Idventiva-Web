@@ -8,7 +8,7 @@
         <h2>Servicios</h2>
     </section>
 
-    <!-------------------------------------- Branding y Diseño Digital -->
+<!-------------------------------------- Branding y Diseño Digital -->
 
     <section class="service__pilar">
         
@@ -19,7 +19,7 @@
             <h2>Branding y Diseño Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-          <button class="slide--left"><a href="#">¡A Crear! </a></button>
+        <button class="slide--left"><a href="#">¡Prueba de longitud de botones! </a></button>
         
         <div class="service__list">
             <div class="service__item">
@@ -86,9 +86,7 @@
             <h2>Marketing Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <section class="service__cta">
-            <button class="slide--left"><a href="#">¡A Crear! </a></button>
-        </section>
+        <button class="slide--left"><a href="#">¡A Crear! </a></button>
         
         <div class="service__list">
             <div class="service__item">
@@ -161,9 +159,7 @@
             <h2>Producción Audiovisual</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <section class="service__cta">
-            <button class="slide--left"><a href="#">¡A Crear! </a></button>
-        </section>
+        <button class="slide--left"><a href="#">¡A Crear! </a></button>
         
         <div class="service__list">
             <div class="service__item">
@@ -225,9 +221,7 @@
             <h2>Diseño Web y Productos Digitales</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <section class="service__cta">
-            <button class="slide--left"><a href="#">¡A Crear! </a></button>
-        </section>
+        <button class="slide--left"><a href="#">¡A Crear! </a></button>
         
         <div class="service__list">
             <div class="service__item">
