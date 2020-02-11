@@ -125,13 +125,13 @@ h2 {
 
 @media (min-width: 900px) and (max-width: 1199px) {
   h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 899px) {
   h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -191,7 +191,7 @@ ul li {
 /*-------------------------------------- Buttons --*/
 button {
   position: relative;
-  margin: 8px;
+  margin: 8px auto;
   height: 64px;
   border: 2px solid #bea373;
   background: -webkit-gradient(linear, left top, right top, from(#1b1b1b), to(#000000));
@@ -277,14 +277,23 @@ button a:hover {
 }
 
 .line--lightgolden {
+  display: inline-block;
   background: url("img/line_golden.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0% center;
-  margin-top: 12%;
+  margin-top: 10%;
   color: #bea373;
   width: 100%;
   height: 7px;
+}
+
+@media (max-width: 899px) {
+  .line--lightgolden {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-top: 0px;
+  }
 }
 
 /*-------------------------------------- Animations --*/
@@ -1781,6 +1790,9 @@ CAROUSEL
     width: 320px;
     height: 480px;
   }
+  .carousel-item:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
@@ -1800,6 +1812,9 @@ CAROUSEL
 @media (max-width: 1200px) {
   .carousel-item {
     margin-bottom: 40px;
+  }
+  .carousel-item:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -1863,16 +1878,30 @@ CAROUSEL
 .carousel__title {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 5fr 1fr;
-      grid-template-columns: 1fr 5fr 1fr;
+  -ms-grid-columns: 1fr 5fr 2fr;
+      grid-template-columns: 1fr 5fr 2fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-column: 2;
       grid-column-start: 2;
   width: 100%;
   padding: 0px 16px;
   margin-bottom: 80px;
+}
+
+@media (max-width: 899px) {
+  .carousel__title {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+  }
 }
 
 .carousel__title h2 {
@@ -1881,6 +1910,24 @@ CAROUSEL
       grid-column-start: 2;
   padding-left: 1%;
   color: #ffffff;
+}
+
+@media (max-width: 899px) {
+  .carousel__title h2 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 899px) {
+  .carousel__title button {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
 }
 
 /*------------------------------------*\

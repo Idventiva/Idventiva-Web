@@ -76,6 +76,10 @@ CAROUSEL
     @include upto-portrait-tablet {
       width: 320px;
       height: 480px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
     
     @include tablet-landscape {
@@ -90,6 +94,10 @@ CAROUSEL
     
     @include phone-and-tablet {
       margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
    }
   
@@ -141,18 +149,40 @@ CAROUSEL
 
   &__title {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 2fr;
     justify-content: space-between;
+    align-items: center;
     grid-column-start: 2;
     width: 100%;
     padding: 0px 16px;
     margin-bottom: 80px;
+
+    @include upto-portrait-tablet {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, auto);
+    }
     
     h2 {
       display: inline-block;
       grid-column-start: 2;
       padding-left: 1%;
       color: $white;
+      
+      @include upto-portrait-tablet {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
     }
+
+    button {
+      
+      @include upto-portrait-tablet {
+        grid-row-start: 3;
+      }
+    }
+
   }
 }
