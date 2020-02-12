@@ -12,7 +12,7 @@
 
           </div>
           <div class="about-right">
-            <h1 class="section-title"><?php the_title(); ?></h1>
+            <h5 class="section-title"><?php the_title(); ?></h5>
             <h2>Quiénes somos</h2>
             <p>Somos una consultoría creativa especializada en branding y marketing digital.</p>
             <p>Trabajamos hombro a hombro con su empresa en el desarrollo de estrategias para la integración y explotación del ecosistema digital, generando experiencias trascendentales que le permitan conectar con su audiencia.</p>

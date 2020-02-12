@@ -9,7 +9,7 @@
         </div>
         <div class="contactContainer">
           <div class="contact-right">
-            <h1 class="section-title"><?php the_title(); ?></h1>
+            <h5 class="section-title"><?php the_title(); ?></h5>
             <h2 class="">Dudas y sugerencias</h2>
             <address>Ricardo Toscano #18 P.H. Cd. Satélite. Naucalpan, Edo. Méx. C.P: 53100</address>
           </div>
