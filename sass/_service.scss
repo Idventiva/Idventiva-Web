@@ -14,13 +14,13 @@
    &__pilar {
       display: grid;
       grid-template-columns: 1fr 5fr 2fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 2;
       grid-column-start: 2;
-      height: auto;
+      // height: auto;
 
       @include phone-and-tablet {
          grid-template-columns: 90%;
-         grid-template-rows: 30px 1fr 100px;
+         grid-template-rows: 30px 1 30px;
          margin: 0px 16px;
       }
 
@@ -68,8 +68,6 @@
    }
 
    &__list {
-      // display: grid;
-      // grid-template-columns: repeat(4, 1fr);
       display: flex;
       flex-direction: row;
       grid-column-start: 2;
@@ -120,8 +118,6 @@
 }
 
 .project-case {
-   // display: grid;
-   // grid-template-columns: 1fr 1fr;
    display: flex;
    flex-direction: row;
    grid-column-start: 2;
@@ -208,7 +204,7 @@
 
       @include phone {
          width: 100%;
-         margin: 8px 16px;
+         margin: 8px;
       }
    }
    

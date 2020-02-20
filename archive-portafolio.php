@@ -1,110 +1,251 @@
+<?php /* Template Name: Servicios */ get_header(); ?>
 
 
-<?php get_header(); ?>
-	<main role="main">
-		<!-- section -->
-		<section class="main-area">
-      <div id="portafolio" class="section">
-        <h1 class="section-title">Portafolio</h1>
-        <h2 class="">Nuestro trabajo</h2>
-        <div data-tilt class="parallaxLayer">
-          <div class="portafolioBackground"></div>
-          <div class="dotGrid"></div>
-        </div>
+<main class="body--black">
+<container class="portfolio">
 
-        <div id="portafolioContainer" class="container">
-          <div class="portafolioSlider">
+    <section class="section__title">
+        <h5>Nuestro</h5>
+        <h2>Trabajo</h2>
+    </section>
 
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!--------------------------------------------- Branding y Diseño Digital -->
 
-              <div class="portafolioSlide">
-              <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-                  <div class="projectSlide">
-                    <div class="thumbnail" style="background-image:url(<?php the_post_thumbnail_url() ?>);">
-                      <a class="thumb-link"
-                        style="display:block; width:100%; height: 100%;"
-                       href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"></a>
-                    </div>
-                      <div class="details"><!-- post details -->
-                        <h3><?php the_title(); ?></h3>
-                        <span class="date"><?php the_time('Y'); ?></span>
-                        <span class="excerpt"><?php the_excerpt() ?></span>
+    <section class="carousel">
+        <div class="carousel__container">
 
-                        <a class="view-project" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Ver proyecto</a>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
 
-
-                      </div><!-- post details -->
-                  </div>
-              <?php endif; ?>
-              <!-- /post thumbnail -->
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <div class="carousel-item__details">
+                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
             </div>
-
-            <?php endwhile; else: ?>
-                <div class="post">
-                    <p><?php _e('Sorry, no posts matched your criteria.', "proyectos"); ?></p>
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <div class="carousel-item__details">
+                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
                 </div>
-            <?php endif; ?>
-
-          </div>
-          <div class="portafolioGallery">
-
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-              <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-                  <div id="" class="thumbnail" style="background-image:url(<?php the_post_thumbnail_url() ?>);">
-
-                  <a class="view-project" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"></a>
-
-
-
-                  </div>
-              <?php endif; ?>
-              <!-- /post thumbnail -->
-
-            <?php endwhile; else: ?>
-                <div class="post">
-                    <p><?php _e('Sorry, no posts matched your criteria.', "proyectos"); ?></p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
                 </div>
-            <?php endif; ?>
-
-          </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+ 
         </div>
+    </section>
+
+    <?php endif; ?>
+
+<?php endwhile; else: ?>
+    <div class="post">
+        <p><?php _e('No hay proyectos para mostrar en esta categoría.', "proyectos"); ?></p>
+    </div>
+<?php endif; ?>
+
+    <section class="carousel__title">
+            <div class="line--lightgolden"></div>
+            <h2>Branding y Diseño Digital</h2>
+            <button class="slide--left">
+                <a href="#">Probando longitud de botones </a>
+            </button>
+    </section>
+
+<!--------------------------------------------- Marketing Digital -->
+
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+
+    <section class="carousel__title">
+            <div class="line--lightgolden"></div>
+            <h2>Marketing Digital</h2>
+            <button class="slide--left">
+                <a href="/portafolio/healthypau">¡A crear!</a>
+            </button>
+    </section>
+
+<!--------------------------------------------- Producción Audiovisual -->
+
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+
+    <section class="carousel__title">
+            <div class="line--lightgolden"></div>
+            <h2>Producción Audiovisual</h2>
+            <button class="slide--left">
+                <a href="/portafolio/healthypau">¡A crear!</a>
+            </button>
+    </section>
 
 
+<!-------------------------------------- Diseño Web y Productos Digitales -->
+    
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5>Healthy Pau</h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
 
-      </div>
-		</section>
-		<!-- /section -->
-	</main>
-
-
-
-  <script>
-
-  jQuery(document).ready(function(){
-
-    jQuery(document).ready(function(){
-      jQuery('.portafolioSlider').bxSlider({
-        mode: 'fade'
-      }
-
-      );
-    });
-
-
-
-    jQuery('.parallaxLayer').tilt({
-          maxTilt: 20,
-          perspective: 4000,
-          reset: false,
-          glare: false,
-          maxGlare: 1,
-          transition: true,
-          easing: "cubic-bezier(.03,.98,.52,.99)",
-          speed:  1000
-    });
-  });
-
-  </script>
-
+    <section class="carousel__title">
+            <div class="line--lightgolden"></div>
+            <h2>Diseño Web y Productos Digitales</h2>
+            <button class="slide--left">
+                <a href="/portafolio/healthypau">¡A crear!</a>
+            </button>
+    </section>
+</container>
+</main>
 
 <?php get_footer(); ?>

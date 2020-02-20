@@ -12,7 +12,7 @@
 
 			<!-- post title -->
 			<h1 class="project-title">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				Hola soy un entrometido<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
         <span class="date"><?php the_time('Y'); ?></span>
 			</h1>
 			<!-- /post title -->

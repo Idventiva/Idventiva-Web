@@ -87,6 +87,7 @@
       transition: 0.25;
       &:hover {
         color: lighten($golden, 20%);
+        transform: scale(1.2);
       }
     }
   }

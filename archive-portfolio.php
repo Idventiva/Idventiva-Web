@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Portafolio IDV</title>
-</head>
-<body class="body--black">
-<main class="portfolio">
+<?php /* Template Name: Servicios */ get_header(); ?>
+
+
+<main class="body--black">
+<container class="portfolio">
 
     <section class="section__title">
         <h5>Nuestro</h5>
@@ -239,7 +233,7 @@
                 <a href="/portafolio/healthypau">¡A crear!</a>
             </button>
     </section>
+</container>
 </main>
-</body>
 
-</html>
+<?php get_footer(); ?>
