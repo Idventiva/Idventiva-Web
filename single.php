@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php /* Template Name: Proyecto Simple */ get_header(); ?>
 
 <main class="single-project">
 	<?php if(have_posts()){ 

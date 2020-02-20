@@ -2612,6 +2612,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 5fr 1fr;
       grid-template-columns: 1fr 5fr 1fr;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   width: 100%;
   padding: 80px 0px;
   background-image: url("img/dotGridBlack.png");

@@ -1,4 +1,4 @@
-<?php /* Template Name: Servicios */ get_header(); ?>
+<?php /* Template Name: Acerca */ get_header(); ?>
 	<main role="main">
 		<!-- section -->
 		<section class="main-area">

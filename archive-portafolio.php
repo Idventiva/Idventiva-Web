@@ -1,4 +1,4 @@
-<?php /* Template Name: Servicios */ get_header(); ?>
+<?php /* Template Name: Proyectos */ get_header(); ?>
 
 
 <main class="body--black">
@@ -14,8 +14,9 @@
     <section class="carousel">
         <div class="carousel__container">
 
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+        <?php if (have_posts()) { 
+			while (have_posts()) { 
+				the_post(); ?> 
 
             <div class="carousel-item">
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
@@ -27,7 +28,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
@@ -56,18 +57,12 @@
                         <li>Marketing Digital</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
  
         </div>
     </section>
-
-    <?php endif; ?>
-
-<?php endwhile; else: ?>
-    <div class="post">
-        <p><?php _e('No hay proyectos para mostrar en esta categoría.', "proyectos"); ?></p>
-    </div>
-<?php endif; ?>
+    <?php }
+    }?>
 
     <section class="carousel__title">
             <div class="line--lightgolden"></div>

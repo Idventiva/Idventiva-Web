@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php /* Template Name: 404 */ get_header(); ?>
 <header class="thumbnail-header"></header>
 	<main role="main">
 		<div class="sidebar-idv">
