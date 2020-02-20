@@ -2707,10 +2707,10 @@ body {
 }
 
 .single-project__img {
-  background-image: url("img/tri.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 40px;
   width: 60%;
   height: 500px;
 }
@@ -2729,6 +2729,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 160px;
+  margin-left: 160px;
 }
 
 .single-project__content__info {
@@ -2753,6 +2755,8 @@ body {
   .single-project__content__info {
     width: 100%;
     padding: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 

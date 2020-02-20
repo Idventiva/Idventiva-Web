@@ -77,12 +77,13 @@ body {
   }
 
   &__img {
-    background-image: url("img/tri.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 40px;
     width: 60%;
     height: 500px;
+    
     
     @include upto-portrait-tablet {
       width: 100%;
@@ -94,6 +95,8 @@ body {
     grid-column-start: 2;
     margin-top: 40px;
     justify-content: center;
+    margin-right: 160px;
+    margin-left: 160px;
 
     &__info {
       display: flex;
@@ -106,6 +109,8 @@ body {
       @include phone-and-tablet {
         width: 100%;
         padding: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
       }
       
       &--left {
