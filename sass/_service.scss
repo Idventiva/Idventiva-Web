@@ -117,66 +117,6 @@
    }
 }
 
-.project-case {
-   display: flex;
-   flex-direction: row;
-   grid-column-start: 2;
-   margin-bottom: 160px;
-   
-   @include phone-and-tablet {
-      flex-wrap: wrap;
-      margin-bottom: 80px;
-   }
-   
-   @include phone {
-      grid-column-start: 2;
-      flex-wrap: wrap;
-   }
-
-   &__item {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      width: 95%;
-      height: 280px;
-      margin: 8px;
-      padding: 16px;
-      border: 3px solid $golden;
-      border-radius: 5px;
-      background-color: $lightgolden;
-
-      @include phone {
-         height: 380px;
-         flex-wrap: wrap;
-      }
-   }
-
-   &__info {
-      display: flex;
-      width: 60%;
-      flex-direction: column;
-      justify-content: start;
-      align-items: flex-start;
-
-      @include phone {
-         display: none;
-      }
-
-
-   h3 {
-      margin: 0;
-      font-weight: 300;
-      font-size: 24px;
-      color: $carbon;
-   }
-
-      li {
-         color: $white;
-      }
-}
-
-}
-
 
 .project-case-two {
    display: flex;

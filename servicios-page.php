@@ -52,28 +52,37 @@
         
     </section>
 
-    <section class="project-case">
-            <div class="project-case__item">
-                <div class="project-case__info">
-                    <h3>Healthy Pau</h3>
+    <section class="carousel">
+        <div class="carousel__container">
+
+        <?php 
+        $dat = array(
+            'post_type' => 'project',
+            'post_per_page' => 2,
+        );
+        
+        $projects = new WP_Query($dat);
+
+        if ($projects->have_posts()) { 
+			while ($projects->have_posts()) { 
+				$projects->the_post(); ?> 
+
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <div class="carousel-item__details">
+                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <ul>
                         <li>Identidad Visual</li>
                         <li>Marketing Digital</li>
                     </ul>
                 </div>
-                <button class="slide--left"><a href="#">¡A Crear! </a></button>
             </div>
-            <div class="project-case__item">
-                <div class="project-case__info">
-                    <h3>Healthy Pau</h3>
-                    <ul>
-                        <li>Identidad Visual</li>
-                        <li>Marketing Digital</li>
-                    </ul>
-                </div>
-                <button class="slide--left"><a href="#">¡A Crear! </a></button>
-            </div>
-        </section>
+    <?php }
+    }?>
+ 
+        </div>
+    </section>
+    </section>
 
 <!-------------------------------------- Marketing Digital -->
 

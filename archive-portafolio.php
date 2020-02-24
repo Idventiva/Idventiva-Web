@@ -14,9 +14,17 @@
     <section class="carousel">
         <div class="carousel__container">
 
-        <?php if (have_posts()) { 
-			while (have_posts()) { 
-				the_post(); ?> 
+        <?php 
+        $dat = array(
+            'post_type' => 'project',
+            'post_per_page' => 2,
+        );
+        
+        $projects = new WP_Query($dat);
+
+        if ($projects->have_posts()) { 
+			while ($projects->have_posts()) { 
+				$projects->the_post(); ?> 
 
             <div class="carousel-item">
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
@@ -28,41 +36,11 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
-                <div class="carousel-item__details">
-                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <ul>
-                        <li>Identidad Visual</li>
-                        <li>Marketing Digital</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
-                <div class="carousel-item__details">
-                <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <ul>
-                        <li>Identidad Visual</li>
-                        <li>Marketing Digital</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/3380967/pexels-photo-3380967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Japan">
-                <div class="carousel-item__details">
-                <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <ul>
-                        <li>Identidad Visual</li>
-                        <li>Marketing Digital</li>
-                    </ul>
-                </div>
-            </div> -->
+    <?php }
+    }?>
  
         </div>
     </section>
-    <?php }
-    }?>
 
     <section class="carousel__title">
             <div class="line--lightgolden"></div>

@@ -1565,97 +1565,6 @@ a img.aligncenter {
   color: #ffffff;
 }
 
-.project-case {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  margin-bottom: 160px;
-}
-
-@media (max-width: 1200px) {
-  .project-case {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 80px;
-  }
-}
-
-@media (max-width: 599px) {
-  .project-case {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.project-case__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 95%;
-  height: 280px;
-  margin: 8px;
-  padding: 16px;
-  border: 3px solid #bea373;
-  border-radius: 5px;
-  background-color: #d4c3a4;
-}
-
-@media (max-width: 599px) {
-  .project-case__item {
-    height: 380px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.project-case__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media (max-width: 599px) {
-  .project-case__info {
-    display: none;
-  }
-}
-
-.project-case__info h3 {
-  margin: 0;
-  font-weight: 300;
-  font-size: 24px;
-  color: #1b1b1b;
-}
-
-.project-case__info li {
-  color: #ffffff;
-}
-
 .project-case-two {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1982,7 +1891,7 @@ CAROUSEL
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   padding-bottom: 10px;
 }
 
@@ -2102,6 +2011,12 @@ CAROUSEL
   font-family: "IbarraRealNova", Arial, sans-serif;
   font-weight: bold;
   color: #ffffff;
+}
+
+.carousel-item__details a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #bea373;
 }
 
 .carousel-item__details ul {
@@ -2482,129 +2397,12 @@ CAROUSEL
 \*------------------------------------*/
 /*------------------------------------*\
     Focus - Idventiva 2020
-    SINGLE POST
-\*------------------------------------*/
-.post-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
-.post-container .post-header {
-  height: 300px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
-
-.post-container .post-header .section-title {
-  position: absolute;
-  bottom: 40px;
-  font-family: 'Futura Condensed';
-  font-size: 58px;
-  line-height: 1.3;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.post-container .post-header .section-title a {
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.post-container article {
-  padding: 60px;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.single-post .footer {
-  position: relative;
-}
-
-.single-post .post-meta {
-  position: absolute;
-  background-color: #000000;
-  color: #ffffff;
-  bottom: 0;
-  right: 0;
-  text-transform: uppercase;
-  font-size: 0.6em;
-  padding: 10px;
-  letter-spacing: 2px;
-}
-
-.single-post .post-meta a {
-  color: #bea373;
-}
-
-/* Comentarios */
-.single-post .comments {
-  padding: 60px;
-  margin: 80px 0 80px;
-  border-top: 1px solid #bea373;
-}
-
-.single-post .comments h2 {
-  font-family: 'Futura Condensed';
-  color: #bea373;
-  text-transform: uppercase;
-}
-
-.single-post .comments .comment-reply-title {
-  font-family: 'Futura Condensed';
-  color: #bea373;
-  text-transform: uppercase;
-}
-
-.single-post .comments ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.single-post .comments .comment-respond {
-  border-top: 1px dotted #bea373;
-  margin-top: 40px;
-}
-
-.single-post .comments .comment-form-comment label {
-  float: left;
-}
-
-.single-post .comments .comment-form-comment #comment {
-  float: left;
-  clear: both;
-}
-
-.single-post .comments textarea {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.single-post .comments .form-submit {
-  clear: both;
-}
-
-.single-post .comments .form-submit #submit {
-  float: right;
-  background-color: #bea373;
-  color: #ffffff;
-  border: 0;
-  padding: 10px;
-}
-
-/*------------------------------------*\
-    Focus - Idventiva 2020
     SINGLE PROJECT
 \*------------------------------------*/
 body {
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#c3c3c3));
   background: linear-gradient(90deg, #ffffff, #c3c3c3);
+  background-image: url("img/dotGridBlack.png");
 }
 
 .single-project {
@@ -2615,8 +2413,8 @@ body {
   -ms-grid-column: 2;
       grid-column-start: 2;
   width: 100%;
-  padding: 80px 0px;
-  background-image: url("img/dotGridBlack.png");
+  padding: 24px 0px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 899px) {
@@ -2646,6 +2444,7 @@ body {
 
 .single-project__title h2 {
   color: #1b1b1b;
+  font-weight: bold;
 }
 
 .single-project__intro {
