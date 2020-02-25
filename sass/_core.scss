@@ -162,7 +162,7 @@ button {
 	overflow: hidden;
 	
 	&:hover {
-		border-color: $white;
+		border-color: $lightgolden;
 		color: $carbon;
 	}
 	
@@ -257,7 +257,7 @@ button {
 /*-------------------------------------- Animations --*/
 
 @mixin fade {
-	animation: fadein 4s;
+	animation: fadein 2s;
 }
 
 @keyframes fadein {

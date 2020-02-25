@@ -467,42 +467,6 @@ add_shortcode('idv_shortcode_demo_2', 'idv_shortcode_demo_2'); // Place [idv_sho
 	Custom Post Types
 \*------------------------------------*/
 
-// function codex_custom_init() {
-//   $labels = array(
-//     'name' => _x('Proyectos', 'post type general name'),
-//     'singular_name' => _x('Proyecto', 'post type singular name'),
-//     'add_new' => _x('Agregar nuevo', 'proyecto'),
-//     'add_new_item' => __('Agregar nuevo proyecto'),
-//     'edit_item' => __('Editar Proyecto'),
-//     'new_item' => __('Nuevo proyecto'),
-//     'all_items' => __('Todos los proyectos'),
-//     'view_item' => __('Ver proyectos'),
-//     'search_items' => __('Buscar en proyectos'),
-//     'not_found' =>  __('No se encontraron proyectos'),
-//     'not_found_in_trash' => __('No se encontraron proyectos en la papelera'),
-//     'parent_item_colon' => '',
-//     'menu_name' => __('Proyectos')
-
-//   );
-//   $args = array(
-//     'labels' => $labels,
-//     'public' => true,
-//     'publicly_queryable' => true,
-//     'show_ui' => true,
-//     'show_in_menu' => true,
-//     'query_var' => true,
-//     'rewrite' => true,
-//     'capability_type' => 'post',
-//     'has_archive' => true,
-//     'hierarchical' => false,
-//     'menu_icon' => 'dashicons-laptop',
-//     'menu_position' => null,
-//     'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt')
-//   );
-//   register_post_type('portafolio',$args);
-// }
-// add_action( 'init', 'codex_custom_init' );
-
 function projects_type() {
     $labels = array(
     'name' => 'Proyectos',
@@ -544,6 +508,26 @@ function projects_type() {
 }
 
 add_action('init', 'projects_type');
+
+/*------------------------------------*\
+	Taxonomies
+\*------------------------------------*/
+
+add_action('init', 'idvRegisterTax');
+
+function idvRegisterTax() {
+    $args = array(
+        'hierarchical' => true,
+        'labels' => array(
+            'name' => 'Categorias de Proyectos',
+            'singular-name' => 'Categoría de Proyectos'
+        ),
+        'show_in_nav_menu' => true,
+        'show_admin_column' => true,
+        'rewrite' => array('slug' => 'categoria-proyectos')
+    );
+    register_taxonomy('categoria-proyectos', array('project'), $args);
+}
 
 /*------------------------------------*\
 	ShortCode Functions

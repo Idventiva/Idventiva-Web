@@ -58,7 +58,9 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'post_per_page' => 2,
+            'posts_per_page' => 4,
+            'order' => 'ASC',
+            'orderby' => 'date'
         );
         
         $projects = new WP_Query($dat);
@@ -68,14 +70,14 @@
 				$projects->the_post(); ?> 
 
             <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan">
                 <div class="carousel-item__details">
-                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <h5><?php the_title(); ?></h5>
                     <ul>
                         <li>Identidad Visual</li>
                         <li>Marketing Digital</li>
                     </ul>
-                </div>
+                </div> </a>
             </div>
     <?php }
     }?>
