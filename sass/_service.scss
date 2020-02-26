@@ -118,56 +118,6 @@
 }
 
 
-.project-case-two {
-   display: flex;
-   flex-direction: row;
-   grid-column-start: 2;
-   margin-bottom: 160px;
-
-   @include phone-and-tablet {
-      margin-bottom: 80px;;
-   }
-
-   @include phone-and-tablet {
-      flex-wrap: wrap;  
-   }
-   
-   &__item {
-      display: flex;
-      flex-direction: column;
-      padding: 16px;
-      width: 25%;
-
-      @include both-tablet {
-         width: 50%
-      }
-
-      @include phone {
-         width: 100%;
-         margin: 8px;
-      }
-   }
-   
-   &__container {
-      width: 95%;
-      height: 400px;
-      background-color: $golden;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @include both-tablet {
-         height: 300px;
-      }
-   }
-   
-   a {
-      margin-top: 16px;
-      color: $white;
-      text-decoration: underline $lightgolden;
-   }
-}
-
 
 .project-case-three {
    display: flex;
@@ -185,7 +135,7 @@
       flex-direction: column;
       width: 50%;
       justify-content: space-around;
-
+      
       @include phone-and-tablet {
          width: 100%;
          margin-bottom: 24px;
@@ -193,18 +143,35 @@
    }
    
    &__container {
+      position: relative;
       clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
       width: 95%;
       height: 220px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid $lightgolden;
       background-color: $golden;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include phone-and-tablet {
+         width: 80%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
    }
    
    a {
       text-align: end;
       margin-top: 16px;
+      margin-right: 10%;
       color: $white;
       text-decoration: underline $lightgolden;
    }
@@ -237,11 +204,11 @@
          flex-direction: column-reverse;
       }
       
-      &--reverse {
+      &:last-child {
+         display: flex;
          grid-column-start: 2;
          grid-row-start: 2;
          flex-direction: row-reverse;
-         display: flex;
          justify-content: space-around;
 
          @include phone-and-tablet {
@@ -256,7 +223,7 @@
       flex-direction: column;
       grid-column-start: 1;
       align-content: center;
-      width: 60%;
+      width: 40%;
       padding:0px 40px;
 
       @include phone-and-tablet {
@@ -290,14 +257,18 @@
    }
 
    &__img {
-      background-image: url("img/tri.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
       grid-column-start: 2;
-      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 40%;
       height: 500px;
       margin: 24px;
+      
+      img {
+         width: 500px;
+         padding: 16px;
+      }
 
       @include phone-and-tablet {
          height: 300px;

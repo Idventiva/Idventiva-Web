@@ -58,9 +58,10 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 4,
+            'posts_per_page' => 2,
             'order' => 'ASC',
-            'orderby' => 'date'
+            'orderby' => 'date',
+            'categoria-proyectos' => 'branding'
         );
         
         $projects = new WP_Query($dat);
@@ -94,7 +95,7 @@
         
         <section class="service__info">
             <h5>Creativos y Creadores</h5>
-            <h2>Branding y Diseño Digital</h2>
+            <h2>Marketing Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
         <button class="slide--left"><a href="#">¡Prueba de longitud de botones! </a></button>
@@ -136,28 +137,38 @@
         
     </section>
 
-    <section class="project-case-two">
-        <div class="project-case-two__item">
-            <div class="project-case-two__container">
-            </div>
-            <a href="/#">Healthy Pau</a>
-        </div>
-        <div class="project-case-two__item">
-            <div class="project-case-two__container">
-            </div>
-            <a href="/#">Healthy Pau</a>
-        </div>
-        <div class="project-case-two__item">
-            <div class="project-case-two__container">
-            </div>
-            <a href="/#">Healthy Pau</a>
-        </div>
-        <div class="project-case-two__item">
-            <div class="project-case-two__container">
-            </div>
-            <a href="/#">Healthy Pau</a>
-        </div>
+    <section class="carousel">
+        <div class="carousel__container">
+
+        <?php 
+        $dat = array(
+            'post_type' => 'project',
+            'posts_per_page' => 4,
+            'order' => 'ASC',
+            'orderby' => 'date',
+            'categoria-proyectos' => 'marketing'
+        );
         
+        $projects = new WP_Query($dat);
+
+        if ($projects->have_posts()) { 
+			while ($projects->have_posts()) { 
+				$projects->the_post(); ?> 
+
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5><?php the_title(); ?></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div> </a>
+            </div>
+    <?php }
+    }?>
+ 
+        </div>
     </section>
 
 <!-------------------------------------- Producción Audiovisual -->
@@ -210,16 +221,31 @@
     </section>
 
     <section class="project-case-three">
+
+    <?php 
+        $dat = array(
+            'post_type' => 'project',
+            'posts_per_page' => 2,
+            'order' => 'ASC',
+            'orderby' => 'date',
+            // 'categoria-proyectos' => 'audiovisual'
+        );
+
+        $projects = new WP_Query($dat);
+
+        if ($projects->have_posts()) { 
+			while ($projects->have_posts()) { 
+				$projects->the_post(); ?>
+
         <div class="project-case-three__item">
             <div class="project-case-three__container">
+                <a href="<?php the_permalink(); ?>"> <img src="<?php the_post_thumbnail_url() ?>" alt="">
             </div>
-                <a href="/#">Healthy Pau</a>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </div>
-        <div class="project-case-three__item">
-            <div class="project-case-three__container">
-            </div>
-                <a href="/#">Healthy Pau</a>
-        </div>
+        <?php }
+    }?>
+
     </section>
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
@@ -265,10 +291,26 @@
     </section>
 
     <section class="project-case-four">
+
+    <?php 
+        $dat = array(
+            'post_type' => 'project',
+            'posts_per_page' => 4,
+            'order' => 'ASC',
+            'orderby' => 'date',
+            'categoria-proyectos' => 'branding'
+        );
+        
+        $projects = new WP_Query($dat);
+
+        if ($projects->have_posts()) { 
+			while ($projects->have_posts()) { 
+				$projects->the_post(); ?> 
+
         <div class="project-case-four__item">
             <div class="project-case-four__info">
-                <h3>Healthy Pau</h3>
-                <p>Excepteur velit culpa culpa incididunt ad esse pariatur dolor eu irure do Lorem reprehenderit. Reprehenderit id ex occaecat excepteur culpa do velit reprehenderit et in eu incididunt veniam adipisicing.</p>
+                <a href="<?php the_permalink(); ?>"></a><h3><?php the_title(); ?></h3></a>
+                <p><?php the_excerpt(); ?></p>
                 <ul>
                     <li>Identidad Visual</li>
                     <li>Marketing Digital</li>
@@ -278,23 +320,12 @@
                 </section>
             </div>
             <div class="project-case-four__img">
+                <img src="<?php the_post_thumbnail_url(); ?>" alt="">
             </div>
         </div>
-        <div class="project-case-four__item--reverse">
-            <div class="project-case-four__info">
-                <h3>Healthy Pau</h3>
-                <p>Excepteur velit culpa culpa incididunt ad esse pariatur dolor eu irure do Lorem reprehenderit. Reprehenderit id ex occaecat excepteur culpa do velit reprehenderit et in eu incididunt veniam adipisicing.</p>
-                <ul>
-                    <li>Identidad Visual</li>
-                    <li>Marketing Digital</li>
-                </ul>
-                <section class="service__cta">
-                    <button class="slide--left"><a href="#">¡A Crear! </a></button>
-                </section>
-            </div>
-            <div class="project-case-four__img">
-            </div>
-        </div>
+
+        <?php }
+    } ?>
 
     </section>
 </container>

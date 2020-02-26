@@ -18,6 +18,8 @@
         $dat = array(
             'post_type' => 'project',
             'posts_per_page' => 4,
+            'order' => 'ASC',
+            'orderby' => 'date',
             'categoria-proyectos' => 'branding'
         );
         

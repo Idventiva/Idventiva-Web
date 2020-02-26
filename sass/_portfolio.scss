@@ -32,6 +32,11 @@ CAROUSEL
   grid-template-columns: 1fr 90% 1fr;
   width: 100%;
   grid-column-start: 2;
+  margin-bottom: 40px;
+
+  @include phone-and-tablet {
+    margin-bottom: 80px;
+  }
   
   &__container {
     display: flex;
@@ -39,33 +44,33 @@ CAROUSEL
     justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 24px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 
     &:hover .carousel-item {
       opacity: 0.3;
     }
     
-    &:hover .carousel-item:hover {
+    &:hover .carousel-item:hover  {
       transform: scale(1.1);
       opacity: 1;
     }
 
     @include desktop {
-      padding-left: 0;
-      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     @include upto-portrait-tablet {
       flex-wrap: wrap;
-      padding: 0;
+      margin: 0;
     }
   }
    
   &-item {
     position: relative;
-    width: 320px;
-    height: 480px;
+    width: 1fr;
+    height: 400px;
     overflow: hidden;
     margin-right: 24px;
     border: 2px solid $golden;
@@ -74,6 +79,7 @@ CAROUSEL
     cursor: pointer;
     transition: 450ms all;
     transform-origin: center left;
+    
 
     &__details img:hover {
       transform: scale(1.1);
@@ -85,8 +91,7 @@ CAROUSEL
     }
 
     @include upto-portrait-tablet {
-      width: 320px;
-      height: 480px;
+      height: 400px;
 
       &:last-child {
         margin-bottom: 0px;
@@ -94,21 +99,12 @@ CAROUSEL
     }
     
     @include tablet-landscape {
-      width: 25%;
-      height: 400px;
+      height: 300px;
     }
     
     @include phone {
       width: 100%;
-      height: 480px;
-    }
-    
-    @include phone-and-tablet {
-      margin-bottom: 40px;
-
-      &:last-child {
-        margin-bottom: 0px;
-      }
+      height: 400px;
     }
    }
   
