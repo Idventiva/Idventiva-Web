@@ -18,7 +18,7 @@ body {
   margin-bottom: 80px;
   
   @include upto-portrait-tablet {
-    grid-template-columns: 32px 1fr 32px;
+    grid-template-columns: 8px 1fr 8px;
     
   }
 
@@ -112,6 +112,14 @@ body {
     justify-content: center;
     margin-right: 160px;
     margin-left: 160px;
+
+    @include phone-and-tablet {
+      width: 100%;
+      padding: 16px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
 
     &__info {
       display: flex;

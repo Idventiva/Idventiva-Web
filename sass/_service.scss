@@ -25,6 +25,7 @@
       }
 
       button {
+         grid-column-start: 2;
          @include phone-and-tablet {
             grid-column-start: 1;
             grid-row-start: 3;
@@ -35,7 +36,7 @@
       h3 {
          grid-column-start: 2;
          margin-top: 16px;
-         margin-bottom: 16px;
+         margin-bottom: -8px;
          color: $white;
          
          @include phone-and-tablet {
@@ -114,165 +115,5 @@
          li {
          color: $white;
          }
-   }
-}
-
-
-
-.project-case-three {
-   display: flex;
-   flex-direction: row;
-   grid-column-start: 2;
-   margin-bottom: 160px;
-   
-   @include phone-and-tablet {
-      margin-bottom: 80px;
-      flex-wrap: wrap;
-   }
-   
-   &__item {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      justify-content: space-around;
-      
-      @include phone-and-tablet {
-         width: 100%;
-         margin-bottom: 24px;
-      }
-   }
-   
-   &__container {
-      position: relative;
-      clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
-      width: 95%;
-      height: 220px;
-      overflow: hidden;
-      cursor: pointer;
-      border: 2px solid $lightgolden;
-      background-color: $golden;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @include phone-and-tablet {
-         width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-      }
-      img {
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-      }
-   }
-   
-   a {
-      text-align: end;
-      margin-top: 16px;
-      margin-right: 10%;
-      color: $white;
-      text-decoration: underline $lightgolden;
-   }
-}
-
-.project-case-four {
-   display: grid;
-   grid-template-columns: 1fr 5fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   grid-column-start: 2;
-   margin-top: -80px;
-   margin-bottom: 160px;
-
-   @include phone-and-tablet {
-      margin-bottom: 16px;
-   }
-
-   &:last-child {
-      margin-bottom: 160px;
-   }
-   
-   &__item {
-      display: flex;
-      grid-column-start: 2;
-      flex-direction: row;
-      justify-content: space-around;
-
-      @include phone-and-tablet {
-         flex-wrap: wrap;
-         flex-direction: column-reverse;
-      }
-      
-      &:last-child {
-         display: flex;
-         grid-column-start: 2;
-         grid-row-start: 2;
-         flex-direction: row-reverse;
-         justify-content: space-around;
-
-         @include phone-and-tablet {
-            flex-wrap: wrap;
-            flex-direction: column-reverse;
-         }
-      }
-   }
-   
-   &__info {
-      display: flex;
-      flex-direction: column;
-      grid-column-start: 1;
-      align-content: center;
-      width: 40%;
-      padding:0px 40px;
-
-      @include phone-and-tablet {
-         padding: 0px 0px;
-         width: 100%;
-      }
-      
-      h3 {
-         margin-top: 160px;
-         text-align: end;
-         color: $white;
-
-         @include phone-and-tablet {
-            margin-top: 0px;
-
-         }
-      }
-      
-      p {
-         color: $white;
-         margin: 24px 0px;
-      }
-      
-      ul {
-         margin-bottom: 32px;
-         
-         li { 
-            color: $white;
-         }
-      }
-   }
-
-   &__img {
-      grid-column-start: 2;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: 40%;
-      height: 500px;
-      margin: 24px;
-      
-      img {
-         width: 500px;
-         padding: 16px;
-      }
-
-      @include phone-and-tablet {
-         height: 300px;
-         margin-top: 40px;
-      }
    }
 }

@@ -1443,6 +1443,11 @@ a img.aligncenter {
   }
 }
 
+.service__pilar button {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
 @media (max-width: 1200px) {
   .service__pilar button {
     -ms-grid-column: 1;
@@ -1457,7 +1462,7 @@ a img.aligncenter {
   -ms-grid-column: 2;
       grid-column-start: 2;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: -8px;
   color: #ffffff;
 }
 
@@ -1565,240 +1570,6 @@ a img.aligncenter {
   color: #ffffff;
 }
 
-.project-case-three {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  margin-bottom: 160px;
-}
-
-@media (max-width: 1200px) {
-  .project-case-three {
-    margin-bottom: 80px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.project-case-three__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media (max-width: 1200px) {
-  .project-case-three__item {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-}
-
-.project-case-three__container {
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
-          clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
-  width: 95%;
-  height: 220px;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid #d4c3a4;
-  background-color: #bea373;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (max-width: 1200px) {
-  .project-case-three__container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.project-case-three__container img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.project-case-three a {
-  text-align: end;
-  margin-top: 16px;
-  margin-right: 10%;
-  color: #ffffff;
-  -webkit-text-decoration: underline #d4c3a4;
-          text-decoration: underline #d4c3a4;
-}
-
-.project-case-four {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 5fr 1fr;
-      grid-template-columns: 1fr 5fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  margin-top: -80px;
-  margin-bottom: 160px;
-}
-
-@media (max-width: 1200px) {
-  .project-case-four {
-    margin-bottom: 16px;
-  }
-}
-
-.project-case-four:last-child {
-  margin-bottom: 160px;
-}
-
-.project-case-four__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media (max-width: 1200px) {
-  .project-case-four__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-.project-case-four__item:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media (max-width: 1200px) {
-  .project-case-four__item:last-child {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-.project-case-four__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 40%;
-  padding: 0px 40px;
-}
-
-@media (max-width: 1200px) {
-  .project-case-four__info {
-    padding: 0px 0px;
-    width: 100%;
-  }
-}
-
-.project-case-four__info h3 {
-  margin-top: 160px;
-  text-align: end;
-  color: #ffffff;
-}
-
-@media (max-width: 1200px) {
-  .project-case-four__info h3 {
-    margin-top: 0px;
-  }
-}
-
-.project-case-four__info p {
-  color: #ffffff;
-  margin: 24px 0px;
-}
-
-.project-case-four__info ul {
-  margin-bottom: 32px;
-}
-
-.project-case-four__info ul li {
-  color: #ffffff;
-}
-
-.project-case-four__img {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
-  height: 500px;
-  margin: 24px;
-}
-
-.project-case-four__img img {
-  width: 500px;
-  padding: 16px;
-}
-
-@media (max-width: 1200px) {
-  .project-case-four__img {
-    height: 300px;
-    margin-top: 40px;
-  }
-}
-
 /*------------------------------------*\
     Focus - Idventiva 2020
     PORTAFOLIO
@@ -1839,8 +1610,8 @@ CAROUSEL
 .carousel {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 90% 1fr;
-      grid-template-columns: 1fr 90% 1fr;
+  -ms-grid-columns: 1fr 5fr 2fr;
+      grid-template-columns: 1fr 5fr 2fr;
   width: 100%;
   -ms-grid-column: 2;
       grid-column-start: 2;
@@ -2020,7 +1791,7 @@ CAROUSEL
       grid-column-start: 2;
   width: 100%;
   padding: 0px 16px;
-  margin-bottom: 80px;
+  margin-top: 40px;
 }
 
 @media (max-width: 899px) {
@@ -2390,8 +2161,8 @@ body {
 
 @media (max-width: 899px) {
   .single-project {
-    -ms-grid-columns: 32px 1fr 32px;
-        grid-template-columns: 32px 1fr 32px;
+    -ms-grid-columns: 8px 1fr 8px;
+        grid-template-columns: 8px 1fr 8px;
   }
 }
 
@@ -2517,6 +2288,15 @@ body {
           justify-content: center;
   margin-right: 160px;
   margin-left: 160px;
+}
+
+@media (max-width: 1200px) {
+  .single-project__content {
+    width: 100%;
+    padding: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .single-project__content__info {

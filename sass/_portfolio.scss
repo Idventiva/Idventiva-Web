@@ -29,7 +29,7 @@ CAROUSEL
 
 .carousel {
   display: grid;
-  grid-template-columns: 1fr 90% 1fr;
+  grid-template-columns: 1fr 5fr 2fr;
   width: 100%;
   grid-column-start: 2;
   margin-bottom: 40px;
@@ -168,7 +168,7 @@ CAROUSEL
     grid-column-start: 2;
     width: 100%;
     padding: 0px 16px;
-    margin-bottom: 80px;
+    margin-top: 40px;
 
     @include upto-portrait-tablet {
       display: grid;

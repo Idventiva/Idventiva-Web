@@ -12,6 +12,15 @@
 <!--------------------------------------------- Branding y Diseño Digital -->
 
     <section class="carousel">
+
+        <section class="carousel__title">
+                <div class="line--lightgolden"></div>
+                <h2>Branding y Diseño Digital</h2>
+                <button class="slide--left">
+                    <a href="#">Conoce nuestro servicio </a>
+                </button>
+        </section>
+
         <div class="carousel__container">
 
         <?php 
@@ -46,17 +55,20 @@
         </div>
     </section>
 
-    <section class="carousel__title">
-            <div class="line--lightgolden"></div>
-            <h2>Branding y Diseño Digital</h2>
-            <button class="slide--left">
-                <a href="#">Probando longitud de botones </a>
-            </button>
-    </section>
+
 
 <!--------------------------------------------- Marketing Digital -->
 
 <section class="carousel">
+
+        <section class="carousel__title">
+                    <div class="line--lightgolden"></div>
+                    <h2>Marketing Digital</h2>
+                    <button class="slide--left">
+                        <a href="/portafolio/healthypau">¡A crear!</a>
+                    </button>
+        </section>
+
         <div class="carousel__container">
 
         <?php 
@@ -89,17 +101,20 @@
         </div>
     </section>
 
-    <section class="carousel__title">
-            <div class="line--lightgolden"></div>
-            <h2>Marketing Digital</h2>
-            <button class="slide--left">
-                <a href="/portafolio/healthypau">¡A crear!</a>
-            </button>
-    </section>
+
 
 <!--------------------------------------------- Producción Audiovisual -->
 
 <section class="carousel">
+
+        <section class="carousel__title">
+                    <div class="line--lightgolden"></div>
+                    <h2>Producción Audiovisual</h2>
+                    <button class="slide--left">
+                        <a href="/portafolio/healthypau">¡A crear!</a>
+                    </button>
+        </section>
+
         <div class="carousel__container">
 
         <?php 
@@ -132,18 +147,21 @@
         </div>
     </section>
 
-    <section class="carousel__title">
-            <div class="line--lightgolden"></div>
-            <h2>Producción Audiovisual</h2>
-            <button class="slide--left">
-                <a href="/portafolio/healthypau">¡A crear!</a>
-            </button>
-    </section>
+
 
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
     
 <section class="carousel">
+
+        <section class="carousel__title">
+                    <div class="line--lightgolden"></div>
+                    <h2>Diseño Web y Productos Digitales</h2>
+                    <button class="slide--left">
+                        <a href="/portafolio/healthypau">¡A crear!</a>
+                    </button>
+        </section>
+
         <div class="carousel__container">
 
         <?php 
@@ -176,13 +194,7 @@
         </div>
     </section>
 
-    <section class="carousel__title">
-            <div class="line--lightgolden"></div>
-            <h2>Diseño Web y Productos Digitales</h2>
-            <button class="slide--left">
-                <a href="/portafolio/healthypau">¡A crear!</a>
-            </button>
-    </section>
+
 </container>
 </main>
 

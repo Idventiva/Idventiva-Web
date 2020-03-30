@@ -1,4 +1,7 @@
-<?php /* Template Name: Proyecto Simple */ get_header(); ?>
+<?php 
+/* Template Name: Proyecto Simple */ 
+get_header();
+$fields = get_fields(); ?>
 
 <main class="single-project">
 	<?php if(have_posts()){ 
@@ -6,22 +9,17 @@
 				the_post();
 			?> 
 				<section class="single-project__title">
-					<h5>Sitio Web</h5>
+					<h5><?php echo $fields['tipo']; ?></h5>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				</section>
 
 				<section class="single-project__intro">
 					<div class="single-project__info">
 						<h5>Descripción:</h5>
-						<p>Excepteur velit culpa culpa incididunt ad esse pariatur dolor eu irure do Lorem reprehenderit. Reprehenderit id ex occaecat excepteur culpa do velit reprehenderit et in eu incididunt veniam adipisicing. Tempor id qui dolore tempor eu id veniam.</p>
-						<h5>Categorías:</h5>
-						<ul>
-							<li>Identidad Visual</li>
-							<li>Naming</li>
-							<li>Registro de Marca</li>
-							<li>Publicidad</li>
-						</ul>
-						<button class="slide--left"><a href="#">Mi marca</a></button>
+						<p><?php echo $fields['descripcion']; ?></p>
+						<h5>Actividades:</h5>
+						<p><?php echo $fields['actividades']; ?></p>
+						<button class="slide--left"><a href="#">Quiero algo así</a></button>
 					</div>
 					<div class="single-project__img">
 						<?php the_post_thumbnail('large'); ?>
@@ -29,6 +27,7 @@
 				</section>
 
 				<section class="single-project__content">
+                    <img src="<?php echo $fields['portada01']; ?>" alt="">
 					<?php the_content(); ?>
 					<?php the_tags( __( 'Tags: ', 'idv2018' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 				</section>

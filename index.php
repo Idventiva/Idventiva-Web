@@ -4,7 +4,7 @@
 
   <div class="container">
     <header>
-      <h1 class="section-title"><?php _e( 'Ledix', 'idv2018' ); ?><small>Leading Digitalitotot Experiences</small></h1>
+      <h1 class="section-title"><?php _e( 'Ledix', 'idv2018' ); ?><small>Leading Digitali Experiences</small></h1>
 
     </header>
   	<main role="main">

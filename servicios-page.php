@@ -19,7 +19,7 @@
             <h2>Branding y Diseño Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <button class="slide--left"><a href="#">¡Prueba de longitud de botones! </a></button>
+        <!-- Ilustración -->
         
         <div class="service__list">
             <div class="service__item">
@@ -45,10 +45,9 @@
                 <i></i>
                 <h4>Publicidad</h4>
             </div>
-
         </div>
-
-        <h3>Así es como nos superamos</h3>
+        <button class="slide--left"><a href="#">Conocer servicio </a></button>
+        <h3>Nuestro trabajo:</h3>
         
     </section>
 
@@ -58,7 +57,7 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 2,
+            'posts_per_page' => 3,
             'order' => 'ASC',
             'orderby' => 'date',
             'categoria-proyectos' => 'branding'
@@ -66,22 +65,23 @@
         
         $projects = new WP_Query($dat);
 
+
         if ($projects->have_posts()) { 
 			while ($projects->have_posts()) { 
 				$projects->the_post(); ?> 
 
             <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
                 <div class="carousel-item__details">
-                    <h5><?php the_title(); ?></h5>
+                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <ul>
                         <li>Identidad Visual</li>
                         <li>Marketing Digital</li>
                     </ul>
-                </div> </a>
+                </div>
             </div>
-    <?php }
-    }?>
+        <?php }
+    } ?>
  
         </div>
     </section>
@@ -98,8 +98,6 @@
             <h2>Marketing Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <button class="slide--left"><a href="#">¡Prueba de longitud de botones! </a></button>
-        
         
         <div class="service__list">
             <div class="service__item">
@@ -132,7 +130,7 @@
         </div>
 
         </div>
-
+        <button class="slide--left"><a href="#">Conocer servicio </a></button>
         <h3>Así es como nos superamos</h3>
         
     </section>
@@ -143,7 +141,7 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 4,
+            'posts_per_page' => 3,
             'order' => 'ASC',
             'orderby' => 'date',
             'categoria-proyectos' => 'marketing'
@@ -182,7 +180,6 @@
             <h2>Producción Audiovisual</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <button class="slide--left"><a href="#">¡A Crear! </a></button>
         
         <div class="service__list">
             <div class="service__item">
@@ -215,37 +212,43 @@
         </div>
 
         </div>
-
+        <button class="slide--left"><a href="#">Conocer servicio </a></button>
         <h3>Así es como nos superamos</h3>
         
     </section>
 
-    <section class="project-case-three">
+    <section class="carousel">
+        <div class="carousel__container">
 
-    <?php 
+        <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 2,
+            'posts_per_page' => 3,
             'order' => 'ASC',
             'orderby' => 'date',
-            // 'categoria-proyectos' => 'audiovisual'
+            'categoria-proyectos' => 'audiovisual'
         );
-
+        
         $projects = new WP_Query($dat);
 
         if ($projects->have_posts()) { 
 			while ($projects->have_posts()) { 
-				$projects->the_post(); ?>
+				$projects->the_post(); ?> 
 
-        <div class="project-case-three__item">
-            <div class="project-case-three__container">
-                <a href="<?php the_permalink(); ?>"> <img src="<?php the_post_thumbnail_url() ?>" alt="">
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5><?php the_title(); ?></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div> </a>
             </div>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </div>
-        <?php }
+    <?php }
     }?>
-
+ 
+        </div>
     </section>
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
@@ -259,7 +262,6 @@
             <h2>Diseño Web y Productos Digitales</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
-        <button class="slide--left"><a href="#">¡A Crear! </a></button>
         
         <div class="service__list">
             <div class="service__item">
@@ -285,20 +287,21 @@
         </div>
 
         </div>
-
+        <button class="slide--left"><a href="#">Conocer servicio </a></button>
         <h3>Así es como nos superamos</h3>
         
     </section>
 
-    <section class="project-case-four">
+    <section class="carousel">
+        <div class="carousel__container">
 
-    <?php 
+        <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 4,
+            'posts_per_page' => 3,
             'order' => 'ASC',
             'orderby' => 'date',
-            'categoria-proyectos' => 'branding'
+            'categoria-proyectos' => 'web'
         );
         
         $projects = new WP_Query($dat);
@@ -307,26 +310,20 @@
 			while ($projects->have_posts()) { 
 				$projects->the_post(); ?> 
 
-        <div class="project-case-four__item">
-            <div class="project-case-four__info">
-                <a href="<?php the_permalink(); ?>"></a><h3><?php the_title(); ?></h3></a>
-                <p><?php the_excerpt(); ?></p>
-                <ul>
-                    <li>Identidad Visual</li>
-                    <li>Marketing Digital</li>
-                </ul>
-                <section class="service__cta">
-                    <button class="slide--left"><a href="#">¡A Crear! </a></button>
-                </section>
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan">
+                <div class="carousel-item__details">
+                    <h5><?php the_title(); ?></h5>
+                    <ul>
+                        <li>Identidad Visual</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                </div> </a>
             </div>
-            <div class="project-case-four__img">
-                <img src="<?php the_post_thumbnail_url(); ?>" alt="">
-            </div>
+    <?php }
+    }?>
+ 
         </div>
-
-        <?php }
-    } ?>
-
     </section>
 </container>
 </main>
