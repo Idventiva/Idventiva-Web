@@ -15,7 +15,10 @@ body {
   grid-column-start: 2;
   width: 100%;
   padding: 24px 0px;
-  margin-bottom: 80px;
+
+  @include phone-and-tablet {
+    grid-template-columns: 40px 1fr 40px;
+  }
   
   @include upto-portrait-tablet {
     grid-template-columns: 8px 1fr 8px;
@@ -29,6 +32,11 @@ body {
     grid-column-start: 2;
     margin-bottom: 40px;
 
+    @include phone {
+      margin-top: 80px;
+      margin-bottom: 0px;
+    }
+
     h5 {
       color: $carbon;
     }
@@ -37,16 +45,34 @@ body {
       color: $carbon;
       font-weight: bold;
     }
+
+    a {
+      color: $golden;
+
+      &:visited {
+        color: $golden;
+      }
+    }
   }
 
-  &__intro {
+  &__content {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column;
     grid-column-start: 2;
+    margin-bottom: 80px;
+  }
 
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-column-start: 2;
+    margin: 40px 0px;
+    
     @include upto-portrait-tablet {
       flex-wrap: wrap;
       flex-direction: column-reverse;
+      margin: 0px;
     }
 
     h5 {
@@ -59,10 +85,6 @@ body {
       color: $carbon;
     }
 
-    li {
-      color: $carbon;
-    }
-
     button {
       margin-top: 40px;
     }
@@ -71,27 +93,35 @@ body {
   &__info {
     display: flex;
     flex-direction: column;
+    padding: 24px;
+    justify-content: center;
+    align-items: flex-start;
     align-content: space-around;
     text-align: left;
-    width: 40%;
+    width: 48%;
 
     @include upto-portrait-tablet {
       width: 100%;
+      padding: 16px;
+    }
+
+    h3 {
+      font-size: 40px;
+      line-height: 1.2em;
+      @include phone-and-tablet {
+        margin-top: 40px;
+      }
     }
   }
 
   &__img {
     position: relative;
-    width: 320px;
-    height: 480px;
+    width: 400px;
+    height: 540px;
     overflow: hidden;
-    margin-right: 24px;
     border: 2px solid $golden;
     border-radius: 10px;
-    background-color: $spaceshuttle;
-    cursor: pointer;
     transition: 450ms all;
-    transform-origin: center left;
 
     img {
       width: 100%;
@@ -99,120 +129,10 @@ body {
       object-fit: cover;
     }
     
-    
     @include upto-portrait-tablet {
       width: 100%;
       height: 300px;
-    }
-  }
-  
-  &__content {
-    grid-column-start: 2;
-    margin-top: 40px;
-    justify-content: center;
-    margin-right: 160px;
-    margin-left: 160px;
-
-    @include phone-and-tablet {
-      width: 100%;
-      padding: 16px;
-      margin-right: 0px;
-      margin-left: 0px;
-    }
-
-
-    &__info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      padding: 40px;
-      
-      @include phone-and-tablet {
-        width: 100%;
-        padding: 16px;
-        margin-right: 0px;
-        margin-left: 0px;
-      }
-      
-      &--left {
-        width: 50%;
-        padding: 40px;
-        align-items: flex-start;
-        
-        @include phone-and-tablet {
-          width: 100%;
-          padding: 16px;
-        }
-        
-        h5 {
-          margin-top: 16px;
-          font-weight: 600;
-          color: $golden;
-          }
-    
-        li {
-          color: $carbon;
-        }
-      }
-
-    }
-
-    &__img { 
-      
-      &--complete {
-        display: block;
-        width: 100%;
-        height: 280px;
-        overflow: hidden;
-        border: 2px solid $golden;
-
-        @include phone {
-          heigth: 400px;
-        }
-        
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
-      }
-      
-      &--half {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 32px 0px;
-        overflow: hidden;
-        
-        @include phone {
-          flex-wrap: wrap;
-          flex-direction: column;
-        }
-        
-        img {
-          width: 48%;
-          height: auto;
-          object-fit: cover;
-          border: 2px solid $golden;
-        
-          @include phone {
-            width: 100%;
-            margin-bottom: 24px;
-          }
-        }
-      }
-    }
-  }
-
-  .center {
-    display: flex;
-    justify-content: center;
-    button {
       margin-top: 40px;
-      margin-bottom: 80px;
-      align-self: center;
     }
   }
 }

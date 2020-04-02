@@ -1,4 +1,6 @@
-<?php /* Template Name: Proyectos */ get_header(); ?>
+<?php /* Template Name: Proyectos */ 
+get_header(); 
+$fields = get_fields(); ?>
 
 
 <main class="body--black">
@@ -11,14 +13,11 @@
 
 <!--------------------------------------------- Branding y Diseño Digital -->
 
-    <section class="carousel">
+    <section class="carousel col2">
 
         <section class="carousel__title">
                 <div class="line--lightgolden"></div>
                 <h2>Branding y Diseño Digital</h2>
-                <button class="slide--left">
-                    <a href="#">Conoce nuestro servicio </a>
-                </button>
         </section>
 
         <div class="carousel__container">
@@ -43,30 +42,24 @@
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <ul>
-                        <li>Identidad Visual</li>
-                        <li>Marketing Digital</li>
-                    </ul>
+                    <p><?php echo $fields['anno']; ?></p>
                 </div>
             </div>
         <?php }
     } ?>
  
         </div>
+        <button class="slide--left"><a href="/servicios">Ver Servicio </a></button>
     </section>
-
 
 
 <!--------------------------------------------- Marketing Digital -->
 
-<section class="carousel">
+<section class="carousel col2">
 
         <section class="carousel__title">
                     <div class="line--lightgolden"></div>
                     <h2>Marketing Digital</h2>
-                    <button class="slide--left">
-                        <a href="/portafolio/healthypau">¡A crear!</a>
-                    </button>
         </section>
 
         <div class="carousel__container">
@@ -74,7 +67,7 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 4,
+            'posts_per_page' => 3,
             'categoria-proyectos' => 'marketing'
         );
         
@@ -99,20 +92,18 @@
     } ?>
  
         </div>
+        <button class="slide--left"><a href="/servicios">Ver Servicio </a></button>
     </section>
 
 
 
 <!--------------------------------------------- Producción Audiovisual -->
 
-<section class="carousel">
+<section class="carousel col2">
 
         <section class="carousel__title">
                     <div class="line--lightgolden"></div>
                     <h2>Producción Audiovisual</h2>
-                    <button class="slide--left">
-                        <a href="/portafolio/healthypau">¡A crear!</a>
-                    </button>
         </section>
 
         <div class="carousel__container">
@@ -120,7 +111,7 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 4,
+            'posts_per_page' => 3,
             'categoria-proyectos' => 'audiovisual'
         );
         
@@ -145,6 +136,7 @@
     } ?>
  
         </div>
+        <button class="slide--left"><a href="/servicios">Ver Servicio </a></button>
     </section>
 
 
@@ -152,14 +144,11 @@
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
     
-<section class="carousel">
+<section class="carousel col2">
 
         <section class="carousel__title">
                     <div class="line--lightgolden"></div>
                     <h2>Diseño Web y Productos Digitales</h2>
-                    <button class="slide--left">
-                        <a href="/portafolio/healthypau">¡A crear!</a>
-                    </button>
         </section>
 
         <div class="carousel__container">
@@ -167,7 +156,7 @@
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 4,
+            'posts_per_page' => 3,
             'categoria-proyectos' => 'web'
         );
         
@@ -192,6 +181,7 @@
     } ?>
  
         </div>
+        <button class="slide--left"><a href="/servicios">Ver Servicio </a></button>
     </section>
 
 

@@ -11,12 +11,16 @@
    @include dotgrid--white;
    @include fade;
 
+   &:last-child {
+      padding-bottom: 80px;
+   }
+
    &__pilar {
       display: grid;
       grid-template-columns: 1fr 5fr 2fr;
       grid-template-rows: 2;
       grid-column-start: 2;
-      // height: auto;
+      margin-top: 32px;
 
       @include phone-and-tablet {
          grid-template-columns: 90%;
@@ -99,10 +103,7 @@
       }
 
       i {
-         background-image: url("img/triangle.png");
-         background-repeat: no-repeat;
-         background-position: center;
-         background-size: contain;
+         color: $lightgolden;
          width: 80px;
          height: 80px;
          margin: 8px;

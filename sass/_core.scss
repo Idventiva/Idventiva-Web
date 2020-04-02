@@ -114,7 +114,7 @@ a {
 	font-family: $Geometria;
 	text-decoration: none;
 	&:visited {
-		color:$golden;
+		color:$white;
 	  }
 }
 
@@ -128,14 +128,10 @@ ul {
 
 	li {
 		margin: 8px;
-		padding-left: 24px;
+		padding-left: 8px;
 
 		@include phone-and-tablet {
 			padding-left: 8px;
-		}
-
-		&:hover {
-			transform: scale(1.2);
 		}
 	}
 }

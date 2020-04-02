@@ -65,7 +65,10 @@
                 <div class="menu-address">
                   <h4>Satélite</h4>
                   <address>
-                    Ricardo Toscano #18 P.H. Cd. Satélite. Naucalpan, Edo. Méx. C.P: 53100
+                  Autopista Mex-Qro. Km 37.5 Condominio Industrial Cuamatla Bodega 34 Planta Alta
+Cuautitlán Izcalli
+Estado de México 
+C.P. 54730
                   </address>
                 </div>
                 <div class="menu-phone">

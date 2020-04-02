@@ -23,7 +23,7 @@
         
         <div class="service__list">
             <div class="service__item">
-                <i></i>
+                <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-identidadvisual.svg" alt="Icono Identidad Visual"></i>
                 <h4>Identidad Visual</h4>
                 <ul class="service__item__list">
                     <li>Logotipos</li>
@@ -32,26 +32,26 @@
             </div>
 
             <div class="service__item">
-                <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-naming.svg" alt="Icono Naming"></i>
                 <h4>Naming</h4>
             </div>
 
             <div class="service__item">
-                <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-registrodemarca.svg" alt="Icono Registro de Marca"></i>
                 <h4>Registro de Marca</h4>
             </div>
 
             <div class="service__item">
-                <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-publicidad2.svg" alt="Icono Publicidad"></i>
                 <h4>Publicidad</h4>
             </div>
         </div>
-        <button class="slide--left"><a href="#">Conocer servicio </a></button>
+        <button class="slide--left"><a href="/contacto">¡Quiero esto para mi marca! </a></button>
         <h3>Nuestro trabajo:</h3>
         
     </section>
 
-    <section class="carousel">
+    <section class="carousel col1">
         <div class="carousel__container">
 
         <?php 
@@ -74,10 +74,7 @@
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <ul>
-                        <li>Identidad Visual</li>
-                        <li>Marketing Digital</li>
-                    </ul>
+                    <p>Categoria</p>
                 </div>
             </div>
         <?php }
@@ -101,18 +98,18 @@
         
         <div class="service__list">
             <div class="service__item">
-                <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-iomarketing.svg" alt="Icono Inbound y Outbound Marketing"></i>
                 <h4>Inbound y Outbound Marketing</h4>
               </ul>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-redessociales.svg" alt="Icono Redes Sociales"></i>
               <h4>Gestión de Redes Sociales</h4>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-seosem.svg" alt="Icono SEO y SEM"></i>
               <h4>Campañas de SEO y SEM</h4>
               <ul class="service__item__list">
                   <li>Google Analytics</li>
@@ -120,7 +117,7 @@
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-campanas.svg" alt="Icono Social Media"></i>
               <h4>Campañas de Social Media</h4>
               <ul class="service__item__list">
                 <li>Estrategias de Contenido</li>
@@ -130,12 +127,12 @@
         </div>
 
         </div>
-        <button class="slide--left"><a href="#">Conocer servicio </a></button>
-        <h3>Así es como nos superamos</h3>
+        <button class="slide--left"><a href="/contacto">¡Quiero esto para mi marca! </a></button>
+        <h3>Nuestro Trabajo:</h3>
         
     </section>
 
-    <section class="carousel">
+    <section class="carousel col1">
         <div class="carousel__container">
 
         <?php 
@@ -183,21 +180,21 @@
         
         <div class="service__list">
             <div class="service__item">
-                <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-fotografia.svg" alt="Icono Identidad Visual"></i>
                 <h4>Fotografía Digital</h4>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-video.svg" alt="Icono Video"></i>
               <h4>Producción de Video</h4>
               <ul class="service__item__list">
-                  <li>Videos Corporativos</li> 
-                  <li>Promocionales</li> 
+                  <li>Videos Corporativos</li>
+                  <li>Promocionales</li>
               </ul>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-postproduccion.svg" alt="Icono Post-Producción"></i>
               <h4>Post-Producción</h4>
               <ul class="service__item__list">
                   <li>Edición de Video</li> 
@@ -206,18 +203,18 @@
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-animacion.svg" alt="Icono Animación Digital"></i>
               <h4>Animación Digital</h4>
             </div>
         </div>
 
         </div>
-        <button class="slide--left"><a href="#">Conocer servicio </a></button>
-        <h3>Así es como nos superamos</h3>
+        <button class="slide--left"><a href="/contacto">¡Quiero esto para mi marca! </a></button>
+        <h3>Nuestro trabajo:</h3>
         
     </section>
 
-    <section class="carousel">
+    <section class="carousel col1">
         <div class="carousel__container">
 
         <?php 
@@ -265,34 +262,34 @@
         
         <div class="service__list">
             <div class="service__item">
-                <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-webcorporativo.svg" alt="Icono Sitios Web"></i>
                 <h4>Sitios Web Corporativos</h4>
               </ul>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-landingpages.svg" alt="Icono Landing Pages"></i>
               <h4>Landing Pages</h4>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-ecommerce.svg" alt="Icono Blog e E-commerce"></i>
               <h4>Blog e E-Commerce</h4>
             </div>
             
             <div class="service__item">
-              <i></i>
+            <i><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-apps.svg" alt="Icono Diseño de Aplicaciones"></i>
               <h4>Diseño de Aplicaciones</h4>
             </div>
         </div>
 
         </div>
-        <button class="slide--left"><a href="#">Conocer servicio </a></button>
-        <h3>Así es como nos superamos</h3>
+        <button class="slide--left"><a href="/contacto">¡Quiero esto para mi marca! </a></button>
+        <h3>Nuestro trabajo:</h3>
         
     </section>
 
-    <section class="carousel">
+    <section class="carousel col1">
         <div class="carousel__container">
 
         <?php 
