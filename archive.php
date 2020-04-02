@@ -1,22 +1,40 @@
 <?php get_header(); ?>
-<header class="thumbnail-header"></header>
-	<main role="main">
-		<div class="sidebar-idv">
-			<?php get_sidebar(); ?>
-		</div>
-		<!-- section -->
-		<section class="main-area">
 
-			<h1 class="section-title"><?php _e( 'Archives', 'idv2018' ); ?></h1>
+<main class="body--black">
+<container class="portfolio">
 
-			<?php get_template_part('loop'); ?>
+<section class="section__title">
+        <h5>Servicio</h5>
+        <h2><?php the_archive_title(); ?></h2>
+    </section>
 
-			<?php get_template_part('pagination'); ?>
+    <section class="carousel col2">
 
-		</section>
-		<!-- /section -->
-	</main>
+        <section class="carousel__title">
+                <div class="line--lightgolden"></div>
+                <h3>Nuestros Proyectos</h3>
+        </section>
 
-<?php get_sidebar(); ?>
+        <div class="carousel__container">
 
+        <?php 
+
+        if (have_posts()) { 
+			while (have_posts()) { 
+				the_post(); ?> 
+
+            <div class="carousel-item">
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>"></a>
+                <div class="carousel-item__details">
+                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                </div>
+            </div>
+        <?php }
+    } ?>
+        </div>
+    </section>
+	<?php get_template_part('pagination'); ?>
+
+</container>
+</main>
 <?php get_footer(); ?>

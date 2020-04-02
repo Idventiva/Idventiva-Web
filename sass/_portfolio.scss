@@ -14,6 +14,7 @@ body {
   grid-template-columns: 1fr 90% 1fr;
   width: 100%;
   height: auto;
+  min-height: 100%;
   overflow: hidden;
   padding-bottom: 80px;
   @include dotgrid--white;
@@ -91,7 +92,7 @@ CAROUSEL
     width: 1fr;
     height: 400px;
     overflow: hidden;
-    margin-right: 24px;
+    margin-right: 8px;
     border: 2px solid $golden;
     border-radius: 10px;
     background-color: $spaceshuttle;
@@ -194,6 +195,10 @@ CAROUSEL
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: repeat(3, auto);
+    }
+
+    h3 {
+      color: $white;
     }
     
     h2 {

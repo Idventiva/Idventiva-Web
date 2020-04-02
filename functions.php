@@ -27,6 +27,7 @@ if (function_exists('add_theme_support'))
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
+    add_image_size('xl', 1920, '', true); // XL Thumbnail
     add_image_size('large', 800, '', true); // Large Thumbnail
     add_image_size('medium', 400, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail

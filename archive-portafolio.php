@@ -28,7 +28,7 @@ $fields = get_fields(); ?>
             'posts_per_page' => 4,
             'order' => 'ASC',
             'orderby' => 'date',
-            'categoria-proyectos' => 'branding'
+            'categoria-proyectos' => 'branding',
         );
         
         $projects = new WP_Query($dat);
@@ -39,7 +39,7 @@ $fields = get_fields(); ?>
 				$projects->the_post(); ?> 
 
             <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <p><?php echo $fields['anno']; ?></p>
@@ -67,7 +67,7 @@ $fields = get_fields(); ?>
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 3,
+            'posts_per_page' => 4,
             'categoria-proyectos' => 'marketing'
         );
         
@@ -79,7 +79,7 @@ $fields = get_fields(); ?>
 				$projects->the_post(); ?> 
 
             <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <ul>
@@ -111,7 +111,7 @@ $fields = get_fields(); ?>
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 3,
+            'posts_per_page' => 4,
             'categoria-proyectos' => 'audiovisual'
         );
         
@@ -123,7 +123,7 @@ $fields = get_fields(); ?>
 				$projects->the_post(); ?> 
 
             <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <ul>
@@ -156,7 +156,7 @@ $fields = get_fields(); ?>
         <?php 
         $dat = array(
             'post_type' => 'project',
-            'posts_per_page' => 3,
+            'posts_per_page' => 4,
             'categoria-proyectos' => 'web'
         );
         
@@ -168,7 +168,7 @@ $fields = get_fields(); ?>
 				$projects->the_post(); ?> 
 
             <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="Japan"></a>
+                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
                 <div class="carousel-item__details">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <ul>
