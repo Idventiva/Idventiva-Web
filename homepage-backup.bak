@@ -1,0 +1,90 @@
+  <div class="sliderContainer clone">
+    <div class="sliderFix">
+      <div id="sliderClone1" class="slider">
+        <div class="slide">
+          <div id="slide00" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide01" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide02" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide03" class="slideBk"></div>
+        </div>
+        <!-- <div class="slide">
+          <div id="slide04" class="slideBk"></div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="sliderContainer clone">
+    <div class="sliderFix">
+      <div id="sliderClone2" class="slider">
+        <div class="slide">
+          <div id="slide00" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide01" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide02" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide03" class="slideBk"></div>
+        </div>
+        <!-- <div class="slide">
+          <div id="slide04" class="slideBk"></div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="sliderContainer">
+    <div class="sliderFix">
+      <div id="slider" class="slider">
+        <div class="slide">
+          <div id="slide00" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide01" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide02" class="slideBk"></div>
+        </div>
+        <div class="slide">
+          <div id="slide03" class="slideBk"></div>
+        </div>
+        <!-- <div class="slide">
+          <div id="slide04" class="slideBk"></div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+      jQuery('#slider').bxSlider({
+      controls: false,
+      auto:true,
+      mode: 'fade',
+      autoStart: true,
+      speed: 400,
+      pager: false
+    });
+
+    jQuery('#sliderClone1').bxSlider({
+      controls: false,
+      auto:true,
+      mode: 'fade',
+      autoStart: true,
+      speed: 400,
+      pager: false
+    });
+
+    jQuery('#sliderClone2').bxSlider({
+      controls: false,
+      auto:true,
+      mode: 'fade',
+      autoStart: true,
+      speed: 400,
+      pager: false
+    });
