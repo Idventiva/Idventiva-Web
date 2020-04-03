@@ -1,0 +1,5 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/idventiv/v3.idventiva.com/wp-content/themes/idventiva-focus
+        - /bin/cp -r * $DEPLOYPATH 
