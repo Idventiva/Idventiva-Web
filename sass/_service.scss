@@ -20,7 +20,7 @@
       grid-template-columns: 1fr 5fr 2fr;
       grid-template-rows: 2;
       grid-column-start: 2;
-      margin-top: 32px;
+      margin-top: 64px;
 
       @include phone-and-tablet {
          grid-template-columns: 90%;

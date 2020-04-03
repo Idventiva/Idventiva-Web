@@ -64,8 +64,6 @@ CAROUSEL
     justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 24px;
-    margin-left: 5%;
-    margin-right: 5%;
 
     &:hover .carousel-item {
       opacity: 0.3;
@@ -188,7 +186,6 @@ CAROUSEL
     align-items: center;
     grid-column-start: 2;
     width: 100%;
-    padding: 0px 16px;
     margin-top: 40px;
 
     @include upto-portrait-tablet {
