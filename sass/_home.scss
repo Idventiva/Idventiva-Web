@@ -13,21 +13,22 @@
   bottom: 0;
   overflow: hidden;
   
+  .home-background {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url(img/backgrounds/moss.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: left;
+    transform: translateZ(-100px);
+    transform-style: preserve-3d;
+    pointer-events: none;
+    opacity: 0.5;
+  }
   .parallaxLayer {
-    .home-background {
-      position: absolute;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      background-image: url(img/backgrounds/graydots.jpg);
-      background-repeat: repeat-x;
-      background-size: cover;
-      background-position: left;
-      transform: translateZ(-100px);
-      transform-style: preserve-3d;
-      pointer-events: none;
-    }
     
     .parallaxText {
       color: $white;

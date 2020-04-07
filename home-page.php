@@ -1,11 +1,37 @@
 <?php /* Template Name: Home */ get_header(); ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+<div id="home" class="section">
+
+  <canvas id="c" style="height:100%; width:100%"></canvas>
+  <div class="home-background"></div>
+  <div class="dotGrid"></div>
+
+</div>
+
 <script>
-// Customize these...
-var n = 800, //points in the line
-    speed = 30,
-    amp = 400, // base amplitude
-    rand = 0, //modifies amp
+  jQuery(document).ready(function(){
+
+  jQuery('.parallaxLayer').tilt({
+        maxTilt: 20,
+        perspective: 4000,
+        reset: false,
+        glare: false,
+        maxGlare: 1,
+        transition: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        speed:  1000
+  });
+
+});
+
+</script>
+
+<script>
+    // Customize these...
+    var n = 200, //points in the line
+    speed = 46,
+    amp = 365, // base amplitude
+    rand = 4, //modifies amp
     cycles = 7,
     pan = window.innerWidth; //adjust panning to make a smoother lateral movement
 
@@ -56,48 +82,19 @@ function init() {
     setParticle(particles[i]);
   }
 }
-colorBase = 240;
 
 gsap.ticker.add(function(){
-  colorBase+=0.2;
+
   ctx.globalAlpha = 0.05;
   ctx.globalCompositeOperation = 'source-over';  
-  ctx.fillStyle = 'hsl('+colorBase+', 100%,50% )';//"#a00070";
+  ctx.fillStyle = 'rgba(0,0,0,1)';
   ctx.fillRect(0, 0, cw, ch);
   ctx.globalCompositeOperation = 'lighter';
-  ctx.strokeStyle = "#aaa";
+  ctx.strokeStyle = "#bea373";
   ctx.beginPath();
   ctx.moveTo(-n,ch/2);
   for (var i=0; i<n; i++) particles[i].draw();
   ctx.stroke();
 });
 </script>
-
-<div id="home" class="section">
-  <div class="parallaxLayer">
-  <div class="home-background"></div>
-  <div class="dotGrid"></div>
-  </div>
-</div>
-  <canvas id="c" style="height:100%, width:100%"></canvas>
-
-<script>
-  jQuery(document).ready(function(){
-
-  jQuery('.parallaxLayer').tilt({
-        maxTilt: 20,
-        perspective: 4000,
-        reset: false,
-        glare: false,
-        maxGlare: 1,
-        transition: true,
-        easing: "cubic-bezier(.03,.98,.52,.99)",
-        speed:  1000
-  });
-
-});
-
-</script>
-
-
 <?php get_footer(); ?>
