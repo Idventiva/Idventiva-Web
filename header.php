@@ -65,9 +65,9 @@
                 <div class="menu-address">
                   <address>
                   Autopista Mex-Qro. Km 37.5 Condominio Industrial Cuamatla Bodega 34 Planta Alta
-Cuautitlán Izcalli
-Estado de México 
-C.P. 54730
+                  Cuautitlán Izcalli
+                  Estado de México 
+                  C.P. 54730
                   </address>
                 </div>
                 <div class="menu-phone">
