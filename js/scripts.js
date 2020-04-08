@@ -49,3 +49,5 @@ jQuery(document).ready(function(){
       jQuery('.blade, .menu ul li, .upper, .lower,   .social-networks-nav, nav .menu').toggleClass('hidden');
     });
   });
+
+
