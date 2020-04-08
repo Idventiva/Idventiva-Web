@@ -63,7 +63,6 @@
               <div class="lower">
                 <div class="menu-logo"></div>
                 <div class="menu-address">
-                  <h4>Satélite</h4>
                   <address>
                   Autopista Mex-Qro. Km 37.5 Condominio Industrial Cuamatla Bodega 34 Planta Alta
 Cuautitlán Izcalli
