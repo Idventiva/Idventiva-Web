@@ -1138,6 +1138,7 @@ a img.aligncenter {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  background-color: #000;
 }
 
 #home .parallaxLayer .home-background {
