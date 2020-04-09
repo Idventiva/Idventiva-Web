@@ -2,29 +2,15 @@
 
 <div id="home" class="section">
 
-  <canvas id="c" style="height:100%; width:100%"></canvas>
-  <div class="home-background"></div>
+  <canvas id="wavecanvas" style="height:100%; width:100%"></canvas>
+  <div class="home-background"> 
+    <div class="background-image"></div>
+    <?php get_template_part('dots') ?>
+  </div>
   <div class="dotGrid"></div>
+  <div class="logo-container" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);"><img style="height:200px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-black.svg" /></div>
 
 </div>
-
-<script>
-  jQuery(document).ready(function(){
-
-  jQuery('.parallaxLayer').tilt({
-        maxTilt: 20,
-        perspective: 4000,
-        reset: false,
-        glare: false,
-        maxGlare: 1,
-        transition: true,
-        easing: "cubic-bezier(.03,.98,.52,.99)",
-        speed:  1000
-  });
-
-});
-
-</script>
 
 <script>
     // Customize these...
@@ -36,7 +22,7 @@
     pan = window.innerWidth; //adjust panning to make a smoother lateral movement
 
 // ...not these
-var c = document.getElementById("c"),
+var c = document.getElementById("wavecanvas"),
     ctx = c.getContext("2d"),
     cw = (c.width = window.innerWidth),
     ch = (c.height = window.innerHeight),
