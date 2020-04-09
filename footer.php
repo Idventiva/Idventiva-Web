@@ -1,11 +1,6 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-        <div class="logo">
-          <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="Logo" class="logo-img">
-          </a>
-        </div>
-        <!-- /logo -->
+
         <div class="wrapper">
 				<!-- copyright -->
         <div class="footer-widget">
