@@ -86,6 +86,15 @@
               </div>
           </div>
         </nav>
+
+
+        <div class="logo">
+          <a href="<?php echo home_url(); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-small.png" alt="Logo" class="logo-img">
+          </a>
+        </div>
+        <!-- /logo -->
+        
         <div id="nav-button-container">
           <div id="nav-button">
             <span></span>
