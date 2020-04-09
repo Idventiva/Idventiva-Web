@@ -15,8 +15,7 @@
   pointer-events: none;
 
   @include phone {
-    top:0;
-    bottom: auto;
+    display: none;
   }
 
 

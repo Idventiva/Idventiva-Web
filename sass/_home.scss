@@ -38,6 +38,9 @@
 
   h2 {
     font-weight: light;
+    @include phone {
+      font-size: 20px;
+    }
   }
   
   p {
@@ -76,6 +79,10 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include phone-and-tablet {
+      width: 100%;
+    }
   
 
     button {
