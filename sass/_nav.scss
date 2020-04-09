@@ -151,10 +151,10 @@ nav {
   }
 
   .blade-a {
-    left:0;
+    left:-120px;
     top:0;
     bottom:0;
-    width: 50%;
+    width: 60%;
     background-color: transparentize($black, 0.08);
     z-index: 1004;
     border-left: 8px solid $spaceshuttle;
