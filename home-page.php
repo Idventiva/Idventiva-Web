@@ -2,12 +2,11 @@
 
 <div id="home" class="section">
 
-  <canvas id="wavecanvas" style="height:100%; width:100%"></canvas>
+  <canvas style="display:none;" id="wavecanvas" style="height:100%; width:100%"></canvas>
   <div class="home-background"> 
     <div class="background-image"></div>
     <?php get_template_part('dots') ?>
   </div>
-  <div class="dotGrid"></div>
     <div class="logo-container glitch">  
     <div class="glitch__item logo__img"></div>
     <div class="glitch__item logo__img"></div>
