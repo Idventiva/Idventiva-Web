@@ -3,6 +3,12 @@
    PAGINA DE SERVICIOS
 \*------------------------------------*/
 
+
+.service-header {
+   height: 30vw;
+   background-color: $golden;
+}
+
 .service {
    display: grid;
    grid-template-columns: 1fr 90% 1fr;

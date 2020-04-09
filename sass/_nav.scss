@@ -378,45 +378,6 @@ nav {
 }
 
 
-.parallaxLayer {
-  position: fixed;
-  top:-200px;
-  left: -200px;
-  right:-400px;
-  bottom:-400px;
-  background-color: rgba(0, 0, 0, 0.0);
-  transform-style: preserve-3d;
-}
-
-
-.dotGrid {
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-image: url('img/dotGrid.png');
-  z-index: 10;
-  opacity: 0.8;
-  pointer-events: none;
-  transform: translateZ(0px);
-  transform-style: preserve-3d;
-}
-
-.dotGridBlack {
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-image: url('img/dotGridBlack.png');
-  z-index: 10;
-  opacity: 0.4;
-  pointer-events: none;
-  transform: translateZ(0px);
-  transform-style: preserve-3d;
-}
-
 .sub-menu {
   li {
     font-size: 24px;
