@@ -8,9 +8,14 @@
     <?php get_template_part('dots') ?>
   </div>
   <div class="dotGrid"></div>
-  <div class="logo-container"><img class="glitch-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/idvlogo.png" /></div>
+    <div class="logo-container glitch">  
+    <div class="glitch__item logo__img"></div>
+    <div class="glitch__item logo__img"></div>
+    <div class="glitch__item logo__img"></div>
+    <div class="glitch__item logo__img"></div>
+  </div>
   <div class="logix">
-      <h2 class="glitch" data-text="Somos su próxima agencia digital">Somos su próxima agencia digital</h2>
+      <h2 class="glitchx" data-text="Somos su próxima agencia digital">Somos su próxima agencia digital</h2>
       <p>Creamos experiencias visuales únicas.</p>
       <button class="slide--left"><a href="#">Empezar</a></div>
     </div>

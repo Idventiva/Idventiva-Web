@@ -3,18 +3,18 @@
 <main class="body--black">
 <container class="service">
 
-    <section class="section__title">
-        <h5>Nuestros</h5>
-        <h2>Servicios</h2>
-    </section>
+        <section class="section__title">
+            <h5>Nuestros</h5>
+            <h2>Servicios</h2>
+        </section>
 
 <!-------------------------------------- Branding y Diseño Digital -->
 
     <section class="service__pilar">
         
-        <div class="line--lightgolden"></div>
         
         <section class="service__info">
+            <div class="line--lightgolden"></div>
             <h5>Creativos y Creadores</h5>
             <h2>Branding y Diseño Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
@@ -88,9 +88,9 @@
 
     <section class="service__pilar">
         
-        <div class="line--lightgolden"></div>
         
         <section class="service__info">
+            <div class="line--lightgolden"></div>
             <h5>Creativos y Creadores</h5>
             <h2>Marketing Digital</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
@@ -170,9 +170,9 @@
 
     <section class="service__pilar">
         
-        <div class="line--lightgolden"></div>
         
         <section class="service__info">
+            <div class="line--lightgolden"></div>
             <h5>Planeamos y diseñamos el futuro</h5>
             <h2>Producción Audiovisual</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
@@ -252,11 +252,11 @@
 
     <section class="service__pilar">
         
-        <div class="line--lightgolden"></div>
         
         <section class="service__info">
             <h5>Planeamos y diseñamos el futuro</h5>
             <h2>Diseño Web y Productos Digitales</h2>
+            <div class="line--lightgolden"></div>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </section>
         

@@ -6,9 +6,9 @@
 /* Animación de Icono */
 
 .logo {
-  position: absolute;
+  position: fixed;
   left: 60px;
-  top: 60px;
+  top: 80px;
   transform: translate(0,-50%);
   height: 30px;
   pointer-events: all;
