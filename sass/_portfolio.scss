@@ -4,20 +4,16 @@
 \*------------------------------------*/
 
 body {
-  background: $degblack;
+  background: $carbon;
   @include fade;
-  @include dotgrid--white;
 }
 
 .portfolio {
-  display: grid;
-  grid-template-columns: 1fr 90% 1fr;
   width: 100%;
   height: auto;
   min-height: 100%;
   overflow: hidden;
   padding-bottom: 80px;
-  @include dotgrid--white;
 
   @include phone {
     display: grid;
@@ -40,12 +36,20 @@ body {
 CAROUSEL
 -------------------------------*/
 
+.main__section__title {
+  color: $white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 46px;
+  width: 100%;
+}
+
 .col1 {
   grid-template-columns: 1fr 5fr 2fr;
 }
 
 .col2 {
-  grid-template-columns: 5% 5fr 5%;
+  grid-template-columns: 5fr;
 }
 
 .carousel {
@@ -88,11 +92,8 @@ CAROUSEL
   &-item {
     position: relative;
     width: 1fr;
-    height: 400px;
     overflow: hidden;
     margin-right: 8px;
-    border: 2px solid $golden;
-    border-radius: 10px;
     background-color: $spaceshuttle;
     cursor: pointer;
     transition: 450ms all;
@@ -180,11 +181,8 @@ CAROUSEL
   }
 
   &__title {
-    display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
     justify-content: space-between;
     align-items: center;
-    grid-column-start: 2;
     width: 100%;
     margin-top: 40px;
 
@@ -200,7 +198,7 @@ CAROUSEL
     
     h2 {
       display: inline-block;
-      grid-column-start: 2;
+      grid-column-start: 1;
       padding-left: 1%;
       color: $white;
       

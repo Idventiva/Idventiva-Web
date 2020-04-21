@@ -11,35 +11,36 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
-@import 'sass/setup';        //Fuentes, Colores y Tamaños de Pantalla
+@import 'sass/setup';            //Fuentes, Colores y Tamaños de Pantalla
 
 
 /*------------------------------------*\
     Estructura
 \*------------------------------------*/
 
-@import 'sass/core';       //Estructura Principal
-@import 'sass/footer';     //Footer Principal
-@import 'sass/nav';        //Navegación Principal
-@import 'sass/wordpress-core';        //Estructuras de Wordpress
+@import 'sass/core';            //Estructura Principal
+@import 'sass/footer';          //Footer Principal
+@import 'sass/nav';             //Navegación Principal
+@import 'sass/wordpress-core';  //Estructuras de Wordpress
 
 /*------------------------------------*\
     Páginas
 \*------------------------------------*/
 
-@import 'sass/home';        //Página de Inicio
-@import 'sass/service';    //Página de Servicios
-@import 'sass/portfolio';   //Página de Portafolio
-@import 'sass/about';       //Página de Acerca de Nosotros
-@import 'sass/blog';       //Página de LEDIX Blog
-@import 'sass/contact';     //Página de Contacto
+@import 'sass/home';            //Página de Inicio
+@import 'sass/animaciones';     //Animaciones
+@import 'sass/service';         //Página de Servicios
+@import 'sass/portfolio';       //Página de Portafolio
+@import 'sass/about';           //Página de Acerca de Nosotros
+@import 'sass/blog';            //Página de LEDIX Blog
+@import 'sass/contact';         //Página de Contacto
 
 
 /*------------------------------------*\
     Plantillas
 \*------------------------------------*/
 
-@import 'sass/single-project';       //Entrada de Proyecto Simple
+@import 'sass/single-project';   //Entrada de Proyecto Simple
 
 
 /*------------------------------------*\
@@ -47,4 +48,4 @@
 \*------------------------------------*/
 
 @import 'sass/responsive';       //Estilos responsivos para todo el sitio
-@import 'sass/print';       //Estilos para Imprimir
+@import 'sass/print';            //Estilos para Imprimir

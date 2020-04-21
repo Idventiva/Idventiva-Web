@@ -14,7 +14,6 @@
    grid-template-columns: 1fr 90% 1fr;
    height: auto;
    margin: 0;
-   @include dotgrid--white;
    @include fade;
 
    &:last-child {
