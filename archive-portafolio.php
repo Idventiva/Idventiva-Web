@@ -13,10 +13,9 @@ $fields = get_fields(); ?>
 
 <!--------------------------------------------- Branding y Diseño Digital -->
 
-    <section class="carousel col2">
+    <section class="carousel col1">
 
         <section class="carousel__title">
-                <div class="line--lightgolden"></div>
                 <h2>Branding y Diseño Digital</h2>
         </section>
 
@@ -55,10 +54,9 @@ $fields = get_fields(); ?>
 
 <!--------------------------------------------- Marketing Digital -->
 
-<section class="carousel col2">
+<section class="carousel col1">
 
         <section class="carousel__title">
-                    <div class="line--lightgolden"></div>
                     <h2>Marketing Digital</h2>
         </section>
 
@@ -99,10 +97,9 @@ $fields = get_fields(); ?>
 
 <!--------------------------------------------- Producción Audiovisual -->
 
-<section class="carousel col2">
+<section class="carousel col1">
 
         <section class="carousel__title">
-                    <div class="line--lightgolden"></div>
                     <h2>Producción Audiovisual</h2>
         </section>
 
@@ -144,10 +141,9 @@ $fields = get_fields(); ?>
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
     
-<section class="carousel col2">
+<section class="carousel col1">
 
         <section class="carousel__title">
-                    <div class="line--lightgolden"></div>
                     <h2>Diseño Web y Productos Digitales</h2>
         </section>
 

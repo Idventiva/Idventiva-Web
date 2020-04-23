@@ -67,7 +67,7 @@ body {
 
   &__container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1420px 1fr; 
     
     @include upto-portrait-tablet {
       flex-wrap: wrap;
