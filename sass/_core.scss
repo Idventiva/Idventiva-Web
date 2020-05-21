@@ -3,6 +3,20 @@
     MAIN
 \*------------------------------------*/
 
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+	width: 0px;  /* Remove scrollbar space */
+	background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+	background: #FF0000;
+  }  
+
+
 *,
 *:after,
 *:before {
@@ -17,6 +31,7 @@
 /*-------------------------------------- Body & Boxes --*/
 
 .body {
+
 	font-family: $Geometria;
 
 	&--white { 
@@ -188,7 +203,7 @@ address {
 button {
 	position: relative;
 	margin: 8px auto;
-	height: 64px;
+	height: 44px;
 	border: 2px solid $golden;
 	background: #1b1b1b;
 	transition: all 500ms;
@@ -197,6 +212,7 @@ button {
 	font-weight: bold;
 	font-size: 16px;
 	overflow: hidden;
+	border-radius: 40px;
 	
 	&:hover {
 		border-color: $lightgolden;
@@ -247,15 +263,22 @@ button {
 
 /*-------------------------------------- Sections --*/
   
-.section__title {
-	display: flex;
-	grid-column-start: 2;
-	flex-direction: column;
-	padding-top: 60px;
+.section-menu {
+	display:block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: $black;
+	height: 100%;
+	width: 290px;
+}
 
-	@include phone-and-tablet {
-		padding-top: 160px;
-	}
+
+.section__title {
+	padding-top: 60px;
+	margin-top: 80px;
+	margin-left: 63px;
+
 	
 	h5 {
 	margin-bottom: -8px;
@@ -335,10 +358,9 @@ button {
 /* wrapper */
 .wrapper {
 	max-width:1120px;
-	width:95%;
 	margin:0 auto;
 	position:relative;
-  padding: 20px;
+  padding: 40px;
   height: 100%;
 
 }

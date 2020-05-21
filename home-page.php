@@ -1,9 +1,10 @@
 <?php /* Template Name: Home */ get_header(); ?>
+<div class="body-container">
 
 <div id="home" class="section">
 
   <div class="home-background"> 
-    <div class="background-image"></div>
+    <div class="background-image bg--parallax"></div>
     <?php get_template_part('animation') ?>
   </div>
 
@@ -21,34 +22,44 @@
   </div>
 
 </div>
-<div id="features" class="section">
+
+<section class="home-cta">
+  <div class="wrapper">    
+    <section class="home-cta__grid">
+      <h2 class="">Ponte en contacto con nuestros ejecutivos</h2>
+      <button class="slide--left"><a href="">Contactanos</a></button>
+    </section>
+  </div>
+</section>
+
+<div id="features" class="features section bg--parallax-smooth">
   <section class="wrapper">
-    <h2>Soluciones estratégicas ágiles para su negocio.</h2>
-  </section>
-  <section class="wrapper">
-    <div class="mid--wrapper">
-      <h3>
-        Aquí va un texto llamativo de título
-      </h3>
-      <p>
-        Aquí va un texto apantallante acerca de lo complicados que son los proyectos de nuestros clientes y cómo nosotros echamos mano de nuestras estratégias y personal profesional para cumplir con sus objetivos.
-      </p>
+    <div class="features__intro">
+      <div class="features__intro-text">
+        <h2 class="">Estamos aquí para mejorar sus resultados</h2>
+        <h3>
+          Aquí va un texto llamativo de título
+        </h3>
+        <p>
+          Aquí va un texto apantallante acerca de lo complicados que son los proyectos de nuestros clientes y cómo nosotros echamos mano de nuestras estratégias y personal profesional para cumplir con sus objetivos.
+        </p>
+      </div>
+      <img class="globe" src="<?php echo get_stylesheet_directory_uri(); ?>/img/globe.png" alt="">
     </div>
   </section>
 </div>
+<!--------------------------------------------- Portfolio -->
 
-  <container class="portfolio">
-    
-    <section class="main__section__title">
-            <h2>Branding y Diseño Digital</h2>
-    </section>
-<!--------------------------------------------- Branding y Diseño Digital -->
+  <section class="home-portfolio">
 
-    <section class="carousel col2">
-
-
-        <div class="carousel__container">
-
+    <div class="wrapper home-portfolio__wrapper">
+        <section class="main__section__title home-portfolio__title">
+          <h2>Proyectos Destacado</h2>
+        </section>
+    <section class="home-portfolio__carousel">
+      
+    <!-- home-portfolio__container -->
+    <div class="home-portfolio__container">
         <?php 
         $dat = array(
             'post_type' => 'project',
@@ -57,29 +68,27 @@
             'orderby' => 'date',
             'categoria-proyectos' => 'branding',
         );
-        
         $projects = new WP_Query($dat);
-
-
         if ($projects->have_posts()) { 
-			while ($projects->have_posts()) { 
-				$projects->the_post(); ?> 
+          while ($projects->have_posts()) { 
+            $projects->the_post(); ?> 
+              <div class="home-portfolio__item">
+                  <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
+                  <div class="home-portfolio__details">
+                      <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                      <p><?php echo $fields['anno']; ?></p>
+                  </div>
+              </div>
+            <?php }
+        } ?>
+        </div> 
+        <!-- home-portfolio__container -->
+      </section>
+      <button class="slide--left"><a href="/servicios">Ver Portafolio </a></button>
+    </div>
 
-            <div class="carousel-item">
-                <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
-                <div class="carousel-item__details">
-                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <p><?php echo $fields['anno']; ?></p>
-                </div>
-            </div>
-        <?php }
-    } ?>
- 
-        </div>
-        <button class="slide--left"><a href="/servicios">Ver Portafolio </a></button>
-    </section>
-
-</container>
+  </section> <!-- area -->
 
 <?php get_footer(); ?>
   
+</div>

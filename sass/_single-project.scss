@@ -5,7 +5,6 @@
 
 body {
   background: $degwhite;
-  @include dotgrid--black;
   @include fade;
 }
 

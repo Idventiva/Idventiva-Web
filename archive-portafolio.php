@@ -4,16 +4,21 @@ $fields = get_fields(); ?>
 
 
 <main class="body--black">
-<container class="portfolio">
+<container class="portfolio col1">
 
-    <section class="section__title">
-        <h5>Nuestro</h5>
-        <h2>Trabajo</h2>
+    <section class="section-menu">
+        <section class="section__title">
+            <h5>Nuestro</h5>
+            <h2>Trabajo</h2>
+        </section>
+        <nav class="">
+            
+        </nav>
     </section>
 
 <!--------------------------------------------- Branding y Diseño Digital -->
 
-    <section class="carousel col1">
+    <section class="carousel">
 
         <section class="carousel__title">
                 <h2>Branding y Diseño Digital</h2>
@@ -40,8 +45,14 @@ $fields = get_fields(); ?>
             <div class="carousel-item">
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" ></a>
                 <div class="carousel-item__details">
-                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <p><?php echo $fields['anno']; ?></p>
+                    <a href="<?php the_permalink(); ?>">
+                        <h5>
+                            <?php the_title(); ?>
+                        </h5>
+                        <p>
+                            <?php echo $fields['anno']; ?>
+                        </p>
+                    </a>
                 </div>
             </div>
         <?php }
@@ -54,9 +65,10 @@ $fields = get_fields(); ?>
 
 <!--------------------------------------------- Marketing Digital -->
 
-<section class="carousel col1">
+<section class="carousel col2">
 
         <section class="carousel__title">
+                    <div class="line--lightgolden"></div>
                     <h2>Marketing Digital</h2>
         </section>
 
@@ -97,9 +109,10 @@ $fields = get_fields(); ?>
 
 <!--------------------------------------------- Producción Audiovisual -->
 
-<section class="carousel col1">
+<section class="carousel col2">
 
         <section class="carousel__title">
+                    <div class="line--lightgolden"></div>
                     <h2>Producción Audiovisual</h2>
         </section>
 
@@ -141,9 +154,10 @@ $fields = get_fields(); ?>
 
 <!-------------------------------------- Diseño Web y Productos Digitales -->
     
-<section class="carousel col1">
+<section class="carousel col2">
 
         <section class="carousel__title">
+                    <div class="line--lightgolden"></div>
                     <h2>Diseño Web y Productos Digitales</h2>
         </section>
 
