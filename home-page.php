@@ -23,14 +23,7 @@
 
 </div>
 
-<section class="home-cta">
-  <div class="wrapper">    
-    <section class="home-cta__grid">
-      <h2 class="">Ponte en contacto con nuestros ejecutivos</h2>
-      <button class="slide--left"><a href="">Contactanos</a></button>
-    </section>
-  </div>
-</section>
+
 
 <div id="features" class="features section bg--parallax-smooth">
   <section class="wrapper">
@@ -48,6 +41,15 @@
     </div>
   </section>
 </div>
+
+<section class="home-cta">
+  <div class="wrapper">    
+    <section class="home-cta__grid">
+      <h2 class="">Ponte en contacto con nuestros ejecutivos</h2>
+      <button class="slide--left"><a href="">Contactanos</a></button>
+    </section>
+  </div>
+</section>
 <!--------------------------------------------- Portfolio -->
 
   <section class="home-portfolio">

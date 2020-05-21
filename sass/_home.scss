@@ -167,9 +167,7 @@
 
 .home-portfolio {
   background-color: #1f1f1f;
-  // background-image: url('img/backgrounds/home-portfolio.jpg');
-  // background-size: cover;
-  // background-position: top center;
+  background-image: linear-gradient(to bottom, $black, $carbon);
   border-top: 1px solid $golden;
   overflow: hidden;
   text-align: center;
