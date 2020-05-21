@@ -9,13 +9,18 @@ body {
   @include dotgrid--white;
 }
 
+
 .portfolio {
   width: 100%;
   height: auto;
   min-height: 100%;
   overflow: hidden;
   padding-bottom: 80px;
-  // @include dotgrid--white;
+  background-image: url(img/backgrounds/Bokeh.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
 
   @include phone {
     display: grid;
@@ -98,6 +103,7 @@ CAROUSEL
     background-color: $spaceshuttle;
     cursor: pointer;
     transition: 450ms all;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     
 
     &__details img:hover {

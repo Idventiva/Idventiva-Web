@@ -56,7 +56,7 @@
 
     <div class="wrapper home-portfolio__wrapper">
         <section class="main__section__title home-portfolio__title">
-          <h2>Proyectos Destacado</h2>
+          <h2>Proyectos Destacados</h2>
         </section>
     <section class="home-portfolio__carousel">
       
@@ -68,7 +68,7 @@
             'posts_per_page' => 3,
             'order' => 'ASC',
             'orderby' => 'date',
-            'categoria-proyectos' => 'branding',
+            'categoria-proyectos' => 'destacados',
         );
         $projects = new WP_Query($dat);
         if ($projects->have_posts()) { 
@@ -86,7 +86,7 @@
         </div> 
         <!-- home-portfolio__container -->
       </section>
-      <button class="slide--left"><a href="/servicios">Ver Portafolio </a></button>
+      <button class="slide--left"><a href="<?php echo get_site_url() ?>/portafolio">Ver Portafolio </a></button>
     </div>
 
   </section> <!-- area -->
