@@ -9,6 +9,7 @@ body {
   @include dotgrid--white;
 }
 
+
 .portfolio {
   width: 100%;
   height: auto;
@@ -16,10 +17,17 @@ body {
   overflow: hidden;
   padding-bottom: 80px;
   background-image: url(img/backgrounds/portfolio.jpg);
+<<<<<<< HEAD
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
+=======
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
 
   @include phone {
     display: grid;
@@ -48,28 +56,48 @@ CAROUSEL
 
 .col1 {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 350px 1fr 120px;
   column-gap: 30px;
   @include phone-and-tablet {
     grid-template-columns: 16px 1fr 16px;
   }
+=======
+  grid-template-columns: 300px 1fr 120px;
+  column-gap: 30px;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
 }
 
 .col2 {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 350px 1fr;
+=======
+  grid-template-columns: 320px 1fr;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
 }
 
 .carousel {
   display: block;
   width: 100%;
   grid-column-start: 2;
+<<<<<<< HEAD
+=======
+  grid-template-columns: 1fr;
+  margin-bottom: 40px;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
 
   &__container {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
+=======
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
     grid-column-start: 2;
     justify-content: space-around;
     margin-top: 40px;
@@ -96,13 +124,19 @@ CAROUSEL
   }
 
   &-item {
+<<<<<<< HEAD
     width: 100%;
     // padding-bottom: 100%;
+=======
+    height: 300px;
+    width: 100%;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
     position: relative;
     overflow: hidden;
     background-color: $spaceshuttle;
     cursor: pointer;
     transition: 450ms all;
+<<<<<<< HEAD
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid $white;
     border-radius: 4px;
@@ -114,6 +148,10 @@ CAROUSEL
       right: 0;
       bottom: 0;
     }
+=======
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
 
     &__details img:hover {
       transform: scale(1.05);
@@ -121,7 +159,11 @@ CAROUSEL
       padding: 30px;
       filter: grayscale(0.4);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
     &:hover {
       z-index: 1;
       transform: translateX(-20px);
@@ -134,11 +176,19 @@ CAROUSEL
     }
 
     @include upto-portrait-tablet {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
       &:last-child {
         margin-bottom: 0px;
       }
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
     @include phone {
       width: 100%;
     }
@@ -159,17 +209,25 @@ CAROUSEL
   &-item__details {
     position: absolute;
     opacity: 1;
+<<<<<<< HEAD
     padding: 40px;
+=======
+    padding: 24px;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
     left: 0;
     right: 0;
     bottom: 0;
     opacity: 0.9;
     transition: 450ms opacity;
+<<<<<<< HEAD
     background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0) 100%
     );
+=======
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
     height: auto;
 
     a {
@@ -214,8 +272,14 @@ CAROUSEL
 
     h2 {
       display: inline-block;
+<<<<<<< HEAD
       color: $golden;
 
+=======
+      padding-left: 1%;
+      color: $white;
+      
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
       @include upto-portrait-tablet {
         grid-row-start: 2;
         grid-column-start: 1;

@@ -46,7 +46,11 @@ $base-hue: 34; // change for diff colors (180 is nice)
   .c:nth-child(#{$i}){ // grab the nth particle
     animation: orbit#{$i} $time infinite;
     animation-delay: ($i * .01s); 
+<<<<<<< HEAD
     background-color: hsla($hue, 50%, 80%, 1);
+=======
+    background-color: hsla($hue, 100%, 90%, 0.3);
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
   }
 
   @keyframes orbit#{$i}{ 
@@ -118,7 +122,11 @@ animation: glitch-skew 1s infinite linear alternate-reverse;
 &::after {
   @include glitchCopy;
   left: -2px;
+<<<<<<< HEAD
   text-shadow: -2px 0 #ebebeb, 2px 2px #ededed;
+=======
+  text-shadow: -2px 0 #a79b76, 2px 2px #d0d0d0;
+>>>>>>> 7652d86b3c64e8d362a5b0b29dd61d73cf998ca3
   animation: glitch-anim2 1s infinite linear alternate-reverse;
 }
 }

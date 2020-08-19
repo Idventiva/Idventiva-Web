@@ -9,14 +9,14 @@
   position: fixed;
   left: 20px;
   top: 40px;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   height: 30px;
   pointer-events: all;
   @include phone {
     left: 20px;
-    top:40px;
+    top: 40px;
   }
-  
+
   &-img {
     width: 180px;
   }
@@ -27,7 +27,7 @@
   position: fixed;
   top: 24px;
   right: 30px;
-  pointer-events:all;
+  pointer-events: all;
   -webkit-transform: translateZ(120px);
   transform: translateZ(120px);
   @include phone {
@@ -36,11 +36,11 @@
     top: 30px;
   }
   &:after {
-    content: 'menu';
+    content: "menu";
     display: block;
     color: $golden;
     font-size: 10px;
-    transform: translate(0px,33px);
+    transform: translate(0px, 33px);
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 2px;
@@ -56,10 +56,10 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
     z-index: 9000;
     span {
@@ -75,10 +75,10 @@
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
-      -webkit-transition: .25s ease-in-out;
-      -moz-transition: .25s ease-in-out;
-      -o-transition: .25s ease-in-out;
-      transition: .25s ease-in-out;
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       -o-transform-origin: left center;
@@ -86,7 +86,6 @@
     }
     span:nth-child(1) {
       top: 0px;
-
     }
     span:nth-child(2) {
       top: 10px;
@@ -131,9 +130,8 @@
   z-index: 1000;
   overflow: hidden;
   pointer-events: none;
-  transform: translate3d(0,0,100px);
+  transform: translate3d(0, 0, 100px);
 }
-
 
 .blade {
   position: absolute;
@@ -148,16 +146,15 @@
 }
 
 .blade-a {
-
-  top:0;
-  bottom:0;
+  top: 0;
+  bottom: 0;
   width: 65%;
   background-color: $carbon;
   z-index: 1004;
   border-left: 8px solid $spaceshuttle;
   transform: translateZ(100px) translateX(-16vw);
   &.hidden {
-    transform: translateX(-150vw) translateZ(100px) ;
+    transform: translateX(-150vw) translateZ(100px);
   }
   @include phone {
     background-color: $black;
@@ -169,45 +166,44 @@
   }
 }
 .blade-c {
-    right: -10%;
-    background-color: #1f1f1f;
-    top:0;
-    bottom:0;
-    width: 80%;
-    z-index: 1000;
-    overflow: hidden;
+  right: -10%;
+  background-color: #1f1f1f;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  z-index: 1000;
+  overflow: hidden;
+  &.hidden {
+    transform: translateX(-165vw);
+  }
+  @include phone {
     &.hidden {
-      transform:  translateX(-165vw);
-    }
-    @include phone {
-      &.hidden {
-        transform:  translateX(-200vw);
-      }
+      transform: translateX(-200vw);
     }
   }
-  
+}
+
 .overblade {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('img/bigglobe.png');
+  background-image: url("img/bigglobe.png");
   background-position: center center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
-  left:50%;
+  left: 50%;
   opacity: 0.3;
 }
-
 
 .main-menu {
   position: absolute;
   top: 50%;
   left: 25%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   font-weight: 400;
   text-transform: uppercase;
   z-index: 1010;
-  pointer-events:all;
+  pointer-events: all;
   font-size: 46px;
 
   @include phone {
@@ -226,11 +222,21 @@
     list-style: none;
     transition: 0.35s;
     transition-delay: 0.2s;
-    &:nth-of-type(2) {transition-delay: 0.45s;}
-    &:nth-of-type(3) {transition-delay: 0.50s;}
-    &:nth-of-type(4) {transition-delay: 0.55s;}
-    &:nth-of-type(5) {transition-delay: 0.60s;}
-    &:nth-of-type(6) {transition-delay: 0.65s;}
+    &:nth-of-type(2) {
+      transition-delay: 0.45s;
+    }
+    &:nth-of-type(3) {
+      transition-delay: 0.5s;
+    }
+    &:nth-of-type(4) {
+      transition-delay: 0.55s;
+    }
+    &:nth-of-type(5) {
+      transition-delay: 0.6s;
+    }
+    &:nth-of-type(6) {
+      transition-delay: 0.65s;
+    }
 
     @include upto-portrait-tablet {
       font-size: 30px;
@@ -247,12 +253,12 @@
     transition: 0.35s;
     padding-left: 15px;
     text-decoration: none;
-    border-left:5px solid transparent;
+    border-left: 5px solid transparent;
     &:hover {
       color: $golden;
       padding-right: 0px;
       padding-left: 30px;
-      border-left:5px solid $golden;
+      border-left: 5px solid $golden;
     }
   }
 }
@@ -266,10 +272,10 @@
 
   a {
     &:hover {
-      border:0;
+      border: 0;
     }
   }
-  
+
   i {
     margin-right: 8px;
     color: $golden;
@@ -283,7 +289,7 @@
 
 .hidden {
   pointer-events: none;
-  ul{
+  ul {
     pointer-events: none;
   }
   li {
@@ -301,7 +307,6 @@
     transition-delay: 0s;
   }
 }
-
 
 .menu-localization {
   width: 80%;
@@ -327,7 +332,7 @@
   transition: 0.35s;
   transition-delay: 0.65s;
   font-family: $OpenSans;
-  pointer-events:all;
+  pointer-events: all;
   &.hidden {
     opacity: 0;
     visibility: hidden;
@@ -338,8 +343,8 @@
   .menu-logo {
     width: 100%;
     height: 60px;
-    background-image: url('img/logo-small.png');
-    background-repeat:no-repeat;
+    background-image: url("img/logo-small.png");
+    background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
     margin-bottom: 40px;
@@ -365,7 +370,6 @@
   }
 }
 
-
 .prepare {
   display: none;
 }
@@ -382,15 +386,14 @@
   transform: translateY(-200px);
 }
 
-
 .nav-down {
   transform: translateY(0);
   // background-color: $white;
   // box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
-
-.over-all { // Se active en Script.js
+.over-all {
+  // Se active en Script.js
   position: fixed;
   background: transparent;
   z-index: 9999;
@@ -399,6 +402,6 @@
   opacity: 0;
 
   .logo {
-    display: none!important;
+    display: none !important;
   }
 }
