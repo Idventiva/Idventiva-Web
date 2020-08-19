@@ -28,11 +28,10 @@ $fields = get_fields(); ?>
                 <p><?php echo $fields['anno']; ?></p>
                 <h5>Resultados:</h5>
                 <p><?php echo $fields['resultados']; ?></p>
-                <button class="slide--left"><a href="/contacto">Quiero algo así</a></button>
+                <button class="slide--left"><a href="<?php echo get_site_url(); ?>/contacto">Quiero algo así</a></button>
             </div>
             <div class="single-project__content">
                 <?php the_content();?>
-                <button class="slide--left"><a href="/contacto">Quiero algo así</a></button>
             </div>
         </section>
         
@@ -40,7 +39,12 @@ $fields = get_fields(); ?>
     }
 } ?>
 
-<section class="single-project__container">
+
+
+</main>
+
+
+<section class="related-projects">
     <section class="carousel">
         <div class="carousel__container">
         <?php 
@@ -78,8 +82,5 @@ $fields = get_fields(); ?>
     </section>
 
 </section>
-
-
-</main>
 
 <?php get_footer(); ?>

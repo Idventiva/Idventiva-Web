@@ -4,8 +4,6 @@
 \*------------------------------------*/
 
 body {
-  background: $degwhite;
-  @include dotgrid--black;
   @include fade;
 }
 
@@ -13,9 +11,14 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  
+  overflow: hidden;
+
+  .size-full {
+    margin-bottom: -4px;
+  }
+
   &__portada {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: flex-start;
     margin: 0;
@@ -27,20 +30,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     button {
       margin: 0px;
     }
-    
   }
 
   &__title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    grid-column-start: 2;
     margin-bottom: 40px;
 
     @include phone {
@@ -63,47 +59,61 @@ body {
     flex-direction: column;
     grid-column-start: 2;
     margin-bottom: 40px;
+    max-width: 100vw;
+    @include phone-and-tablet {
+      display: block;
+    }
+    .wp-block-image {
+      img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto;
+      }
+    }
   }
 
   &__container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    
-    @include upto-portrait-tablet {
+    grid-template-columns: 360px 1fr;
+
+    @include phone-and-tablet {
       flex-wrap: wrap;
+      display: block;
       flex-direction: column-reverse;
       margin: 0px;
     }
-    
+
     h5 {
+      font-size: 16px;
       margin-top: 16px;
-      font-weight: 600;
       color: $golden;
     }
-    
-    p {
-      color: $carbon;
-    }
-    
+
     button {
       margin-top: 40px;
     }
   }
-  
+
   &__info {
-    display: flex;
-    grid-column-start: 2;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
     padding: 24px;
     justify-content: center;
     align-items: flex-start;
     align-content: space-around;
     text-align: left;
-    width: 100%;
+    width: 360px;
+    padding-top: 100px;
+    margin-bottom: 32px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 
     @include upto-portrait-tablet {
+      position: initial;
+      background-color: $white;
       width: 100%;
-      padding: 16px;
+      padding: 80px 16px;
     }
 
     h3 {
@@ -113,18 +123,31 @@ body {
         margin-top: 40px;
       }
 
-    h2 {
-      color: $carbon;
-    }
-
-    a {
-      color: $golden;
-
-      &:visited {
-        color: $golden;
+      h2 {
+        color: $carbon;
       }
 
+      a {
+        color: $golden;
+
+        &:visited {
+          color: $golden;
+        }
+      }
+    }
+    p {
+      color: $carbon;
+      font-size: 14px;
     }
   }
+
+  .carousel__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
+
+.related-projects {
+  position: relative;
+  background-color: $white;
+  padding: 40px;
 }

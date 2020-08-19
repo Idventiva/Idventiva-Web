@@ -17,12 +17,6 @@
         </div>
 				<!-- /copyright -->
       </div>
-      <div class="social-networks-footer">
-        <a href="https://www.facebook.com/idventiva/" alt="Facebook"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com/idventiva" alt="Twitter"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://mx.linkedin.com/company/idventiva" alt="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/idventiva/" alt="Idventiva"><i class="fab fa-instagram-square"></i></a>
-      </div>
 			</footer>
 			<!-- /footer -->
 

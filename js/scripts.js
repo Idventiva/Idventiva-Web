@@ -42,12 +42,52 @@ jQuery(document).ready(function(){
 
   jQuery(document).ready(function(){
     // Preparando el terreno
-    jQuery('.blade, .menu ul li, .upper, .lower,   .social-networks-nav, nav .menu').toggleClass('hidden');
+    jQuery('.blade, .main-menu ul li, .upper, .lower, .social-networks-nav, nav .main-menu').toggleClass('hidden'); // Lanza la animación de las cuchillas al inicio
+    jQuery('.prepare').removeClass('prepare'); // Oculta los elementos de menú al cargar, excepto las cuchillas.
     // Click en botón
     jQuery('#nav-button').click(function(){
       jQuery(this).toggleClass('open');
-      jQuery('.blade, .menu ul li, .upper, .lower,   .social-networks-nav, nav .menu').toggleClass('hidden');
+      jQuery('.top-bar').toggleClass('over-all'); // Activa la clase over-all, que evita que el menú desaparezca en el scroll. 
+      jQuery('.blade, .main-menu ul li, .upper, .lower, .social-networks-nav, nav .main-menu').toggleClass('hidden');
     });
   });
 
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 300;
+var delta = 5;
+var navbarHeight = jQuery('.top-bar').outerHeight();
+
+jQuery(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = jQuery(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        jQuery('.top-bar').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + jQuery(window).height() < jQuery(document).height()) {
+          jQuery('.top-bar').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 

@@ -98,7 +98,7 @@ function idv2018_header_scripts()
 
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
-
+  
         wp_register_script('idv2018scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('idv2018scripts'); // Enqueue it!
     }
@@ -129,9 +129,10 @@ function register_idv_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'idv2018'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'idv2018'), // Sidebar Navigation
-        'footer-menu-1' => __('Footer Menu 1', 'idv2018'), // Extra Navigation if needed (duplicate as many as you need!)
-        'footer-menu-2' => __('Footer Menu 2', 'idv2018'), // Extra Navigation if needed (duplicate as many as you need!)
-        'footer-menu-3' => __('Footer Menu 3', 'idv2018') // Extra Navigation if needed (duplicate as many as you need!)
+        // 'footer-menu-1' => __('Footer Menu 1', 'idv2018'), // Extra Navigation if needed (duplicate as many as you need!)
+        // 'footer-menu-2' => __('Footer Menu 2', 'idv2018'), // Extra Navigation if needed (duplicate as many as you need!)
+        // 'footer-menu-3' => __('Footer Menu 3', 'idv2018') // Extra Navigation if needed (duplicate as many as you need!)
+        'portfolio-menu' => __('Portfolio Menu', 'idv2018') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
 
@@ -495,7 +496,7 @@ function projects_type() {
         'capability_type' => 'post',
         'has_archive' => true,
         'hierarchical' => false,
-        'supports' => array('title','editor','thumbnail', 'revisions', 'excerpt'),
+        'supports' => array('title','editor','thumbnail', 'revisions', 'excerpt','page-attributes'),
         'public' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
@@ -577,5 +578,7 @@ function add_theme_scripts() {
   wp_enqueue_script( 'featherlight', get_template_directory_uri() . '/js/featherlight.min.js', array ( 'jquery' ), true);
   wp_enqueue_script( 'parallax_tilt', get_template_directory_uri() . '/js/tilt.jquery.js', array ( 'jquery' ), true);
   wp_enqueue_script( 'anime', get_template_directory_uri() . '/js/anime.min.js', array ( 'jquery' ), true);
+  wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array ( 'jquery' ), true);
+
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );

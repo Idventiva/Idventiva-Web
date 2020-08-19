@@ -3,319 +3,339 @@
     MAIN
 \*------------------------------------*/
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
 *,
 *:after,
 *:before {
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-	margin: 0;
-	padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }
 
 /*-------------------------------------- Body & Boxes --*/
 
 .body {
-	font-family: $Geometria;
+  font-family: $Geometria;
 
-	&--white { 
-		background: $degwhite;
-	}
-	
-	&--black { 
-		background: $degblack;
-	}
+  &--white {
+    background: $degwhite;
+  }
+
+  &--black {
+    background: $degblack;
+  }
 }
 
-
 @mixin dotgrid--white {
-	background-image: url('img/dotGrid.png');
+  background-image: url("img/dotGrid.png");
 }
 
 @mixin dotgrid--black {
-	background-image: url('img/dotGridBlack.png');
+  background-image: url("img/dotGridBlack.png");
 }
 
-
 .parallaxLayer {
-	position: fixed;
-	top:-200px;
-	left: -200px;
-	right:-400px;
-	bottom:-400px;
-	background-color: rgba(0, 0, 0, 0.0);
-	transform-style: preserve-3d;
-  }
-  
-  
-  .dotGrid {
-	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background-image: url('img/dotGrid.png');
-	z-index: 0;
-	opacity: 0.8;
-	pointer-events: none;
-	transform: translateZ(0px);
-	transform-style: preserve-3d;
-  }
-  
-  .dotGridBlack {
-	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background-image: url('img/dotGridBlack.png');
-	z-index: 0;
-	opacity: 0.4;
-	pointer-events: none;
-	transform: translateZ(0px);
-	transform-style: preserve-3d;
-  }
+  position: fixed;
+  top: -200px;
+  left: -200px;
+  right: -400px;
+  bottom: -400px;
+  background-color: rgba(0, 0, 0, 0);
+  transform-style: preserve-3d;
+}
+
+.dotGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("img/dotGrid.png");
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none;
+  transform: translateZ(0px);
+  transform-style: preserve-3d;
+}
+
+.dotGridBlack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("img/dotGridBlack.png");
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  transform: translateZ(0px);
+  transform-style: preserve-3d;
+}
 
 .clear:before,
 .clear:after {
-    content:' ';
-    display:table;
+  content: " ";
+  display: table;
 }
 
 .clear:after {
-    clear:both;
+  clear: both;
 }
 .clear {
-    *zoom:1;
+  *zoom: 1;
 }
 
 /*-------------------------------------- Text --*/
 
 h1 {
-	font-family: $Geometria;
-	font-weight: 700;
-	font-size: 60px;
-	line-height: 72px;
+  font-family: $Geometria;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
 }
 
 h2 {
-	font-family: $Geometria;
-	font-weight: 300;
-	font-size: 34px;
-	line-height: 40px;
+  font-family: $Geometria;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 40px;
+  text-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
 
-	@include tablet-landscape {
-		font-size: 32px;
-	}
-	
-	@include upto-portrait-tablet {
-		font-size: 28px;
-	}
+  @include tablet-landscape {
+    font-size: 32px;
+  }
 
+  @include upto-portrait-tablet {
+    font-size: 28px;
+  }
 }
 
 h3 {
-	font-family: $Geometria;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 28px;
+  font-family: $Geometria;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 h4 {
-	font-family: $Geometria;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 25px;
+  font-family: $Geometria;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 h5 {
-	font-family: $Ibarra;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 h6 {
-	font-family: $Geometria;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 25px;
+  font-family: $Geometria;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 P {
-	font-family: $Ibarra;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 26px;
+  font-family: $OpenSans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 a {
-	font-family: $Geometria;
-	text-decoration: none;
-	&:visited {
-		color:$lightgolden;
-	  }
+  font-family: $Geometria;
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    color: inherit;
+  }
 }
 
 ul {
-	margin-top: 8px;
-	list-style: none;
-	font-family: $Geometria;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 16px;
+  margin-top: 8px;
+  list-style: none;
+  font-family: $Geometria;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
 
-	li {
-		margin: 8px;
-		padding-left: 8px;
+  li {
+    margin: 8px;
+    padding-left: 8px;
 
-		@include phone-and-tablet {
-			padding-left: 8px;
-		}
-	}
+    @include phone-and-tablet {
+      padding-left: 8px;
+    }
+  }
 }
 
 address {
-	font-family: $Geometria;
-	font-style: normal;
-	padding-bottom: 20px;
-  }
+  font-family: $OpenSans;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+
+.divider {
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  z-index: 20;
+}
 
 /*-------------------------------------- Buttons --*/
 
-
 button {
-	position: relative;
-	margin: 8px auto;
-	height: 64px;
-	border: 2px solid $golden;
-	background: $degblack;
-	transition: all 500ms;
-	z-index: 1;
-	color: $white;
-	font-size: 16px;
-	overflow: hidden;
-	
-	&:hover {
-		border-color: $lightgolden;
-		color: $carbon;
-	}
-	
-	&:after {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		transform: skewX(15deg);
-		transition: all 500ms;
-		background: $white;
-	}
-	
-	a {
-		padding: 24px 48px;
-		color: $white;
-		text-decoration: none;
-  
-		&:after {
-		display: inline-block;
-		// content: "  →";
-	  }
-	
-	  &:hover {
-		color: $carbon;
-	  }
-	}
+  position: relative;
+  margin: 8px auto;
+  height: 44px;
+  border: 2px solid $golden;
+  background: transparent;
+  transition: all 500ms;
+  z-index: 1;
+  color: $golden;
+  font-weight: bold;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    border-color: $lightgolden;
+    background: $golden;
+    color: $white;
+  }
+
+  a {
+    padding: 24px 48px;
+    color: $golden;
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
-  
-  .slide--left::after {
-	left: -35%;
-	height: 100%;
-	width: 0;
-  }
-  
-  .slide--left:hover::after {
-	width: 150%;
-  }
+.slide--left::after {
+  left: -35%;
+  height: 100%;
+  width: 0;
+}
 
-
-  
+.slide--left:hover::after {
+  width: 150%;
+}
 
 /*-------------------------------------- Sections --*/
-  
-.section__title {
-	display: flex;
-	grid-column-start: 2;
-	flex-direction: column;
-	padding-top: 60px;
 
-	@include phone-and-tablet {
-		padding-top: 160px;
-	}
-	
-	h5 {
-	margin-bottom: -8px;
-	color:$white;
-	}
-	
-	h2 {
-	margin: 0;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: $lightgolden;
-	}
+.sidebar {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 350px;
+  padding-left: 40px;
+  @include phone-and-tablet {
+    position: initial;
+    grid-column-start: 2;
+  }
+
+  a:focus,
+  a:active {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    color: $white;
+  }
 }
-  
+
+.section__title {
+  margin-top: 80px;
+
+  h5 {
+    margin-bottom: -8px;
+    color: $golden;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $lightgolden;
+  }
+}
+
+.section-menu {
+  color: $black;
+}
 
 .line--lightgolden {
-	display: inline-block;
-	background: url("img/line_golden.svg");
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: 0% center;
-	margin-top: 32px;
-	margin-bottom: 16px;
-	color: $golden;
-	width: 100%;
-	height: 7px;
-	
-	@include phone-and-tablet {
-		grid-row-start: 1;
-		margin-top: 0px;
-		margin-bottom: 8px;
-	}
+  display: inline-block;
+  background: url("img/line_golden.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: $golden;
+  width: 100%;
+  height: 7px;
+
+  @include phone-and-tablet {
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
 }
 /*-------------------------------------- Animations --*/
 
 @mixin fade {
-	animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 @keyframes fadein {
-    from {
-		opacity:0;
-    }
-    to {
-		opacity:1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @mixin left {
-	animation: left 2s;
+  animation: left 2s;
 }
 
 @keyframes left {
-	from {
-		left: -400px;
-	}
-	to {
-		left: 0;
-	}
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0;
+  }
 }
 
 /*------------------------------------*\
@@ -325,7 +345,7 @@ button {
 /* section */
 .section {
   width: 100%;
-//   height: 100vh;
+  //   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -334,13 +354,11 @@ button {
 
 /* wrapper */
 .wrapper {
-	max-width:1120px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
-  padding: 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px;
   height: 100%;
-
 }
 /* header */
 .header {
@@ -352,7 +370,7 @@ button {
 
 .home-header {
   position: absolute;
-  top:0;
+  top: 0;
   z-index: 2;
 }
 /* logo */
@@ -365,33 +383,37 @@ button {
   width: 200px;
 }
 
-.sidebar-widget h3 {margin-bottom: 0; color: $golden;}
-.sidebar-widget ul {margin-top: 0;}
-
+.sidebar-widget h3 {
+  margin-bottom: 0;
+  color: $golden;
+}
+.sidebar-widget ul {
+  margin-top: 0;
+}
 
 ::selection {
-	background: $golden;
-	color :#FFF;
-	text-shadow: none;
+  background: $golden;
+  color: #fff;
+  text-shadow: none;
 }
 ::-webkit-selection {
-	background: $golden;
-	color:#FFF;
-	text-shadow:none;
+  background: $golden;
+  color: #fff;
+  text-shadow: none;
 }
 ::-moz-selection {
-	background:$golden;
-	color:#FFF;
-	text-shadow:none;
+  background: $golden;
+  color: #fff;
+  text-shadow: none;
 }
 
 .pagination {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	justify-self: center;
-	grid-column-start: 2;
-	color: $lightgolden;
-	width: 10%;
-	margin-bottom: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-self: center;
+  grid-column-start: 2;
+  color: $lightgolden;
+  width: 10%;
+  margin-bottom: 160px;
 }

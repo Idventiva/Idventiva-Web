@@ -4,40 +4,41 @@
 \*------------------------------------*/
 
 .footer {
-  position: fixed;
+  position: relative;
+  background-color: $carbon;
+  // background: radial-gradient(ellipse farthest-side at top center, #606060, #1f1f1f);
+  border-top: 2px solid $golden;
   bottom: 0;
   width: 100%;
-  height: 6%;
+  height: auto;
   padding: 16px 0px;
   color: $white;
   overflow: hidden;
   z-index: 1;
-  pointer-events: none;
+  clear: both;
 
-  @include phone {
-    display: none;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  a {color: $golden;}
+  a:hover {color: $white;}
 
-  .social-networks-footer {
-    position: absolute;
-    right: 7%;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: all;
+}
+.social-networks-footer {
 
-    @include phone {
-      display: none;
-    }
-
-    a i {
-      margin-right: 8px;
-      color: $golden;
-      font-size: 20pt;
-      transition: 0.35s;
-      &:hover {
-        color: $white;
+@include phone {
+  display: none;
+      }
+      
+      a i { 
+        margin-right: 8px;
+        color: $golden;
+        font-size: 20pt;
+        transition: 0.35s;
+        &:hover {
+          color: $white;
+        }
       }
     }
-  }
-}

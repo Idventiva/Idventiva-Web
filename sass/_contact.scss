@@ -4,77 +4,48 @@
 \*------------------------------------*/
 
 #contact {
-  .dotGrid {
-    background-image: url('img/dotGridBlack.png');
-    opacity: 0.5;
-  }
+  clear:both;
+  height: auto;
+  overflow: hidden;
 
   h5 {
     z-index: 1;
     color: $carbon;
-
-    @include phone {
-      margin: 80px;
-    }
   }
 
   h2 {
-    z-index: 1;
     color: $golden;
     padding-bottom: 40px;
     border-bottom: 1px dotted $golden;
     margin-bottom: 40px;
-
   }
-  .contactContainer {
-    position: absolute;
-    max-width: 980px;
-    margin: 0 auto;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, calc(-50% - 50px));
-    background-color: rgba(255,255,255,0.9);
-    border-bottom: 1px dotted $golden;
-    border-top: 1px dotted $golden;
-    padding: 70px;
-    pointer-events: none;
-  }
-
-  .contact-left {
-    float: left;
-    position: relative;
-    width: 400px;
-    height: 400px;
-  }
-  .contact-right {
-    float:right;
-    position: relative;
-    width: calc(100% - 400px - 100px);
-    margin: 20px 50px 50px 50px;
-    a.view-portfolio {
-      color: $golden;
-      float:right;
-      margin-top: 40px;
-      pointer-events: all;
-      transition: 0.25;
-      &:hover {
-        color: lighten($golden, 20%);
-      }
-    }
-  }
-
-
 }
-
-
+.contactContainer {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgba(255,255,255,0.9);
+  border-bottom: 1px dotted $golden;
+  border-top: 1px dotted $golden;
+  padding: 70px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+} 
 .contact-left {
-  float:left;
-  width: 400px;
-  pointer-events: all;
+  position: relative;
+  height: auto;
   label {
     color: $golden;
     font-family: 'Futura';
     font-weight: 300;
   }
+}
+.contact-right {
+  position: relative;
 }
